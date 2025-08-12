@@ -400,10 +400,7 @@ function Contact() {
   )
 }
 
-const demoPosts = [
-  { slug: 'design-that-converts', title: 'Web Design That Converts: Speed, Clarity, Persuasion', summary: 'How to design for clarity, speed, and persuasion in 2025.' },
-  { slug: 'ai-search-optimization', title: 'Optimizing for AI Search Answers with Entities & Schema', summary: 'Entities, schemas, and citations to show up in AI responses.' },
-]
+import { blogPosts, type BlogPost } from './blogPosts'
 
 function BlogHub() {
   const jsonLd = {
@@ -424,10 +421,10 @@ function BlogHub() {
         <h1 className="display text-gradient">Insights</h1>
         <p className="subhead">Short, practical posts on design, SEO, CRO, and paid growth.</p>
         <div className="cards">
-          {demoPosts.map(p => (
+          {blogPosts.map(p => (
             <Link key={p.slug} className="card" to={`/blog/${p.slug}`}>
               <div className="card-title">{p.title}</div>
-              <div className="card-text">{p.summary}</div>
+              <div className="card-text">{p.description}</div>
             </Link>
           ))}
         </div>
@@ -437,7 +434,7 @@ function BlogHub() {
 }
 
 function BlogPost({ slug }: { slug: string }) {
-  const post = demoPosts.find(p => p.slug === slug)
+  const post = blogPosts.find(p => p.slug === slug)
   if (!post) return <main className="section"><div className="container"><h1 className="display text-gradient">Not found</h1></div></main>
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -450,14 +447,13 @@ function BlogPost({ slug }: { slug: string }) {
     <main className="section">
       <Seo
         title={`${post.title} | EZ Web Blog`}
-        description={post.summary}
+        description={post.description}
         path={`/blog/${slug}`}
         jsonLd={jsonLd}
       />
       <div className="container prose">
         <h1>{post.title}</h1>
-        <p>{post.summary}</p>
-        <p>Coming soon: full post content.</p>
+        {post.content}
       </div>
     </main>
   )
@@ -475,7 +471,7 @@ export default function App() {
         ))}
         <Route path="contact" element={<Contact />} />
         <Route path="blog" element={<BlogHub />} />
-        {demoPosts.map(p => (
+        {blogPosts.map(p => (
           <Route key={p.slug} path={`blog/${p.slug}`} element={<BlogPost slug={p.slug} />} />
         ))}
         <Route path="*" element={<Home />} />
