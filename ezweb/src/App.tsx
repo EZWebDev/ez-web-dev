@@ -3,6 +3,19 @@ import { Link, NavLink, Outlet, Route, Routes, useLocation } from 'react-router-
 import clsx from 'clsx'
 import Seo, { useGlobalSchemas } from './seo'
 
+// Rocket component for animated background
+function RocketContainer() {
+  return (
+    <div className="rocket-container">
+      <div className="rocket">🚀</div>
+      <div className="rocket">🛸</div>
+      <div className="rocket">🚀</div>
+      <div className="rocket">🛰️</div>
+      <div className="rocket">⭐</div>
+    </div>
+  )
+}
+
 function Header() {
   const [open, setOpen] = useState(false)
   return (
@@ -61,6 +74,7 @@ function Layout() {
   useEffect(() => { window.scrollTo(0, 0) }, [pathname])
   return (
     <div>
+      <RocketContainer />
       <Header />
       <Outlet />
       <Footer />
