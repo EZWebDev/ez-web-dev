@@ -88,73 +88,73 @@ function Home() {
       />
       <div className="container hero-inner">
         <div>
-          <span className="eyebrow">Boutique Web Dev + Digital Marketing</span>
-          <h1 className="display text-gradient">Websites that rank and convert</h1>
-          <p className="subhead">We design and build lightning-fast sites, write SEO content that climbs, and run high-ROI campaigns. If you want growth without the agency bloat—welcome to EZ Web.</p>
+          <span className="eyebrow">Premium Boutique Agency ⭐ Elite Client Portfolio</span>
+          <h1 className="display text-gradient">Enterprise-grade websites that dominate & convert</h1>
+          <p className="subhead">We architect lightning-fast digital experiences, craft SEO content that commands search rankings, and orchestrate high-performance campaigns. Reserved for ambitious brands ready to eclipse their competition.</p>
           <div className="btns">
-            <Link className="btn btn-primary" to="/contact">Get a free strategy call</Link>
-            <Link className="btn" to="/services">Explore services</Link>
+            <Link className="btn btn-primary" to="/contact">Request strategy consultation</Link>
+            <Link className="btn" to="/services">View premium services</Link>
           </div>
         </div>
         <aside className="hero-card">
           <div className="kpis">
-            <div className="kpi"><div className="num">+210%</div><div className="label">Avg. 6‑mo organic</div></div>
-            <div className="kpi"><div className="num">3.2x</div><div className="label">Paid ROAS</div></div>
-            <div className="kpi"><div className="num">&lt; 2.0s</div><div className="label">Core Web Vitals</div></div>
+            <div className="kpi"><div className="num">+210%</div><div className="label">Avg. 6‑mo organic growth</div></div>
+            <div className="kpi"><div className="num">3.2x</div><div className="label">Premium ROAS</div></div>
+            <div className="kpi"><div className="num">&lt; 1.8s</div><div className="label">Elite performance</div></div>
           </div>
           <div className="badges">
-            <span className="badge">Figma → Pixel‑perfect</span>
-            <span className="badge">SEO Blogs & Newsletters</span>
-            <span className="badge">AI Search (GPT, Gemini, Claude)</span>
-            <span className="badge">Landing Page CRO</span>
+            <span className="badge">Figma → Production Ready</span>
+            <span className="badge">AI-Optimized Content</span>
+            <span className="badge">Next-Gen SEO Strategy</span>
+            <span className="badge">Enterprise CRO</span>
           </div>
         </aside>
       </div>
 
       <section className="section">
         <div className="container">
-          <h2 className="section-title">Web design, SEO, CRO, and paid ads</h2>
-          <p className="section-subtitle">From stunning custom designs to growth engines that keep compounding.</p>
+          <h2 className="section-title">Premium web experiences, elite growth strategies</h2>
+          <p className="section-subtitle">From sophisticated custom architectures to growth engines that compound exponentially. Built for brands that demand excellence.</p>
           <div className="cards">
             <Link className="card" to="/services/custom-web-design">
-              <div className="card-eyebrow">Design & Build</div>
-              <div className="card-title">Custom Web Design</div>
-              <div className="card-text">Figma deliverables, component systems, and dev‑ready builds that are fast and accessible.</div>
-              <div className="badges"><span className="badge">Figma</span><span className="badge">Web Vitals</span><span className="badge">Performance</span></div>
+              <div className="card-eyebrow">Elite Design</div>
+              <div className="card-title">Bespoke Web Architecture</div>
+              <div className="card-text">Premium Figma systems, component libraries, and performance-obsessed builds that set industry standards.</div>
+              <div className="badges"><span className="badge">Design Systems</span><span className="badge">Core Web Vitals</span><span className="badge">Enterprise Scale</span></div>
             </Link>
             <Link className="card" to="/services/monthly-seo-content">
-              <div className="card-eyebrow">Organic Growth</div>
-              <div className="card-title">Monthly SEO Content</div>
-              <div className="card-text">Blogs, on‑page optimizations, local service pages, rewrites, and newsletters that rank.</div>
-              <div className="badges"><span className="badge">Topical Authority</span><span className="badge">EEAT</span><span className="badge">Local SEO</span></div>
+              <div className="card-eyebrow">Authority Building</div>
+              <div className="card-title">Strategic SEO Content</div>
+              <div className="card-text">Executive-level content strategy, topical authority development, and search dominance campaigns.</div>
+              <div className="badges"><span className="badge">Thought Leadership</span><span className="badge">Domain Authority</span><span className="badge">Search Dominance</span></div>
             </Link>
             <Link className="card" to="/services/landing-page-cro">
-              <div className="card-eyebrow">Conversions</div>
-              <div className="card-title">Landing Page CRO</div>
-              <div className="card-text">Relentless A/B testing, clarity, and persuasion—turn more visits into revenue.</div>
-              <div className="badges"><span className="badge">A/B</span><span className="badge">Hotjar</span><span className="badge">UX</span></div>
+              <div className="card-eyebrow">Revenue Optimization</div>
+              <div className="card-title">Conversion Science</div>
+              <div className="card-text">Psychology-driven optimization, advanced analytics, and systematic testing for maximum revenue impact.</div>
+              <div className="badges"><span className="badge">Behavioral Analysis</span><span className="badge">Revenue Science</span><span className="badge">Performance Psychology</span></div>
             </Link>
             <Link className="card" to="/services/ai-search-ranking">
-              <div className="card-eyebrow">AI Era SEO</div>
-              <div className="card-title">AI Search Ranking</div>
-              <div className="card-text">Win in AI answers. We optimize for ChatGPT, Gemini, Claude and SGE‑style results.</div>
-              <div className="badges"><span className="badge">Entities</span><span className="badge">Schemas</span><span className="badge">Citations</span></div>
+              <div className="card-eyebrow">Next-Gen SEO</div>
+              <div className="card-title">AI Search Dominance</div>
+              <div className="card-text">Future-proof optimization for ChatGPT, Gemini, Claude and next-generation search experiences.</div>
+              <div className="badges"><span className="badge">AI Optimization</span><span className="badge">Future-Proof Strategy</span><span className="badge">Search Evolution</span></div>
             </Link>
             <Link className="card" to="/services/google-ads">
-              <div className="card-eyebrow">Acquire</div>
-              <div className="card-title">Google Ads Management</div>
-              <div className="card-text">Smart search, Performance Max, and retargeting tuned for profitable ROAS.</div>
-              <div className="badges"><span className="badge">Search</span><span className="badge">PMax</span><span className="badge">Retargeting</span></div>
+              <div className="card-eyebrow">Premium Acquisition</div>
+              <div className="card-title">Elite Google Campaigns</div>
+              <div className="card-text">Sophisticated audience targeting, advanced attribution, and high-value customer acquisition strategies.</div>
+              <div className="badges"><span className="badge">Advanced Attribution</span><span className="badge">Elite Targeting</span><span className="badge">Premium ROAS</span></div>
             </Link>
             <Link className="card" to="/services/meta-ads">
-              <div className="card-eyebrow">Scale</div>
-              <div className="card-title">Meta Ads Agency</div>
-              <div className="card-text">Creative testing, hooks, and audiences that drive real pipeline—not vanity clicks.</div>
-              <div className="badges"><span className="badge">UGC</span><span className="badge">Lookalikes</span><span className="badge">ROAS</span></div>
+              <div className="card-eyebrow">Scale Strategy</div>
+              <div className="card-title">Premium Social Acquisition</div>
+              <div className="card-text">Sophisticated creative testing, audience intelligence, and scalable acquisition systems for premium brands.</div>
+              <div className="badges"><span className="badge">Creative Intelligence</span><span className="badge">Audience Science</span><span className="badge">Scale Systems</span></div>
             </Link>
           </div>
           <div className="btns" style={{ marginTop: 18 }}>
-            <Link className="btn" to="/services">See all services</Link>
+            <Link className="btn" to="/services">Explore premium services</Link>
           </div>
         </div>
       </section>
@@ -162,20 +162,20 @@ function Home() {
       <section className="section">
         <div className="container two-col callout">
           <div>
-            <h2 className="section-title" style={{ fontSize: 24 }}>Ecommerce websites and lead-gen sites</h2>
-            <p className="section-subtitle" style={{ margin: 0 }}>Shopify, headless, and high‑converting marketing sites with clean, maintainable code.</p>
+            <h2 className="section-title" style={{ fontSize: 24 }}>Enterprise e-commerce & lead generation</h2>
+            <p className="section-subtitle" style={{ margin: 0 }}>Sophisticated Shopify Plus, headless commerce, and premium marketing sites with institutional-grade architecture.</p>
             <div className="list" style={{ marginTop: 10 }}>
-              <div className="item"><span className="icon">✓</span><div>Core Web Vitals under 2s on mid‑tier devices</div></div>
-              <div className="item"><span className="icon">✓</span><div>Schema, sitemaps, and on‑page best practices</div></div>
-              <div className="item"><span className="icon">✓</span><div>Analytics, pixels, and consent done right</div></div>
+              <div className="item"><span className="icon">✓</span><div>Sub-2s Core Web Vitals on enterprise infrastructure</div></div>
+              <div className="item"><span className="icon">✓</span><div>Advanced schema, enterprise sitemaps, and technical SEO</div></div>
+              <div className="item"><span className="icon">✓</span><div>Sophisticated analytics, attribution, and compliance frameworks</div></div>
             </div>
           </div>
           <div>
-            <h2 className="section-title" style={{ fontSize: 24 }}>Boutique on purpose</h2>
-            <p className="section-subtitle" style={{ margin: 0 }}>You work with senior talent only. No bloated teams, no hand‑offs, no mysterious retainers.</p>
+            <h2 className="section-title" style={{ fontSize: 24 }}>Exclusively boutique, intentionally elite</h2>
+            <p className="section-subtitle" style={{ margin: 0 }}>Selective client partnerships. Senior strategists only. Zero account management layers. Premium outcomes, not premium prices.</p>
             <div className="btns" style={{ marginTop: 10 }}>
-              <Link className="btn btn-primary" to="/contact">Start a project</Link>
-              <Link className="btn" to="/about">Why EZ Web</Link>
+              <Link className="btn btn-primary" to="/contact">Apply for partnership</Link>
+              <Link className="btn" to="/about">Our philosophy</Link>
             </div>
           </div>
         </div>
