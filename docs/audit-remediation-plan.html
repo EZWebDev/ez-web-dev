@@ -1,0 +1,567 @@
+<title>ezweb.dev Remediation Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+
+<style>
+  :root {
+    --bg:        #EEF1F4;
+    --surface:   #FFFFFF;
+    --surface-2: #F5F7F9;
+    --ink:       #171B22;
+    --ink-2:     #39424F;
+    --muted:     #64707E;
+    --rule:      #D5DCE3;
+    --rule-soft: #E4EAEF;
+
+    --accent:    #A85B1F;
+    --accent-2:  #C4802F;
+    --accent-bg: #F6EDE3;
+
+    --crit:      #A32219;
+    --crit-bg:   #F8E9E7;
+    --warn:      #8A6100;
+    --warn-bg:   #F7EFDC;
+    --ok:        #1B6248;
+    --ok-bg:     #E4EFEA;
+
+    --display: 'Bricolage Grotesque', 'Helvetica Neue', Arial, sans-serif;
+    --body:    'Newsreader', Georgia, 'Times New Roman', serif;
+    --mono:    'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:        #10141A;
+      --surface:   #171C24;
+      --surface-2: #1E242D;
+      --ink:       #E8ECF1;
+      --ink-2:     #C2CBD6;
+      --muted:     #8794A3;
+      --rule:      #2C343E;
+      --rule-soft: #232A33;
+
+      --accent:    #E29B54;
+      --accent-2:  #C98038;
+      --accent-bg: #2A2018;
+
+      --crit:      #F0897E;
+      --crit-bg:   #2C1A18;
+      --warn:      #DBAE4D;
+      --warn-bg:   #2A2317;
+      --ok:        #6FC59F;
+      --ok-bg:     #16261F;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg:        #10141A;
+    --surface:   #171C24;
+    --surface-2: #1E242D;
+    --ink:       #E8ECF1;
+    --ink-2:     #C2CBD6;
+    --muted:     #8794A3;
+    --rule:      #2C343E;
+    --rule-soft: #232A33;
+
+    --accent:    #E29B54;
+    --accent-2:  #C98038;
+    --accent-bg: #2A2018;
+
+    --crit:      #F0897E;
+    --crit-bg:   #2C1A18;
+    --warn:      #DBAE4D;
+    --warn-bg:   #2A2317;
+    --ok:        #6FC59F;
+    --ok-bg:     #16261F;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 40px 24px 96px;
+  }
+
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  h1, h2, h3, h4 { font-family: var(--display); text-wrap: balance; margin: 0; line-height: 1.15; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* ---------- masthead ---------- */
+
+  .masthead { display: flex; flex-direction: column; gap: 14px; padding-bottom: 26px; border-bottom: 2px solid var(--ink); }
+  .masthead h1 { font-size: clamp(34px, 5.4vw, 52px); font-weight: 800; letter-spacing: -0.025em; }
+  .masthead .standfirst { font-size: 19px; color: var(--ink-2); max-width: 62ch; margin: 0; }
+  .meta-row {
+    display: flex; flex-wrap: wrap; gap: 8px 22px;
+    font-family: var(--mono); font-size: 11.5px; color: var(--muted);
+    letter-spacing: 0.03em;
+  }
+
+  /* ---------- blocker ---------- */
+
+  .blocker {
+    margin-top: 34px;
+    background: var(--crit-bg);
+    border: 1px solid color-mix(in srgb, var(--crit) 34%, transparent);
+    border-left: 4px solid var(--crit);
+    padding: 22px 24px;
+  }
+  .blocker h2 { font-size: 21px; font-weight: 700; color: var(--crit); letter-spacing: -0.01em; }
+  .blocker p { margin: 12px 0 0; max-width: 70ch; }
+  .blocker p:first-of-type { margin-top: 10px; }
+
+  .ledger {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 2px 18px;
+    font-family: var(--mono);
+    font-size: 12.5px;
+    line-height: 1.75;
+  }
+  .ledger dt { color: var(--muted); white-space: nowrap; }
+  .ledger dd { margin: 0; color: var(--ink-2); }
+
+  /* ---------- sequence ---------- */
+
+  section.block { margin-top: 56px; }
+  .block > h2 {
+    font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.13em;
+    color: var(--muted); font-family: var(--mono);
+    padding-bottom: 8px; border-bottom: 1px solid var(--rule);
+  }
+
+  .seq { width: 100%; border-collapse: collapse; margin-top: 18px; font-size: 15.5px; }
+  .seq th {
+    text-align: left; font-family: var(--mono); font-size: 11px; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted);
+    padding: 0 14px 9px 0; border-bottom: 1px solid var(--rule);
+  }
+  .seq td { padding: 11px 14px 11px 0; border-bottom: 1px solid var(--rule-soft); vertical-align: baseline; color: var(--ink-2); }
+  .seq td:first-child { font-family: var(--mono); font-size: 12.5px; color: var(--ink); white-space: nowrap; }
+  .seq td strong { color: var(--ink); font-weight: 600; }
+
+  /* ---------- findings ---------- */
+
+  .finding { margin-top: 34px; padding-left: 20px; border-left: 3px solid var(--rule); }
+  .finding.p0 { border-left-color: var(--crit); }
+  .finding.p1 { border-left-color: var(--accent); }
+  .finding.p2 { border-left-color: var(--muted); }
+
+  .fhead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 14px; }
+  .fnum { font-family: var(--mono); font-size: 12px; color: var(--muted); font-weight: 500; }
+  .finding h3 { font-size: 25px; font-weight: 700; letter-spacing: -0.02em; flex: 1 1 320px; }
+
+  .pill {
+    font-family: var(--mono); font-size: 10.5px; font-weight: 700; letter-spacing: 0.09em;
+    text-transform: uppercase; padding: 3px 8px; border-radius: 2px; white-space: nowrap;
+  }
+  .pill.p0 { background: var(--crit-bg); color: var(--crit); }
+  .pill.p1 { background: var(--accent-bg); color: var(--accent); }
+  .pill.p2 { background: var(--surface-2); color: var(--muted); border: 1px solid var(--rule); }
+
+  .finding p { margin: 13px 0 0; max-width: 70ch; }
+  .finding p.why { color: var(--ink-2); }
+
+  h4.sub {
+    font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--muted); margin: 20px 0 0;
+  }
+
+  ul.moves { margin: 9px 0 0; padding-left: 20px; max-width: 70ch; }
+  ul.moves li { margin: 6px 0; }
+  ul.moves li::marker { color: var(--accent); }
+
+  code, .k {
+    font-family: var(--mono);
+    font-size: 0.855em;
+    background: var(--surface-2);
+    border: 1px solid var(--rule-soft);
+    border-radius: 2px;
+    padding: 1px 5px;
+    color: var(--ink);
+    word-break: break-word;
+  }
+
+  /* ---------- the contradiction ---------- */
+
+  .tags { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1px; margin-top: 16px; background: var(--rule); border: 1px solid var(--rule); }
+  .tag { background: var(--surface); padding: 16px 18px; }
+  .tag .slot { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+  .tag .val { font-family: var(--mono); font-size: 13px; line-height: 1.6; color: var(--ink); margin-top: 8px; }
+  .tag .reads { font-size: 14px; color: var(--muted); margin-top: 10px; font-style: italic; }
+  .caption { font-size: 13.5px; color: var(--muted); margin-top: 10px; max-width: 70ch; }
+
+  .draft {
+    margin-top: 12px;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--accent);
+    padding: 18px 20px;
+  }
+  .draft .val { font-family: var(--mono); font-size: 13.5px; line-height: 1.65; color: var(--ink); }
+
+  .slots { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .slots span {
+    font-family: var(--mono); font-size: 11.5px; color: var(--ink-2);
+    background: var(--surface-2); border: 1px solid var(--rule-soft); border-radius: 2px; padding: 3px 8px;
+  }
+
+  /* ---------- code sample ---------- */
+
+  pre {
+    margin: 12px 0 0;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent-2);
+    padding: 16px 18px;
+    overflow-x: auto;
+    font-family: var(--mono);
+    font-size: 12.5px;
+    line-height: 1.65;
+    color: var(--ink-2);
+    tab-size: 2;
+  }
+  pre code { background: none; border: none; padding: 0; font-size: inherit; color: inherit; }
+
+  /* ---------- correction note ---------- */
+
+  .note {
+    margin-top: 18px;
+    background: var(--warn-bg);
+    border: 1px solid color-mix(in srgb, var(--warn) 32%, transparent);
+    padding: 16px 18px;
+  }
+  .note .label {
+    font-family: var(--mono); font-size: 10.5px; font-weight: 700; letter-spacing: 0.11em;
+    text-transform: uppercase; color: var(--warn);
+  }
+  .note p { margin: 8px 0 0; font-size: 15.5px; max-width: 68ch; color: var(--ink-2); }
+
+  /* ---------- don't list ---------- */
+
+  .dont { margin-top: 18px; display: grid; gap: 14px; }
+  .dont-item { display: grid; grid-template-columns: max-content 1fr; gap: 14px; align-items: baseline; }
+  .dont-item .x { font-family: var(--mono); font-size: 14px; color: var(--crit); font-weight: 700; }
+  .dont-item p { margin: 0; max-width: 66ch; }
+  .dont-item strong { font-family: var(--display); font-weight: 700; }
+
+  /* ---------- asks ---------- */
+
+  .asks { margin-top: 18px; counter-reset: ask; display: grid; gap: 16px; }
+  .ask { display: grid; grid-template-columns: max-content 1fr; gap: 16px; align-items: baseline; }
+  .ask::before {
+    counter-increment: ask; content: counter(ask, decimal-leading-zero);
+    font-family: var(--mono); font-size: 12px; color: var(--accent); font-weight: 700;
+  }
+  .ask p { margin: 0; max-width: 68ch; }
+
+  footer.foot { margin-top: 64px; padding-top: 18px; border-top: 1px solid var(--rule); font-family: var(--mono); font-size: 11.5px; color: var(--muted); line-height: 1.8; }
+
+  @media (max-width: 620px) {
+    body { font-size: 16px; }
+    .wrap { padding: 28px 18px 72px; }
+    .ledger { grid-template-columns: 1fr; gap: 0 0; }
+    .ledger dt { margin-top: 10px; }
+    .finding h3 { font-size: 21px; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <span class="eyebrow">Remediation plan · GEO &amp; entity audit</span>
+    <h1>Fix the entity story, then the markup</h1>
+    <p class="standfirst">Six findings from the ezweb.dev audit, ordered by what actually moves citations. One of them is a contradiction the site is publishing about itself — that one comes first, and everything else is downstream of it.</p>
+    <div class="meta-row">
+      <span>PREPARED 2026-09-08</span>
+      <span>SOURCE: GENERAL SITE AUDIT</span>
+      <span>OWNER: EZRA</span>
+      <span>STATUS: AWAITING CODEBASE</span>
+    </div>
+  </header>
+
+  <div class="blocker">
+    <h2>Before any of this ships: the audited site isn't in this repo</h2>
+    <p>I read every page in <code>EZWebDev/ez-web-dev</code> and none of the audited surfaces exist there. This is the August 2025 build — a general web-dev-and-marketing agency site. The audit describes a later, law-firm-focused rebuild that has never been pushed here.</p>
+    <dl class="ledger">
+      <dt>audit describes</dt><dd>/for-law-firms/ · /about/ that admits no GBP · og:description about an "autonomous engine" · 20 sitemap URLs, no lastmod</dd>
+      <dt>repo contains</dt><dd>/ /about /services /contact /blog · 11 service pages · 8 blog posts · no law-firm page anywhere in history</dd>
+      <dt>repo og:desc</dt><dd>generated from the same string as the meta description (src/seo.tsx:73) — it cannot disagree with itself</dd>
+      <dt>repo sitemap</dt><dd>24 URLs, every one with a lastmod (scripts/generate-sitemap.mjs)</dd>
+      <dt>last commit</dt><dd>d0efe51 · 2025-08-12 · "removed static site folder"</dd>
+      <dt>searched</dt><dd>all 5 branches + full history for "law-firms" and "autonomous" — zero hits</dd>
+    </dl>
+    <p><strong>So the plan below is sound but unaddressed:</strong> I know what to change, not which files to change it in. Tell me where ezweb.dev deploys from — another repo, a Vercel project wired to something else, or a host that isn't in git — and I'll implement findings 01–04 the same day.</p>
+  </div>
+
+  <section class="block">
+    <h2>Work order</h2>
+    <table class="seq">
+      <thead>
+        <tr><th>When</th><th>What</th><th>Why then</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Day 1</td>
+          <td><strong>Start the Google Business Profile</strong> (finding 05)</td>
+          <td>Lowest priority, longest lead time. Verification takes days to weeks; reviews take longer. It has to be running in the background while you do the rest.</td>
+        </tr>
+        <tr>
+          <td>Week 1</td>
+          <td><strong>Findings 01 + 02</strong> — one entity sentence everywhere, one Organization node with sameAs</td>
+          <td>Every other signal on the site points back at the entity. Fixing markup while the entity is contradictory just adds volume to a confused story.</td>
+        </tr>
+        <tr>
+          <td>Week 2</td>
+          <td><strong>Findings 03 + 04</strong> — law-firm page schema, real sitemap lastmod</td>
+          <td>Cheap, mechanical, and they inherit the corrected entity from week 1 rather than needing a second pass.</td>
+        </tr>
+        <tr>
+          <td>Weeks 3–6</td>
+          <td><strong>Finding 06</strong> — break the template</td>
+          <td>The slowest work and the one that needs writing, not code. Do it page by page as reviews start landing.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="block">
+    <h2>Findings</h2>
+
+    <!-- 01 -->
+    <article class="finding p0">
+      <div class="fhead">
+        <span class="fnum">01</span>
+        <h3>Your share tags and your search tags describe two different companies</h3>
+        <span class="pill p0">P0 · blocking</span>
+      </div>
+
+      <div class="tags">
+        <div class="tag">
+          <div class="slot">meta name="description"</div>
+          <div class="val">…agency, free audit…</div>
+          <div class="reads">Reads as: a service business staffed by people.</div>
+        </div>
+        <div class="tag">
+          <div class="slot">meta property="og:description"</div>
+          <div class="val">autonomous engine that writes and publishes — you just approve it</div>
+          <div class="reads">Reads as: a software product that runs itself.</div>
+        </div>
+      </div>
+      <p class="caption">As reported by the audit — worth diffing against the live HTML before editing, since I can't reach ezweb.dev from here.</p>
+
+      <p class="why">These aren't two angles on one company, they're two entity types: <span class="k">Organization</span>/<span class="k">ProfessionalService</span> versus <span class="k">SoftwareApplication</span>. Models build an entity by finding the same claim repeated across sources; a page that makes both claims at once reinforces neither, and the site ends up cited for nothing in particular. Worse, <em>publishes</em> directly contradicts the on-page promise that nothing goes live without approval — so the one tag most likely to be quoted back at you undercuts your own trust argument.</p>
+
+      <h4 class="sub">The fix</h4>
+      <p>Write one sentence that is true in both directions, then use that exact string everywhere. The offending word is <em>publishes</em>, not <em>autonomous</em> — keep the automation, drop the claim that it ships on its own. A draft to react to:</p>
+
+      <div class="draft">
+        <div class="val">EZ Web builds and maintains law-firm websites with an AI engine that drafts and a human who reviews — nothing goes live until you approve it.</div>
+      </div>
+
+      <p>Then propagate it verbatim. Same string, no clever per-slot rewrites — the repetition <em>is</em> the signal:</p>
+      <div class="slots">
+        <span>meta description</span>
+        <span>og:description</span>
+        <span>twitter:description</span>
+        <span>Organization.description</span>
+        <span>homepage subhead</span>
+        <span>LinkedIn company tagline</span>
+        <span>GBP business description</span>
+      </div>
+      <p class="caption">Note the last two. Off-site profiles are where an entity gets corroborated; if they tell a third story you've reopened the same hole somewhere Google trusts more than your own markup.</p>
+    </article>
+
+    <!-- 02 -->
+    <article class="finding p0">
+      <div class="fhead">
+        <span class="fnum">02</span>
+        <h3>The Organization node has no sameAs and no stable identity</h3>
+        <span class="pill p0">P0</span>
+      </div>
+
+      <p class="why">Missing <span class="k">sameAs</span> is the headline, but the deeper problem is fragmentation: each page declares its own loose organization object, so there's no single node for a crawler to attach anything to. In this repo you can see both failure modes literally — <code>sameAs: []</code> sitting empty at <code>src/seo.tsx:39</code>, and <code>url: '/'</code> on the homepage <span class="k">LocalBusiness</span> at <code>src/App.tsx:76</code>, which is not a resolvable URL and does nothing. Whatever the live build looks like, assume the same shape until proven otherwise.</p>
+
+      <h4 class="sub">The fix</h4>
+      <ul class="moves">
+        <li>Declare the organization <strong>once</strong>, with a stable <span class="k">@id</span> of <code>https://ezweb.dev/#organization</code>, and have every other node reference that <span class="k">@id</span> as its <span class="k">provider</span>, <span class="k">publisher</span>, or <span class="k">author</span> instead of restating the name.</li>
+        <li>Populate <span class="k">sameAs</span> with the profiles you control: company LinkedIn, personal LinkedIn, GitHub org, and — once they exist — the GBP listing and any directory profiles from finding 05.</li>
+        <li>Make every <span class="k">url</span> and <span class="k">@id</span> absolute. Relative URLs in JSON-LD are a silent no-op.</li>
+        <li>Add <span class="k">founder</span> as a <span class="k">Person</span> node with its own <span class="k">@id</span> and <span class="k">sameAs</span>. A named human attached to the org is one of the few E-E-A-T signals available to a solo shop, and it does double duty against finding 06.</li>
+      </ul>
+
+      <pre><code>{
+  "@context": "https://schema.org",
+  "@id": "https://ezweb.dev/#organization",
+  "@type": "ProfessionalService",
+  "name": "EZ Web Development LLC",
+  "url": "https://ezweb.dev/",
+  "description": "&lt;the one sentence from finding 01&gt;",
+  "founder": { "@id": "https://ezweb.dev/#ezra" },
+  "areaServed": { "@type": "Country", "name": "United States" },
+  "sameAs": [
+    "https://www.linkedin.com/company/...",
+    "https://github.com/EZWebDev",
+    "https://www.google.com/maps/place/..."
+  ]
+}</code></pre>
+    </article>
+
+    <!-- 03 -->
+    <article class="finding p1">
+      <div class="fhead">
+        <span class="fnum">03</span>
+        <h3>/for-law-firms/ has an FAQ with no FAQPage markup</h3>
+        <span class="pill p1">P1</span>
+      </div>
+
+      <p class="why">A visible FAQ with no markup is free structured data left on the floor — and Q&amp;A pairs are disproportionately useful to answer engines, which lift them more or less intact. Add <span class="k">FAQPage</span> with the question and answer text matching what's rendered on the page word for word; paraphrasing between the markup and the visible copy is the usual reason this gets ignored.</p>
+
+      <h4 class="sub">The fix</h4>
+      <ul class="moves">
+        <li><span class="k">FAQPage</span> — every visible Q&amp;A, verbatim.</li>
+        <li><span class="k">Service</span> with <span class="k">serviceType: "Law firm website and search marketing"</span>, <span class="k">provider</span> pointing at the <code>#organization</code> <span class="k">@id</span>, and <span class="k">audience</span> as <code>{ "@type": "Audience", "audienceType": "Law firms" }</code>.</li>
+        <li><span class="k">BreadcrumbList</span>, since the page sits a level below home.</li>
+      </ul>
+
+      <div class="note">
+        <div class="label">One correction to the audit</div>
+        <p>Don't add <span class="k">Attorney</span> or <span class="k">LegalService</span> markup. Those types describe an entity that <em>practices law</em>. You sell marketing <em>to</em> firms that do — declaring yourself a legal service is a false entity claim, and it would land in the same graph as your clients and their competitors. The audit called this a gap on the grounds that you "literally sell it on that page," but what the page sells is the audience, not the service type, and <span class="k">audience</span> is the property that carries that. Given the whole thrust of the audit is entity clarity, this one would cut against it.</p>
+      </div>
+    </article>
+
+    <!-- 04 -->
+    <article class="finding p1">
+      <div class="fhead">
+        <span class="fnum">04</span>
+        <h3>20 sitemap URLs with no lastmod</h3>
+        <span class="pill p1">P1</span>
+      </div>
+
+      <p class="why">Straightforward to fix, with one trap worth naming: a <span class="k">lastmod</span> that always says "today" is worse than none at all. Crawlers learn within a few cycles that a given site's dates carry no information and stop weighting them — and this repo's generator does exactly that, stamping <code>today</code> on every static and service URL at build time (<code>scripts/generate-sitemap.mjs:19-41</code>) so a CSS tweak "modifies" all 24 pages. If the live generator was written the same way, the 20 missing dates and the 4 fake ones are the same bug.</p>
+
+      <h4 class="sub">The fix</h4>
+      <ul class="moves">
+        <li>Derive <span class="k">lastmod</span> from the last commit that touched each page's own source or content file — <code>git log -1 --format=%cI -- &lt;file&gt;</code> at build time.</li>
+        <li>Or, if content is data-driven, carry an explicit <span class="k">updated</span> field per entry and bump it when the copy actually changes.</li>
+        <li>Drop <span class="k">priority</span> and <span class="k">changefreq</span> entirely. Google ignores both, and they're noise you have to maintain.</li>
+      </ul>
+    </article>
+
+    <!-- 05 -->
+    <article class="finding p2">
+      <div class="fhead">
+        <span class="fnum">05</span>
+        <h3>No Google Business Profile and no third-party reviews</h3>
+        <span class="pill p2">P2 · start now</span>
+      </div>
+
+      <p class="why">The audit's sharpest point, and the only one that isn't a code change. You sell local search to law firms while having no local-search footprint and no independent proof of work — and your own /about/ page says so out loud. Every other fix here is a signal you assert about yourself; this is the only category of signal that comes from somewhere else, which is exactly why it carries more weight than all the markup combined.</p>
+
+      <h4 class="sub">The fix</h4>
+      <ul class="moves">
+        <li>Create and verify the GBP as a service-area business if there's no walk-in office. Category: <em>Website designer</em> or <em>Internet marketing service</em>. Business description gets the finding-01 sentence.</li>
+        <li>Ask your last handful of clients for reviews — Google first, then one directory (Clutch or UpCity read as credible in legal-adjacent buying).</li>
+        <li>Once the profiles exist, add them to <span class="k">sameAs</span> from finding 02. That's the loop closing: the GBP corroborates the site, the site points back at the GBP.</li>
+        <li>Rewrite the /about/ admission once it's no longer true. Until then leave it — it's honest, and honest beats a claim you can't back.</li>
+      </ul>
+
+      <div class="note">
+        <div class="label">Don't shortcut this with markup</div>
+        <p>Self-serving <span class="k">AggregateRating</span> on your own Organization — ratings not tied to visible, independently sourced reviews — is ineligible for rich results and reads as manipulation. Earn the reviews, then mark up what genuinely exists on the page.</p>
+      </div>
+    </article>
+
+    <!-- 06 -->
+    <article class="finding p2">
+      <div class="fhead">
+        <span class="fnum">06</span>
+        <h3>Every page has the same skeleton</h3>
+        <span class="pill p2">P2 · ongoing</span>
+      </div>
+
+      <p class="why">The audit's read is right and the diagnosis is precise: the sentences pass, the structure doesn't. Split headline, three cards, identical CTA stack, next page, repeat. Readers don't consciously clock the pattern — they just arrive at the third page having learned nothing new about how you work, and the "human reviewed" claim quietly stops being believable. Rewriting the prose won't touch this. The tell is the skeleton.</p>
+
+      <h4 class="sub">The fix</h4>
+      <ul class="moves">
+        <li><strong>Break the triad.</strong> Use two, four, five, seven — whatever the content actually contains. Three-of-everything is the single loudest signal, and it's almost never what the material wants.</li>
+        <li><strong>Give pages different spines.</strong> /for-law-firms/ should run as a narrative or a worked example. A service page could be a comparison table, or a "what we don't do" section. Blog posts want pull-quotes, a real screenshot, an inline number.</li>
+        <li><strong>Vary the close.</strong> Different verbs, different placement, and at least one page with no CTA block at all. An identical stack in an identical position on every page is template residue.</li>
+        <li><strong>Add what only you could write.</strong> A dated example, a named tool, a real dashboard screenshot, a number with its caveat attached. One specific detail does more than a page of well-edited generalities.</li>
+        <li><strong>Audit unsourced stats.</strong> This repo's homepage carries "+210% avg. 6-mo organic" and "3.2x paid ROAS" with nothing behind them. Round, confident, unattributed numbers are their own AI tell — attribute them to a named engagement or cut them.</li>
+        <li><strong>Put a byline on it.</strong> Name, photo, real bio, <span class="k">author</span> schema pointing at the Person node from finding 02. Nothing says human-reviewed like a human whose name is attached.</li>
+      </ul>
+
+      <p class="caption">Keep the line the audit singled out — "Schema barely moves citations, whatever the LinkedIn posts say." That's the register the rest of the site should be reaching for.</p>
+    </article>
+  </section>
+
+  <section class="block">
+    <h2>What I'd deliberately not do</h2>
+    <div class="dont">
+      <div class="dont-item">
+        <span class="x">✕</span>
+        <p><strong>Attorney / LegalService markup.</strong> Wrong entity type, actively harmful to the clarity everything else here is buying. Covered in finding 03.</p>
+      </div>
+      <div class="dont-item">
+        <span class="x">✕</span>
+        <p><strong>AggregateRating before real reviews exist.</strong> Ineligible for rich results, and a bad look on a site whose pitch is trustworthy automation.</p>
+      </div>
+      <div class="dont-item">
+        <span class="x">✕</span>
+        <p><strong>Rewriting sentences to fix finding 06.</strong> The prose already passes. Paraphrasing burns a week and changes nothing, because the pattern is structural.</p>
+      </div>
+      <div class="dont-item">
+        <span class="x">✕</span>
+        <p><strong>Softening the entity sentence into something that covers everything.</strong> "Web development and digital marketing agency" is what the current repo says, and it's precisely the vagueness that leaves you uncited. Narrow beats broad for entity resolution.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>What I need from you</h2>
+    <div class="asks">
+      <div class="ask">
+        <p><strong>Where does ezweb.dev deploy from?</strong> Nothing in this repo matches the audited site. This is the one blocker on findings 01–04.</p>
+      </div>
+      <div class="ask">
+        <p><strong>Sign off on the entity sentence</strong> in finding 01, or send your own. Everything downstream propagates whatever string you pick, so it's worth ten minutes now rather than a second pass later.</p>
+      </div>
+      <div class="ask">
+        <p><strong>The profile URLs</strong> for <span class="k">sameAs</span> — company LinkedIn, your LinkedIn, GitHub, anything else you'd want an answer engine to treat as you.</p>
+      </div>
+      <div class="ask">
+        <p><strong>Is the law-firm focus the whole business now,</strong> or one vertical alongside general agency work? It changes whether the entity sentence names law firms at all — and it's the difference between a sharp entity and a broad one.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    EZ WEB DEVELOPMENT LLC · REMEDIATION PLAN · 2026-09-08<br>
+    FINDINGS 01–06 FROM GENERAL SITE AUDIT · REPO INSPECTED: EZWEBDEV/EZ-WEB-DEV @ D0EFE51<br>
+    LIVE SITE NOT REACHABLE FROM THIS SESSION — TAG CONTENTS QUOTED AS REPORTED BY THE AUDIT
+  </footer>
+
+</div>
