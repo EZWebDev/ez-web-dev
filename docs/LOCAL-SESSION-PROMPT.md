@@ -57,6 +57,7 @@ Priority order:
 - We manage Google Ads AND Meta ads, and we offer white-label Google and Meta ads management to other agencies.
 - Use "we" and "agency". Do not use "studio".
 - Never invent clients, results, stats, reviews, prices, turnaround promises or years of experience. If a sentence needs a fact you can't verify, ask me.
+- Google Business Profile rules: a business that does not meet customers at its address should hide the address and list a service area instead. Before publishing the street address in schema or on pages, ask me whether the profile shows or hides the address, and match it. If it is hidden, use the city, state and service area in `LocalBusiness` schema and keep the full address off the site.
 - The Florida Sunbiz record (L22000242599) still shows a Plantation address. I will fix that myself. Don't put the Plantation or Hallandale addresses anywhere.
 
 ## Rules
