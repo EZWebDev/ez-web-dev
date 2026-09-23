@@ -24,7 +24,7 @@ Write like the founder talking to a client across a desk. Plain, specific, short
 ## Facts: never invent
 
 - Never invent clients, results, statistics, awards, reviews, testimonials, years of experience, team members, prices, or turnaround promises.
-- Business facts come only from `ezweb/src/business.ts`. The name, address and phone must match the Google Business Profile byte for byte: `EZ Web Development LLC`, `1909 Tyler Street Suite 308, Hollywood, FL 33020`, `(561) 692-6868`.
+- Business facts come only from `ezweb/src/business.ts`. The name, location and phone must match the Google Business Profile byte for byte: `EZ Web Development LLC`, `Hollywood, FL 33020`, `(561) 692-6868`. The profile hides the street address, so never publish the street address or office coordinates on the site or in schema.
 - If copy needs a claim about how Ezra works that you cannot verify, flag it for him instead of writing it as fact.
 
 ## Deploys
@@ -33,6 +33,6 @@ Write like the founder talking to a client across a desk. Plain, specific, short
 
 ## Owner facts (2026-09-23)
 
-- All client work is remote (phone, email, video, shared documents). Never claim in-person meetings, site visits, office visits, photography or on-site training.
+- Most client work is remote (phone, email, video, shared documents). Local clients can meet at the Hollywood office by appointment. Never claim visits to client sites or offices, photography or on-site training.
 - Services: custom web design and development, monthly SEO and content, AI search visibility (GEO), landing pages and CRO, Google and Meta ads management including white-label ads management for agencies. Full website packages are no longer offered.
 - Say "we" and "agency". Do not say "studio".

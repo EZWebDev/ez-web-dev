@@ -16,7 +16,7 @@ You are working on the live website for my business, EZ Web Development LLC (htt
 Use curl against https://ezweb.dev. Test with a normal user agent and with `-A "GPTBot"`, `-A "ClaudeBot"` and `-A "PerplexityBot"`. Report, per key page (home, about, services, contact, blog index, one blog post):
 - Is the page text in the raw HTML, or only after JavaScript runs?
 - The title, meta description, canonical URL, robots meta and JSON-LD blocks. Do the JSON-LD blocks parse?
-- Business name, address and phone on the page. Do they match exactly `EZ Web Development LLC`, `1909 Tyler Street Suite 308, Hollywood, FL 33020`, `(561) 692-6868`?
+- Business name, location and phone on the page. They must match exactly `EZ Web Development LLC`, `Hollywood, FL 33020`, `(561) 692-6868`. The street address must NOT appear anywhere on the site or in schema, because the Business Profile hides it.
 
 Also check:
 - `/robots.txt`, `/sitemap.xml`, `/llms.txt`
@@ -44,7 +44,7 @@ Produce a gap table: item | live site today | branch has it | port? (yes/no/adap
 
 Priority order:
 1. **Crawlable HTML.** If the live site renders content only with JavaScript, make every page ship full HTML with head tags and JSON-LD in the initial response, using the framework's own static or server rendering.
-2. **One consistent entity.** Use the exact name, address and phone everywhere: footer, contact page, JSON-LD `ProfessionalService`/`LocalBusiness` with `@id`, a Person `#founder` (Ezra Pinsky), and a WebSite. `sameAs` must include the Google Business Profile link `https://maps.google.com/?cid=15049505616001444936`.
+2. **One consistent entity.** Use the exact name, city and phone everywhere: footer, contact page, JSON-LD `ProfessionalService`/`LocalBusiness` with `@id`, a Person `#founder` (Ezra Pinsky), and a WebSite. `sameAs` must include the Google Business Profile link `https://maps.google.com/?cid=15049505616001444936`.
 3. **Crawler files.** A robots.txt that allows search and AI crawlers, plus a sitemap with real lastmod dates, an `llms.txt`, a real 404 status, and canonical URLs that don't redirect.
 4. **Entity page.** An About section, or a short post, that states who we are, and a polite note that we are not EZ Web LLC (ezweb.work, High Ridge MO), EZ Web Solution LLC (Euless TX) or EZ Web Company (Clearwater FL).
 5. **Build gate.** The copy audit script wired into the build with `--strict`, so a failing audit fails the Netlify deploy. Add `CLAUDE.md`.
@@ -52,12 +52,12 @@ Priority order:
 
 ## Facts and corrections from me (these override anything in the branch)
 
-- We do NOT meet clients in person, visit their offices, photograph their space or train their staff on site. All work is remote. The Tyler Street address is our business address only.
+- Most work is remote: phone, email, video calls and shared documents. Local clients can meet at our Hollywood office by appointment. We do NOT visit client offices, photograph their space or train their staff on site.
 - Full Website Packages is no longer offered. Remove it.
 - We manage Google Ads AND Meta ads, and we offer white-label Google and Meta ads management to other agencies.
 - Use "we" and "agency". Do not use "studio".
 - Never invent clients, results, stats, reviews, prices, turnaround promises or years of experience. If a sentence needs a fact you can't verify, ask me.
-- Google Business Profile rules: a business that does not meet customers at its address should hide the address and list a service area instead. Before publishing the street address in schema or on pages, ask me whether the profile shows or hides the address, and match it. If it is hidden, use the city, state and service area in `LocalBusiness` schema and keep the full address off the site.
+- The Google Business Profile hides the street address (service-area business). Match it: publish only Hollywood, FL 33020 and the service area in pages and `LocalBusiness` schema, with no `streetAddress` and no `geo` coordinates.
 - The Florida Sunbiz record (L22000242599) still shows a Plantation address. I will fix that myself. Don't put the Plantation or Hallandale addresses anywhere.
 
 ## Rules

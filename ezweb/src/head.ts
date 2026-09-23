@@ -147,7 +147,6 @@ export function buildGlobalGraph() {
         telephone: b.phone,
         description: b.description,
         address: { '@type': 'PostalAddress', ...b.address },
-        geo: { '@type': 'GeoCoordinates', latitude: b.geo.latitude, longitude: b.geo.longitude },
         hasMap: b.gbp.mapsUrl,
         openingHoursSpecification: b.hours.map((h) => ({
           '@type': 'OpeningHoursSpecification',

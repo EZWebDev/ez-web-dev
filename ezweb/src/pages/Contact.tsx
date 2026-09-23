@@ -8,7 +8,7 @@ import { breadcrumbSchema, orgRef, pageTitle, webPageSchema, type Crumb } from '
 
 const PATH = '/contact'
 const TITLE = pageTitle(`Contact Us in ${business.primaryCity}, ${business.address.addressRegion}`)
-const DESCRIPTION = `Contact ${business.name}: ${business.address.streetAddress}, ${business.address.addressLocality}, ${business.address.addressRegion}. Call ${business.phoneDisplay} or email ${business.email}.`
+const DESCRIPTION = `Contact ${business.name}: ${business.address.addressLocality}, ${business.address.addressRegion}. Call ${business.phoneDisplay} or email ${business.email}.`
 
 /** Netlify Forms: the form is registered by public/__forms.html and submissions are POSTed there. */
 const FORM_NAME = 'contact'

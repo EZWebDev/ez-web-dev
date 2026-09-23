@@ -12,7 +12,7 @@ This plan is ordered by leverage. Phases 1 and 2 are what get us into the answer
 ## Implementation status (2026-09-23)
 
 **Done in code (branch `claude/ez-web-search-visibility-w4ggtd`)**
-- Canonical NAP taken from the live Google Business Profile: EZ Web Development LLC, 1909 Tyler Street Suite 308, Hollywood, FL 33020, (561) 692-6868. Single source: `ezweb/src/business.ts`.
+- Canonical NAP taken from the live Google Business Profile: EZ Web Development LLC, Hollywood, FL 33020 (street address hidden since 2026-09-23, service-area business), (561) 692-6868. Single source: `ezweb/src/business.ts`.
 - Every route is prerendered to static HTML with title, canonical, OG and JSON-LD in `<head>` (`npm run build`, verified by `npm run check:seo`).
 - One `@graph` entity: ProfessionalService/LocalBusiness `#organization`, Person `#founder`, WebSite `#website`. Service, FAQPage, BreadcrumbList, BlogPosting with Person author on the relevant pages.
 - Six services with long-form copy and FAQs; five retired service URLs 301 to the nearest match.

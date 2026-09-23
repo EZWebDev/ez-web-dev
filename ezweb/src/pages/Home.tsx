@@ -35,7 +35,7 @@ const faqs: FaqItem[] = [
   },
   {
     q: `Where is ${business.name} located?`,
-    a: `Our address is ${fullAddressLine}. We work remotely with businesses in ${joinList(locations.map((l) => l.name))} and across ${business.metro}, and with clients in other states.`,
+    a: `We are based in ${fullAddressLine}. We work remotely with businesses in ${joinList(locations.map((l) => l.name))} and across ${business.metro}, and with clients in other states.`,
   },
   {
     q: `What does ${business.name} do?`,
@@ -120,8 +120,8 @@ export default function Home() {
         <div className="container">
           <h2 id="where-title" className="section-title">Where we work</h2>
           <p className="section-subtitle">
-            Based at {fullAddressLine}, between Fort Lauderdale and Miami. Every project runs by phone, email and video
-            call, for clients nearby and in other states alike.
+            Based in {fullAddressLine}, between Fort Lauderdale and Miami. Projects run by phone, email and video call,
+            and local clients can meet at our office by appointment.
           </p>
           <div className="cards">
             {locations.map((l) => (

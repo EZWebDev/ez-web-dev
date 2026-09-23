@@ -8,7 +8,8 @@ Copy-paste kit for every off-site listing (SEO-GEO-PLAN.md Phase 2). Use these b
 
 ```
 Name:     EZ Web Development LLC
-Address:  1909 Tyler Street Suite 308, Hollywood, FL 33020
+Location: Hollywood, FL 33020 (street address hidden)
+Service area: Hollywood, Fort Lauderdale, Miami, Broward County, Miami-Dade County
 Phone:    (561) 692-6868
 Website:  https://ezweb.dev
 Email:    ezra@ezweb.dev
@@ -16,7 +17,9 @@ Hours:    Mon–Fri · 9am–5pm ET
 Category: Internet marketing service
 ```
 
-Verified against the live Google Business Profile on 2026-09-17. This is the source of truth — if any directory shows something different, fix the directory, not this block.
+Verified against the live Google Business Profile on 2026-09-17. On 2026-09-23 the profile was switched to a service-area business with the street address hidden.
+
+**Address rule for every directory:** if the platform lets you hide the street address or mark the business as service-area, do that and list the service area. If it requires a street address (some, like BBB or a chamber directory, may), enter `1909 Tyler Street Suite 308, Hollywood, FL 33020` exactly and choose "do not display" where offered. Never enter any other address. This is the source of truth — if any directory shows something different, fix the directory, not this block.
 
 ---
 
@@ -26,9 +29,9 @@ These three inconsistencies actively hurt entity trust (Google and AI engines cr
 
 | # | Where | Problem | Fix | Who |
 |---|---|---|---|---|
-| 1 | Florida Sunbiz (L22000242599) | Principal/mailing address on file is **610 NW 103rd Ave, Plantation, FL 33324** — does not match the GBP/Hollywood address | File an **Annual Report** (if this is the current filing year and it's still open) or an **Articles of Amendment** at [sunbiz.org](https://sunbiz.org) → search L22000242599 → "File Annual Report" or "Amendment". Updates principal address and mailing address to 1909 Tyler Street Suite 308, Hollywood, FL 33020. This is a state filing only Ezra (as the LLC's authorized member) can submit — it needs the Sunbiz login/PIN tied to the filing. | **Ezra** |
+| 1 | Florida Sunbiz (L22000242599) | Principal/mailing address on file is **610 NW 103rd Ave, Plantation, FL 33324** — does not match the GBP/Hollywood address | File an **Annual Report** (if this is the current filing year and it's still open) or an **Articles of Amendment** at [sunbiz.org](https://sunbiz.org) → search L22000242599 → "File Annual Report" or "Amendment". Updates principal address and mailing address to 1909 Tyler Street Suite 308, Hollywood, FL 33020. State records are public, which is fine: Google only needs the address hidden on the Business Profile. This is a state filing only Ezra (as the LLC's authorized member) can submit — it needs the Sunbiz login/PIN tied to the filing. | **Ezra** |
 | 2 | Service agreement template | Letterhead shows **800 SE 4th Ave STE 801, Hallandale Beach, FL 33309** — a third, different address | Update the template's letterhead/footer to the canonical Hollywood address before it goes out on any new agreement | Ezra (template lives outside this repo — not a `ezweb/` file) |
-| 3 | Email signature | Signature (ezra@ezweb.dev) currently has no address | Add the canonical address + phone to the signature block, matching the NAP above exactly | Ezra |
+| 3 | Email signature | Signature (ezra@ezweb.dev) currently has no address | Add "Hollywood, FL" and the phone to the signature block, matching the NAP above exactly | Ezra |
 
 Do not submit any new directory listing until #1 is at least filed (in progress is fine — directories can't verify Sunbiz in real time, but a mismatch that's been flagged and not fixed is worse than one nobody's checked).
 

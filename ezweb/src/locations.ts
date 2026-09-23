@@ -37,10 +37,10 @@ export const locations: Location[] = [
     region: 'FL',
     displayName: 'Hollywood, FL',
     title: 'Web Design & SEO in Hollywood, FL',
-    description: 'Web design, SEO and Google and Meta ads for Hollywood, FL businesses, from an agency based on Tyler Street in downtown Hollywood.',
+    description: 'Web design, SEO and Google and Meta ads for Hollywood, FL businesses, from an agency based in downtown Hollywood.',
     heading: 'Web design and SEO in Hollywood, Florida',
     intro: [
-      'EZ Web Development LLC is a web development and SEO agency based at 1909 Tyler Street Suite 308, in downtown Hollywood, a few blocks from Young Circle and Hollywood Boulevard. Founded in 2022 by Ezra Pinsky, the agency builds websites, runs SEO and AI search visibility programs, and manages Google and Meta ads for local businesses and for clients elsewhere in the country.',
+      'EZ Web Development LLC is a web development and SEO agency based in downtown Hollywood, near Young Circle and Hollywood Boulevard. Founded in 2022 by Ezra Pinsky, the agency builds websites, runs SEO and AI search visibility programs, and manages Google and Meta ads for local businesses and for clients elsewhere in the country.',
       'The notes below are specific to how people search in Hollywood and what that means for your website.',
     ],
     sections: [
@@ -76,11 +76,11 @@ export const locations: Location[] = [
     faqs: [
       {
         q: 'Where is EZ Web Development LLC located?',
-        a: 'EZ Web Development LLC is at 1909 Tyler Street Suite 308, Hollywood, FL 33020, in downtown Hollywood. You can reach us at (561) 692-6868 or ezra@ezweb.dev, Monday to Friday from 9am to 5pm Eastern.',
+        a: 'EZ Web Development LLC is based in downtown Hollywood, FL 33020. You can reach us at (561) 692-6868 or ezra@ezweb.dev, Monday to Friday from 9am to 5pm Eastern.',
       },
       {
         q: 'Do you meet clients in person?',
-        a: 'No. All of our work is remote, including for businesses here in Hollywood. Projects run by phone, email and video call, with drafts and reports shared online.',
+        a: 'Yes, by appointment at our Hollywood office. Most projects run remotely by phone, email and video call, with drafts and reports shared online.',
       },
       {
         q: 'Do you work with businesses in Hallandale Beach, Dania Beach and Pembroke Pines?',
@@ -204,7 +204,7 @@ export const locations: Location[] = [
       },
       {
         q: 'Are you located in Miami?',
-        a: 'No. Our address is in Hollywood, Florida, north of the Miami-Dade county line. Miami clients work with us remotely, over phone, email and video calls.',
+        a: 'No. Our office is in Hollywood, Florida, north of the Miami-Dade county line. Miami clients work with us remotely, over phone, email and video calls.',
       },
       {
         q: 'How can a Miami business show up in AI answers from ChatGPT or Google AI Mode?',

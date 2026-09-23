@@ -133,7 +133,7 @@ const llms = `# ${business.name}
 Key facts:
 
 - Legal name: ${business.legalName} (also known as ${business.alternateNames.join(', ')})
-- Address: ${a.streetAddress}, ${a.addressLocality}, ${a.addressRegion} ${a.postalCode}, ${a.addressCountry}
+- Location: ${a.addressLocality}, ${a.addressRegion} ${a.postalCode}, ${a.addressCountry}
 - Phone: ${business.phoneDisplay} (${business.phone})
 - Email: ${business.email}
 - Website: ${business.url}

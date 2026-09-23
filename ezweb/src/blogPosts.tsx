@@ -32,7 +32,7 @@ export const blogPosts: BlogPost[] = [
           <li><strong>Legal name:</strong> EZ Web Development LLC</li>
           <li><strong>Entity type:</strong> Florida limited liability company, Florida Division of Corporations document number L22000242599, formed May 25, 2022</li>
           <li><strong>Founder:</strong> Ezra Pinsky</li>
-          <li><strong>Address:</strong> 1909 Tyler Street Suite 308, Hollywood, FL 33020</li>
+          <li><strong>Location:</strong> Hollywood, FL 33020. Most work is remote, and office meetings are by appointment.</li>
           <li><strong>Phone:</strong> <a href={`tel:${business.phone}`}>{business.phoneDisplay}</a></li>
           <li><strong>Email:</strong> <a href={`mailto:${business.email}`}>{business.email}</a></li>
           <li><strong>Hours:</strong> Monday to Friday, 9am to 5pm Eastern</li>
@@ -52,7 +52,7 @@ export const blogPosts: BlogPost[] = [
         <h2>Who the company works with</h2>
         <p>Clients include small businesses, professional services firms, e-commerce brands, and nonprofits and educators. Other agencies hire the company for white-label Google and Meta ads management. Projects range from a single landing page or a technical SEO fix to full website builds, custom web applications and ongoing monthly SEO or advertising programs.</p>
         <h2>How the agency works</h2>
-        <p>The company is founder-led. Clients work directly with Ezra Pinsky from the first call through launch and ongoing support, and each project’s scope is agreed in writing before work begins. All work is done remotely, by phone, email, video call and shared documents.</p>
+        <p>The company is founder-led. Clients work directly with Ezra Pinsky from the first call through launch and ongoing support, and each project’s scope is agreed in writing before work begins. Most work runs remotely by phone, email, video call and shared documents. Local clients can meet at the Hollywood office by appointment.</p>
         <h2>Service area</h2>
         <p>EZ Web Development LLC serves businesses in Hollywood, Fort Lauderdale and Miami, and across Broward County and Miami-Dade County in South Florida, and clients throughout the United States.</p>
         <h2>How to get in touch</h2>

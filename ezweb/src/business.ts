@@ -25,15 +25,23 @@ export const business = {
   phone: '+15616926868',
   /** Display format, identical to the Google Business Profile. */
   phoneDisplay: '(561) 692-6868',
+  /**
+   * Public address. The Google Business Profile hides the street address (service-area
+   * business, set 2026-09-23), so the site and schema publish city, state and ZIP only.
+   */
   address: {
-    streetAddress: '1909 Tyler Street Suite 308',
     addressLocality: 'Hollywood',
     addressRegion: 'FL',
     postalCode: '33020',
     addressCountry: 'US',
   },
-  /** Approximate coordinates for 1909 Tyler St, Hollywood FL. Verify against the GBP map pin. */
-  geo: { latitude: 26.0118, longitude: -80.1462 },
+  /**
+   * Office street address. NOT published on the site or in schema while the Business
+   * Profile hides it. Given to clients who book an in-person meeting.
+   */
+  officeStreetAddressPrivate: '1909 Tyler Street Suite 308',
+  /** Meetings at the Hollywood office are available by appointment; most work is remote. */
+  meetsByAppointment: true,
   foundingDate: '2022-05-25',
   founder: {
     name: 'Ezra Pinsky',
@@ -96,7 +104,7 @@ export const ORG_ID = `${business.url}/#organization`
 export const FOUNDER_ID = `${business.url}/#founder`
 export const WEBSITE_ID = `${business.url}/#website`
 
-export const fullAddressLine = `${business.address.streetAddress}, ${business.address.addressLocality}, ${business.address.addressRegion} ${business.address.postalCode}`
+export const fullAddressLine = `${business.address.addressLocality}, ${business.address.addressRegion} ${business.address.postalCode}`
 
 export const absoluteUrl = (path: string) => {
   if (/^https?:\/\//.test(path)) return path

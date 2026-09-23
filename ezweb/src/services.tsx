@@ -128,7 +128,7 @@ export const services: Service[] = [
       },
       {
         q: 'Do you only work with businesses in South Florida?',
-        a: 'No. Every project runs remotely, over phone, email, video calls and shared documents, so we work with businesses anywhere in the United States.',
+        a: 'No. Projects run by phone, email, video call and shared documents, so we work with businesses anywhere in the United States.',
       },
       {
         q: 'Who owns the website when it’s finished?',

@@ -1,7 +1,7 @@
 import { business } from '../business'
 
 /**
- * Name, address, phone, email and hours, byte-identical to business.ts
+ * Name, city, phone, email and hours, byte-identical to business.ts
  * (and therefore to the Google Business Profile).
  */
 export default function NapBlock({ showName = true, showMapLink = true }: { showName?: boolean; showMapLink?: boolean }) {
@@ -10,8 +10,6 @@ export default function NapBlock({ showName = true, showMapLink = true }: { show
     <address className="nap">
       {showName && <strong className="nap-name">{business.name}</strong>}
       <span>
-        {a.streetAddress}
-        <br />
         {a.addressLocality}, {a.addressRegion} {a.postalCode}
       </span>
       <span>
