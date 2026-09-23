@@ -22,7 +22,8 @@ This plan is ordered by leverage. Phases 1 and 2 are what get us into the answer
 - Netlify config: flat `.html` output so `/about` is served without a redirect, `/path/` 301s to `/path`, www 301s to apex. Vercel and Cloudflare Pages configs also included.
 
 **Owner actions (see `docs/CITATION-KIT.md`, `docs/MEASUREMENT.md`, `docs/REVIEWS-AND-AUTHORITY.md`)**
-1. Deploy this branch on Netlify: base directory `ezweb`, no SPA fallback rule. Then submit `https://ezweb.dev/sitemap.xml` in Search Console and Bing Webmaster Tools.
+1. Deploy this branch on Netlify. DNS shows ezweb.dev on Netlify's load balancer and www.ezweb.dev as a CNAME to `ezweb-site.netlify.app`; confirm that site builds from this repo. Settings: base directory `ezweb`, no SPA fallback rule. Then submit `https://ezweb.dev/sitemap.xml` in Search Console and Bing Webmaster Tools.
+   - Contact form: in Netlify, open Site configuration > Forms and turn on form detection, then redeploy. Add an email notification for the `contact` form to ezra@ezweb.dev under Forms > Form notifications. Send one test submission after deploy.
 2. File a Sunbiz annual report or amendment to change the principal and mailing address from Plantation to the Hollywood address.
 3. Add hours to the Google Business Profile, then build the directory profiles in the citation kit. Append each live URL to `business.sameAs` and redeploy.
 4. Confirm the service FAQ statements about client ownership of accounts and fixed written quotes match how you work.

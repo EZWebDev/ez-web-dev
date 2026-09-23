@@ -205,3 +205,13 @@ a:focus-visible, button:focus-visible, .input:focus-visible { outline: 3px solid
 .footer .nap a { color: #2b1d48; }
 .footer-legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 14px 0 22px; border-top: 1px solid var(--border); }
 .subhead-more { font-size: clamp(15px, 1.9vw, 17px); max-width: 880px; opacity: 0.95; }
+
+/* Contact form (Netlify Forms) */
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.optional { color: var(--muted); font-weight: 400; }
+select.input { appearance: auto; }
+.form-status { margin-top: 12px; padding: 12px 14px; border-radius: 12px; }
+.form-status-ok { background: rgba(22, 163, 74, 0.1); border: 1px solid rgba(22, 163, 74, 0.35); }
+.form-status-ok p + p { margin-top: 8px; }
+.form-status-ok .btn { margin-top: 12px; }
+.form-status-error { background: rgba(220, 38, 38, 0.08); border: 1px solid rgba(220, 38, 38, 0.35); }

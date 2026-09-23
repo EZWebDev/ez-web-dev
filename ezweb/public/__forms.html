@@ -1,0 +1,27 @@
+<!doctype html>
+<!--
+  Netlify Forms detection file. Netlify parses static HTML at deploy time to register forms.
+  The visible form on /contact is rendered by React and POSTs here via fetch, so this file must
+  list every field name the React form sends. Keep in sync with src/pages/Contact.tsx.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="email" type="email" />
+      <input name="phone" type="tel" />
+      <input name="company" />
+      <input name="website" />
+      <select name="service"><option value="">-</option></select>
+      <textarea name="message"></textarea>
+      <input name="page" />
+    </form>
+  </body>
+</html>

@@ -76,7 +76,7 @@ if (failures) {
   console.error(`[prerender] ${failures} page(s) failed.`)
   process.exit(1)
 }
-// 301 trailing-slash variants (e.g. old WordPress permalinks like /about/) to the canonical URL.
+// 301 trailing-slash variants (e.g. /about/) to the canonical URL.
 const redirectsOut = path.join(distDir, '_redirects')
 if (fs.existsSync(redirectsOut)) {
   const slashRules = pages
