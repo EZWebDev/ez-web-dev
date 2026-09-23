@@ -11,7 +11,7 @@ export type Location = {
   region: 'FL'
   /** Full display name, e.g. "Fort Lauderdale, FL". */
   displayName: string
-  /** Title tag (<= 60 chars). */
+  /** Title tag (<= 35 chars; the page appends " | EZ Web Development LLC"). */
   title: string
   /** Meta description (<= 155 chars). */
   description: string
@@ -36,7 +36,7 @@ export const locations: Location[] = [
     name: 'Hollywood',
     region: 'FL',
     displayName: 'Hollywood, FL',
-    title: 'Web Design, Development & SEO in Hollywood, FL',
+    title: 'Web Design & SEO in Hollywood, FL',
     description: 'Websites, SEO and Google Ads from a studio on Tyler Street in downtown Hollywood, FL, serving local businesses and clients across Broward County.',
     heading: 'Web design and SEO in Hollywood, Florida',
     intro: [
@@ -98,7 +98,7 @@ export const locations: Location[] = [
     name: 'Fort Lauderdale',
     region: 'FL',
     displayName: 'Fort Lauderdale, FL',
-    title: 'Web Design & SEO in Fort Lauderdale, FL',
+    title: 'Web Design & SEO in Fort Lauderdale',
     description: 'Websites, SEO and Google Ads for Fort Lauderdale and Broward County businesses, from a studio in nearby Hollywood, FL, with in-person meetings.',
     heading: 'Web design and SEO for Fort Lauderdale businesses',
     intro: [
@@ -160,7 +160,7 @@ export const locations: Location[] = [
     name: 'Miami',
     region: 'FL',
     displayName: 'Miami, FL',
-    title: 'Web Design, SEO & Google Ads in Miami, FL',
+    title: 'Web Design & SEO in Miami, FL',
     description: 'Websites, SEO, AI search visibility and Google Ads for Miami-Dade businesses, including bilingual English and Spanish sites, from nearby Hollywood, FL.',
     heading: 'Web design and SEO for Miami businesses',
     intro: [

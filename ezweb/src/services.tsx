@@ -8,7 +8,7 @@ export type Service = {
   name: string
   /** Short label shown on cards. */
   eyebrow: string
-  /** Title tag (<= 60 chars, brand appended by the page). */
+  /** Title tag (<= 35 chars; the page appends " | EZ Web Development LLC"). */
   title: string
   /** Meta description (<= 155 chars). */
   description: string
@@ -35,7 +35,7 @@ export const services: Service[] = [
     slug: 'custom-web-design',
     name: 'Custom Web Design & Development',
     eyebrow: 'Design & Build',
-    title: 'Custom Web Design & Development in South Florida',
+    title: 'Custom Web Design & Development',
     description: 'Custom websites and web apps built for speed, search and easy editing: WordPress, Shopify and React builds from a Hollywood, FL studio.',
     summary: 'Fast, accessible websites and web apps on WordPress, Shopify or custom React, built to rank and easy to maintain.',
     intro: [
@@ -147,7 +147,7 @@ export const services: Service[] = [
     slug: 'full-website-packages',
     name: 'Full Website Packages',
     eyebrow: 'All-in',
-    title: 'Full Website Packages: Strategy, Design, Build & Launch',
+    title: 'Full-Service Website Packages',
     description: 'One project covering strategy, copy, design, development, SEO setup, analytics, hosting and launch, run by a founder-led studio in Hollywood, FL.',
     summary: 'Strategy, copy, design, build, SEO setup and launch handled end to end by one accountable partner.',
     intro: [
@@ -257,7 +257,7 @@ export const services: Service[] = [
     slug: 'monthly-seo-content',
     name: 'Monthly SEO & Content',
     eyebrow: 'Organic Growth',
-    title: 'Monthly SEO & Content for Small Businesses',
+    title: 'Monthly SEO & Content Services',
     description: 'Monthly SEO: keyword research, technical and Core Web Vitals fixes, local pages and content written to rank, tracked in Google Search Console.',
     summary: 'Technical fixes, page improvements and new content each month, reported against Search Console data.',
     intro: [
@@ -358,7 +358,7 @@ export const services: Service[] = [
     slug: 'ai-search-ranking',
     name: 'AI Search Visibility (GEO)',
     eyebrow: 'AI Era SEO',
-    title: 'AI Search Visibility & Generative Engine Optimization',
+    title: 'AI Search Visibility (GEO)',
     description: 'Help Google AI Mode, ChatGPT and Perplexity find, understand and cite your business: entity consistency, schema, citations and crawlable pages.',
     summary: 'Entity, schema and citation work so AI answers can find and accurately describe your business.',
     intro: [
@@ -463,7 +463,7 @@ export const services: Service[] = [
     slug: 'landing-page-cro',
     name: 'Landing Page & Conversion Rate Optimization',
     eyebrow: 'Conversions',
-    title: 'Landing Page Design & Conversion Rate Optimization',
+    title: 'Landing Page Design & CRO',
     description: 'Landing pages and CRO: clearer offers, faster pages, on-site surveys and A/B tests that turn more of your existing traffic into calls, leads and sales.',
     summary: 'Research, on-site surveys, speed fixes and tests that turn more visitors into leads and customers.',
     intro: [
@@ -562,7 +562,7 @@ export const services: Service[] = [
     slug: 'google-ads',
     name: 'Google Ads Management',
     eyebrow: 'Paid Search',
-    title: 'Google Ads Management for Local & E-commerce',
+    title: 'Google Ads Management & PPC',
     description: 'Google Search, Shopping and Performance Max campaigns with accurate conversion tracking and matched landing pages, managed from Hollywood, FL.',
     summary: 'Search, Shopping and Performance Max campaigns built on accurate tracking and matched landing pages.',
     intro: [
