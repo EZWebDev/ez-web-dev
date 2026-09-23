@@ -1,0 +1,11 @@
+# Netlify build settings. Set the site's Base directory to "ezweb" (this file lives there).
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Do not add an SPA fallback (/* /index.html 200). Every route is prerendered to its own
+# .html file, unknown paths get dist/404.html with a real 404 status, and redirects live in
+# public/_redirects.

@@ -28,7 +28,7 @@ const errors = []
 const fail = (where, msg) => errors.push(`${where}: ${msg}`)
 
 const fileFor = (p) =>
-  p === '/' ? 'index.html' : p === '/404' ? '404.html' : path.join(...p.replace(/^\/+|\/+$/g, '').split('/'), 'index.html')
+  p === '/' ? 'index.html' : p === '/404' ? '404.html' : `${p.replace(/^\/+|\/+$/g, '')}.html`
 const expectedCanonical = (p) => (p === '/' ? `${business.url}/` : `${business.url}${p.replace(/\/+$/, '')}`)
 
 const decode = (s) =>
