@@ -64,7 +64,7 @@ function Footer() {
             <span>{business.name}</span>
           </Link>
           <p className="footer-tagline">
-            Web development and SEO studio in {business.primaryCity}, {business.primaryRegion}.
+            Web development and SEO agency in {business.primaryCity}, {business.primaryRegion}.
           </p>
           <NapBlock />
         </div>

@@ -89,7 +89,7 @@ function LocationDetail({ loc }: { loc: Location }) {
 
           <aside className="callout sidebar" aria-labelledby="loc-contact-title">
             <h2 id="loc-contact-title" className="sidebar-title">
-              Our {business.primaryCity} studio
+              Our address
             </h2>
             <NapBlock />
             <div className="btns" style={{ marginTop: 14 }}>

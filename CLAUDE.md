@@ -29,4 +29,10 @@ Write like the founder talking to a client across a desk. Plain, specific, short
 
 ## Deploys
 
-- Production is the Netlify project `ezweb-site`. Before assuming this repo is what that project deploys, check with Ezra. The live site has forms (`audit`, `audit-law`, `audit-source`, `workshop`) that were not in this repo as of 2026-09-23.
+- Production is the Netlify project `ezweb-site`. This repo is NOT its source as of 2026-09-23: the live site has forms (`audit`, `audit-law`, `audit-source`, `workshop`) that are not here. Never deploy this repo to `ezweb-site`. See `docs/LOCAL-SESSION-PROMPT.md`.
+
+## Owner facts (2026-09-23)
+
+- All client work is remote (phone, email, video, shared documents). Never claim in-person meetings, site visits, office visits, photography or on-site training.
+- Services: custom web design and development, monthly SEO and content, AI search visibility (GEO), landing pages and CRO, Google and Meta ads management including white-label ads management for agencies. Full website packages are no longer offered.
+- Say "we" and "agency". Do not say "studio".

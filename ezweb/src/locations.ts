@@ -37,11 +37,11 @@ export const locations: Location[] = [
     region: 'FL',
     displayName: 'Hollywood, FL',
     title: 'Web Design & SEO in Hollywood, FL',
-    description: 'Web design, SEO and Google Ads from our office on Tyler Street in downtown Hollywood, FL. Meet at the studio or at your business.',
+    description: 'Web design, SEO and Google and Meta ads for Hollywood, FL businesses, from an agency based on Tyler Street in downtown Hollywood.',
     heading: 'Web design and SEO in Hollywood, Florida',
     intro: [
-      'EZ Web Development LLC is a web development and SEO studio at 1909 Tyler Street Suite 308, in downtown Hollywood, a few blocks from Young Circle and Hollywood Boulevard. Founded in 2022 by Ezra Pinsky, the studio builds websites, runs SEO and AI search visibility programs, and manages Google Ads for local businesses and for clients elsewhere in the country.',
-      'If your business is in Hollywood, we can meet at your shop or office instead of on a screen. The notes below are specific to how people search here.',
+      'EZ Web Development LLC is a web development and SEO agency based at 1909 Tyler Street Suite 308, in downtown Hollywood, a few blocks from Young Circle and Hollywood Boulevard. Founded in 2022 by Ezra Pinsky, the agency builds websites, runs SEO and AI search visibility programs, and manages Google and Meta ads for local businesses and for clients elsewhere in the country.',
+      'The notes below are specific to how people search in Hollywood and what that means for your website.',
     ],
     sections: [
       {
@@ -67,7 +67,7 @@ export const locations: Location[] = [
       {
         heading: 'Working with us in Hollywood',
         body: [
-          'Meetings happen at the Tyler Street office by appointment or at your business. Going to you is often more useful: we can photograph the space, see how orders or appointments are handled, and train the staff who will update the site. Day-to-day work runs over email and video calls, Monday to Friday, 9am to 5pm Eastern.',
+          'Hollywood clients work with us the same way clients in other states do. We talk by phone or video call, and drafts, designs and reports arrive as shared documents and links. Hours are Monday to Friday, 9am to 5pm Eastern.',
         ],
       },
     ],
@@ -76,15 +76,15 @@ export const locations: Location[] = [
     faqs: [
       {
         q: 'Where is EZ Web Development LLC located?',
-        a: 'EZ Web Development LLC is at 1909 Tyler Street Suite 308, Hollywood, FL 33020, in downtown Hollywood. You can reach the studio at (561) 692-6868 or ezra@ezweb.dev, Monday to Friday from 9am to 5pm Eastern.',
+        a: 'EZ Web Development LLC is at 1909 Tyler Street Suite 308, Hollywood, FL 33020, in downtown Hollywood. You can reach us at (561) 692-6868 or ezra@ezweb.dev, Monday to Friday from 9am to 5pm Eastern.',
       },
       {
-        q: 'Can we meet in person in Hollywood?',
-        a: 'Yes. Local clients can meet at the downtown Hollywood office by appointment or at their own business. Many projects combine an in-person kickoff with video calls for the rest of the work.',
+        q: 'Do you meet clients in person?',
+        a: 'No. All of our work is remote, including for businesses here in Hollywood. Projects run by phone, email and video call, with drafts and reports shared online.',
       },
       {
         q: 'Do you work with businesses in Hallandale Beach, Dania Beach and Pembroke Pines?',
-        a: 'Yes. Those cities are a short drive from downtown Hollywood, and we work with businesses across southern Broward County as well as in Fort Lauderdale and Miami.',
+        a: 'Yes. We work with businesses in those nearby cities and across southern Broward County, as well as in Fort Lauderdale and Miami.',
       },
       {
         q: 'How do I get my Hollywood business into Google Maps results?',
@@ -99,11 +99,11 @@ export const locations: Location[] = [
     region: 'FL',
     displayName: 'Fort Lauderdale, FL',
     title: 'Web Design & SEO in Fort Lauderdale',
-    description: 'For Fort Lauderdale and Broward County businesses: websites, SEO and Google Ads from a studio 20 to 30 minutes south in Hollywood, FL.',
+    description: 'For Fort Lauderdale and Broward County businesses: websites, SEO and Google and Meta ads from an agency based just south in Hollywood, FL.',
     heading: 'Web design and SEO for Fort Lauderdale businesses',
     intro: [
-      'Fort Lauderdale is Broward’s county seat and its business center: law and finance offices downtown and on Las Olas Boulevard, marinas and hotels along the water, and service companies in every neighborhood. EZ Web Development LLC works with Fort Lauderdale businesses from its office in downtown Hollywood, 20 to 30 minutes south by car depending on traffic.',
-      'Many Fort Lauderdale firms win clients on referrals, and a referral’s first stop is your website. Businesses on the water sell to visitors who have never heard of them. Both need a site that answers questions before anyone calls, and anywhere in the city is close enough for us to meet in person.',
+      'Fort Lauderdale is Broward’s county seat and its business center: law and finance offices downtown and on Las Olas Boulevard, marinas and hotels along the water, and service companies in every neighborhood. EZ Web Development LLC works remotely with Fort Lauderdale businesses from its base just south in Hollywood.',
+      'Many Fort Lauderdale firms win clients on referrals, and a referral’s first stop is your website. Businesses on the water sell to visitors who have never heard of them. Both need a site that answers questions before anyone calls.',
     ],
     sections: [
       {
@@ -129,7 +129,7 @@ export const locations: Location[] = [
       {
         heading: 'How we work with Fort Lauderdale clients',
         body: [
-          'Projects start with a phone call, then a meeting at your office if it helps. Seeing how your team answers calls and follows up on inquiries tells us what the site needs to do. After that, the work runs on video calls and shared documents.',
+          'Projects start with a phone or video call about how inquiries reach you today and what happens to them next. That tells us what the site needs to do. The rest of the work runs on video calls and shared documents.',
         ],
       },
     ],
@@ -138,7 +138,7 @@ export const locations: Location[] = [
     faqs: [
       {
         q: 'Do you have an office in Fort Lauderdale?',
-        a: 'No. Our office is in downtown Hollywood at 1909 Tyler Street, about 20 to 30 minutes south of downtown Fort Lauderdale. We meet Fort Lauderdale clients at their offices when it is useful and work remotely the rest of the time.',
+        a: 'No. We are based in Hollywood, just south of Fort Lauderdale. Fort Lauderdale clients work with us by phone, email and video call.',
       },
       {
         q: 'What does a Fort Lauderdale law or accounting firm need on its website?',
@@ -149,8 +149,8 @@ export const locations: Location[] = [
         a: 'Google ranks local results partly by distance from the searcher, so visibility naturally changes across the city. You can strengthen relevance and prominence with a complete Google Business Profile, steady reviews and strong service pages, but distance always plays a role.',
       },
       {
-        q: 'Can you run Google Ads for a Broward service area?',
-        a: 'Yes. We set location targeting to match where you actually work, add negative keywords for areas and searches you do not serve, and track calls and forms so the budget goes toward real leads.',
+        q: 'Can you run Google and Meta ads for a Broward service area?',
+        a: 'Yes. We set location targeting on both platforms to match where you actually work. On Google we add negative keywords for areas and searches you do not serve. Calls and forms are tracked so the budget goes toward real leads.',
       },
     ],
     updated: '2026-09-23',
@@ -161,10 +161,10 @@ export const locations: Location[] = [
     region: 'FL',
     displayName: 'Miami, FL',
     title: 'Web Design & SEO in Miami, FL',
-    description: 'Bilingual English and Spanish websites, SEO, AI search visibility and Google Ads for Miami-Dade businesses, from a studio in nearby Hollywood, FL.',
+    description: 'Bilingual English and Spanish websites, SEO, AI search visibility and Google and Meta ads for Miami-Dade businesses, from a Hollywood, FL agency.',
     heading: 'Web design and SEO for Miami businesses',
     intro: [
-      'Miami-Dade is a crowded search market: dense neighborhoods, customers arriving from other countries and states, and many businesses that sell in both English and Spanish. EZ Web Development LLC works with Miami and Miami-Dade businesses from its office in Hollywood, in southern Broward County, 30 to 45 minutes from downtown Miami depending on I-95.',
+      'Miami-Dade is a crowded search market: dense neighborhoods, customers arriving from other countries and states, and many businesses that sell in both English and Spanish. EZ Web Development LLC is based in Hollywood, in southern Broward County, and works with Miami and Miami-Dade businesses remotely.',
       'Two things matter more here than in most places: building a bilingual site the right way, and competing for map and ad positions that many other businesses want.',
     ],
     sections: [
@@ -189,9 +189,9 @@ export const locations: Location[] = [
         ],
       },
       {
-        heading: 'Working with a Hollywood-based studio',
+        heading: 'How Miami projects run',
         body: [
-          'Aventura, Sunny Isles Beach and North Miami Beach are a short drive from the Hollywood office. Brickell and Coral Gables are farther, so meetings there are worth planning around a kickoff or a photo session. Everything else runs on video calls and shared documents.',
+          'Everything runs remotely. For a bilingual site, the English and Spanish drafts go out as shared documents, so your staff or translator can mark up the Spanish pages directly. Staging links let you check both versions on a phone before launch.',
         ],
       },
     ],
@@ -204,7 +204,7 @@ export const locations: Location[] = [
       },
       {
         q: 'Are you located in Miami?',
-        a: 'No. Our office is in Hollywood, Florida, in southern Broward County, roughly 30 to 45 minutes from downtown Miami depending on traffic. We work with Miami-Dade businesses in person when useful and remotely otherwise.',
+        a: 'No. Our address is in Hollywood, Florida, north of the Miami-Dade county line. Miami clients work with us remotely, over phone, email and video calls.',
       },
       {
         q: 'How can a Miami business show up in AI answers from ChatGPT or Google AI Mode?',

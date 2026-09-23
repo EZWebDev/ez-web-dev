@@ -19,3 +19,5 @@ http://www.ezweb.dev/* https://ezweb.dev/:splat 301!
 /services/email-marketing/ /services/monthly-seo-content 301
 /services/meta-ads /services/google-ads 301
 /services/meta-ads/ /services/google-ads 301
+/services/full-website-packages /services/custom-web-design 301
+/services/full-website-packages/ /services/custom-web-design 301

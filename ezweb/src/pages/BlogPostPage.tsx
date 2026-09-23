@@ -75,7 +75,7 @@ function Article({ post }: { post: BlogPostMeta }) {
           <footer className="article-footer">
             <p>
               {business.founder.name} is the founder of <Link to="/about">{business.name}</Link>, a web development and
-              SEO studio in {business.primaryCity}, {business.primaryRegion}. Questions about this post? Email{' '}
+              SEO agency in {business.primaryCity}, {business.primaryRegion}. Questions about this post? Email{' '}
               <a href={`mailto:${business.email}`}>{business.email}</a>.
             </p>
           </footer>

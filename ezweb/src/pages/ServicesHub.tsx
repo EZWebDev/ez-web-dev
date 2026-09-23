@@ -8,7 +8,7 @@ import { breadcrumbSchema, orgRef, pageTitle, webPageSchema, type Crumb } from '
 
 const PATH = '/services'
 const TITLE = pageTitle('Web Design & SEO Services')
-const DESCRIPTION = `Services from ${business.name} in ${business.primaryCity}, FL: custom web design, website packages, monthly SEO, AI search visibility, CRO and Google Ads.`
+const DESCRIPTION = `Services from ${business.name} in ${business.primaryCity}, FL: custom web design, monthly SEO, AI search visibility, CRO, and Google and Meta ads.`
 
 const crumbs: Crumb[] = [
   { name: 'Home', path: '/' },
@@ -45,7 +45,7 @@ export default function ServicesHub() {
         <Breadcrumbs items={crumbs} />
         <h1 className="display text-gradient">Services</h1>
         <p className="subhead">
-          Websites, and the work that brings them customers: SEO, AI search visibility, conversion fixes and Google Ads.{' '}
+          Websites, and the work that brings them customers: SEO, AI search visibility, conversion fixes, and Google and Meta ads.{' '}
           {business.name} works with small businesses, professional services firms and e-commerce brands, and founder{' '}
           {business.founder.name} runs every project.
         </p>

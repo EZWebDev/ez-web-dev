@@ -139,9 +139,9 @@ const CONTRASTS = [
  * boilerplate rendered by shared components. Anything else repeated is reported.
  */
 const DUPLICATE_ALLOW = [
-  /^ez web development llc is a web development and seo studio in hollywood, florida, founded in 2022 by ezra pinsky\.$/,
+  /^ez web development llc is a web development and seo agency in hollywood, florida, founded in 2022 by ezra pinsky\.$/,
   /^we design and build fast custom websites, run monthly seo/,
-  /^ezra pinsky is the founder of ez web development llc, a web development and seo studio in hollywood, florida\.$/,
+  /^ezra pinsky is the founder of ez web development llc, a web development and seo agency in hollywood, florida\.$/,
   /^serving hollywood, fort lauderdale, miami and nationwide\.$/,
   /^call \(561\) 692-6868, email ezra@ezweb\.dev, or send us a few details about your project\.$/,
 ]

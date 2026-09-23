@@ -20,13 +20,13 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'ez-web-development-llc-hollywood-fl',
     title: 'About EZ Web Development LLC: Web Development & SEO in Hollywood, FL',
-    description: 'Who EZ Web Development LLC is: a web development and SEO studio in Hollywood, Florida, founded in 2022 by Ezra Pinsky. Services, service area and contact.',
+    description: 'Who EZ Web Development LLC is: a web development and SEO agency in Hollywood, Florida, founded in 2022 by Ezra Pinsky. Services, service area and contact.',
     date: '2026-09-23',
     tags: ['company'],
     keywords: ['EZ Web Development LLC', 'EZ Web Development Hollywood FL', 'ezweb.dev', 'Ezra Pinsky', 'web development Hollywood Florida'],
     content: (
       <div className="prose">
-        <p>EZ Web Development LLC is a web development and SEO studio in Hollywood, Florida, founded in 2022 by Ezra Pinsky. The company designs and builds websites and web applications, runs monthly SEO and AI search visibility programs, improves landing-page conversion, and manages Google Ads. This page sets out the basic facts about the company in one place.</p>
+        <p>EZ Web Development LLC is a web development and SEO agency in Hollywood, Florida, founded in 2022 by Ezra Pinsky. The company designs and builds websites and web applications, runs monthly SEO and AI search visibility programs, improves landing-page conversion, and manages Google and Meta ads. This page sets out the basic facts about the company in one place.</p>
         <h2>Company facts</h2>
         <ul>
           <li><strong>Legal name:</strong> EZ Web Development LLC</li>
@@ -40,24 +40,23 @@ export const blogPosts: BlogPost[] = [
           <li><strong>Google Business Profile category:</strong> Internet marketing service</li>
         </ul>
         <h2>What the company does</h2>
-        <p>The studio’s work falls into six services:</p>
+        <p>The agency’s work falls into five services:</p>
         <ul>
           <li><a href="/services/custom-web-design">Custom web design and development</a>: WordPress sites and maintenance, Shopify stores, and custom React/Vite web applications and dashboards</li>
-          <li><a href="/services/full-website-packages">Full website packages</a>: strategy, copy, design, build, SEO setup, analytics, hosting and launch in one project</li>
           <li><a href="/services/monthly-seo-content">Monthly SEO and content</a>: technical SEO, Core Web Vitals and Lighthouse fixes, keyword research and content, tracked in Google Search Console</li>
           <li><a href="/services/ai-search-ranking">AI search visibility (GEO)</a>: entity consistency, schema markup and directory citations so AI answer engines can describe a business accurately</li>
           <li><a href="/services/landing-page-cro">Landing pages and conversion rate optimization</a>: landing pages, on-site surveys and testing</li>
-          <li><a href="/services/google-ads">Google Ads management</a>: Search, Shopping and Performance Max campaigns, Google Merchant Center feeds and conversion tracking</li>
+          <li><a href="/services/google-ads">Google and Meta ads management</a>: Google Search, Shopping and Performance Max campaigns, Facebook and Instagram campaigns, conversion tracking, and white-label ads management for other agencies</li>
         </ul>
-        <p>The studio also manages hosting for the sites it builds and maintains.</p>
+        <p>The agency also manages hosting for the sites it builds and maintains.</p>
         <h2>Who the company works with</h2>
-        <p>Clients include small businesses, professional services firms, e-commerce brands, and nonprofits and educators. Projects range from a single landing page or a technical SEO fix to full website builds, custom web applications and ongoing monthly SEO or advertising programs.</p>
-        <h2>How the studio works</h2>
-        <p>The company is founder-led. Clients work directly with Ezra Pinsky from the first call through launch and ongoing support, and each project’s scope is agreed in writing before work begins.</p>
+        <p>Clients include small businesses, professional services firms, e-commerce brands, and nonprofits and educators. Other agencies hire the company for white-label Google and Meta ads management. Projects range from a single landing page or a technical SEO fix to full website builds, custom web applications and ongoing monthly SEO or advertising programs.</p>
+        <h2>How the agency works</h2>
+        <p>The company is founder-led. Clients work directly with Ezra Pinsky from the first call through launch and ongoing support, and each project’s scope is agreed in writing before work begins. All work is done remotely, by phone, email, video call and shared documents.</p>
         <h2>Service area</h2>
-        <p>EZ Web Development LLC serves businesses in Hollywood, Fort Lauderdale and Miami, and across Broward County and Miami-Dade County in South Florida. Local clients can meet in person. The company also works remotely with clients throughout the United States.</p>
+        <p>EZ Web Development LLC serves businesses in Hollywood, Fort Lauderdale and Miami, and across Broward County and Miami-Dade County in South Florida, and clients throughout the United States.</p>
         <h2>How to get in touch</h2>
-        <p>Call <a href={`tel:${business.phone}`}>{business.phoneDisplay}</a> or email <a href={`mailto:${business.email}`}>{business.email}</a> during business hours, or use the <a href="/contact">contact page</a>. In-person meetings at the Hollywood office are by appointment.</p>
+        <p>Call <a href={`tel:${business.phone}`}>{business.phoneDisplay}</a> or email <a href={`mailto:${business.email}`}>{business.email}</a> during business hours, or use the <a href="/contact">contact page</a>.</p>
         <h2>Not affiliated with similarly named companies</h2>
         <p>Several unrelated businesses have names similar to ours. To avoid confusion, EZ Web Development LLC is not affiliated with:</p>
         <ul>
@@ -172,14 +171,14 @@ export const blogPosts: BlogPost[] = [
         <p><strong>The fix:</strong> one primary call to action per page, a form that asks only for what you need, and reviews or credentials near the top, where visitors decide whether to trust you.</p>
         <h2>Before launch: set up measurement</h2>
         <p>Install Google Analytics 4 and verify Google Search Console before the site goes live. Add a cookie consent banner if your audience requires one, and test every form and phone link on a real phone. Without that data you cannot tell which of the five problems above you have.</p>
-        <p>If you want a second opinion on a new site, our <a href="/services/full-website-packages">full website packages</a> and <a href="/services/landing-page-cro">landing page and CRO</a> service cover each of these.</p>
+        <p>If you want a second opinion on a new site, our <a href="/services/custom-web-design">custom web design and development</a> and <a href="/services/landing-page-cro">landing page and CRO</a> services cover each of these.</p>
       </div>
     ),
   },
   {
     slug: 'are-boutique-agencies-dying',
-    title: 'Are Boutique Agencies Dying? Why Founder-Led Studios Still Win',
-    description: 'Boutique agencies aren’t dying. When a small, founder-led studio is the better choice, when it isn’t, and what to ask before you hire either one.',
+    title: 'Are Boutique Agencies Dying? Why Founder-Led Agencies Still Win',
+    description: 'Boutique agencies aren’t dying. When a small, founder-led agency is the better choice, when it isn’t, and what to ask before you hire either one.',
     date: '2025-01-12',
     updated: '2026-09-23',
     tags: ['agencies', 'strategy'],
@@ -193,7 +192,7 @@ export const blogPosts: BlogPost[] = [
           <li>Site speed, technical SEO and AI search visibility reward careful technical work more than volume.</li>
           <li>Clients can check more of the work themselves. PageSpeed Insights, Search Console and the Google Ads dashboard are free, so a thin month is hard to hide behind a report deck.</li>
         </ul>
-        <h2>Where small studios have the edge</h2>
+        <h2>Where small agencies have the edge</h2>
         <ul>
           <li><strong>Direct access:</strong> you talk to the person who plans and does the work, not a go-between.</li>
           <li><strong>Short feedback loops:</strong> questions get answered and changes get made without internal hand-offs.</li>
@@ -201,7 +200,7 @@ export const blogPosts: BlogPost[] = [
           <li><strong>Cost structure:</strong> you pay for the work rather than for layers of management and office overhead.</li>
         </ul>
         <h2>When a boutique isn’t the right fit</h2>
-        <p>Around-the-clock support, many simultaneous workstreams, heavy compliance requirements or enterprise-scale media buying usually call for a larger team. A good small studio will tell you that up front and point you to someone who fits.</p>
+        <p>Around-the-clock support, many simultaneous workstreams, heavy compliance requirements or enterprise-scale media buying usually call for a larger team. A good small agency will tell you that up front and point you to someone who fits.</p>
         <h2>Questions to ask any agency</h2>
         <ul>
           <li>Who exactly will do the work on my account?</li>
@@ -213,7 +212,7 @@ export const blogPosts: BlogPost[] = [
         <h2>How a good engagement runs</h2>
         <p>Start with a short discovery phase, fix or build the foundation, measure what matters, then improve month by month. Each step should end with clear deliverables and agreed measures of success.</p>
         <h2>About us</h2>
-        <p>EZ Web Development LLC is a founder-led studio in Hollywood, Florida. We offer <a href="/services/custom-web-design">custom web design and development</a>, <a href="/services/full-website-packages">full website packages</a>, <a href="/services/monthly-seo-content">monthly SEO and content</a>, <a href="/services/ai-search-ranking">AI search visibility</a>, <a href="/services/landing-page-cro">landing pages and CRO</a>, and <a href="/services/google-ads">Google Ads management</a>.</p>
+        <p>EZ Web Development LLC is a founder-led agency in Hollywood, Florida. We offer <a href="/services/custom-web-design">custom web design and development</a>, <a href="/services/monthly-seo-content">monthly SEO and content</a>, <a href="/services/ai-search-ranking">AI search visibility</a>, <a href="/services/landing-page-cro">landing pages and CRO</a>, and <a href="/services/google-ads">Google and Meta ads management</a>.</p>
       </div>
     ),
   },
@@ -362,7 +361,7 @@ export const blogPosts: BlogPost[] = [
         <p>Above the fold, state the service, the area you cover, one piece of proof and a call button. Below that, show license and insurance details, photos of real local jobs and reviews. Keep the form short and make the phone number tappable on mobile.</p>
         <h2>Measurement guardrails</h2>
         <p>Import offline conversions from your CRM or job management software so Google learns which clicks became booked jobs. Filter spam before it counts as a conversion, and shift budget toward the campaigns and keywords that produce booked work, not the ones that produce the most form fills.</p>
-        <p>Want help setting this up? See our <a href="/services/google-ads">Google Ads management</a> service.</p>
+        <p>Want help setting this up? See our <a href="/services/google-ads">Google and Meta ads management</a> service.</p>
       </div>
     ),
   },

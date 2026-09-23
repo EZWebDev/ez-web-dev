@@ -17,7 +17,7 @@ import {
 
 const PATH = '/'
 const TITLE = pageTitle(`Web Development & SEO in ${business.primaryCity}, ${business.address.addressRegion}`)
-const DESCRIPTION = `${business.name} is a web development and SEO studio in ${business.primaryCity}, ${business.primaryRegion}. Custom websites, SEO, AI-search visibility and Google Ads.`
+const DESCRIPTION = `${business.name} is a web development and SEO agency in ${business.primaryCity}, ${business.primaryRegion}. Custom websites, SEO, AI-search visibility and Google and Meta ads.`
 
 const facts = [
   { value: `Founded ${foundingYear}`, label: 'Florida LLC' },
@@ -26,7 +26,7 @@ const facts = [
   { value: `${business.metro} & nationwide`, label: 'Who we serve' },
 ]
 
-const stack = ['WordPress', 'React & Vite', 'Shopify', 'Technical SEO', 'Google Ads', 'AI search visibility']
+const stack = ['WordPress', 'React & Vite', 'Shopify', 'Technical SEO', 'Google & Meta ads', 'AI search visibility']
 
 const faqs: FaqItem[] = [
   {
@@ -35,7 +35,7 @@ const faqs: FaqItem[] = [
   },
   {
     q: `Where is ${business.name} located?`,
-    a: `Our studio is at ${fullAddressLine}. We work with businesses in ${locations.map((l) => l.name).join(', ')} and across ${business.metro}, and remotely with clients across the United States.`,
+    a: `Our address is ${fullAddressLine}. We work remotely with businesses in ${joinList(locations.map((l) => l.name))} and across ${business.metro}, and with clients in other states.`,
   },
   {
     q: `What does ${business.name} do?`,
@@ -43,11 +43,11 @@ const faqs: FaqItem[] = [
   },
   {
     q: 'Who do you work with?',
-    a: `Small businesses, professional services firms and e-commerce brands in ${business.metro} and nationwide. Every project is led by founder ${business.founder.name}.`,
+    a: `Small businesses, professional services firms and e-commerce brands in ${business.metro} and nationwide. We also run white-label Google and Meta ads management for other agencies. Every project is led by founder ${business.founder.name}.`,
   },
   {
     q: 'How do I start a project?',
-    a: `Call ${business.phoneDisplay}, email ${business.email}, or send a message through the contact page at ${business.domain}/contact. Office hours are ${business.hoursDisplay.replace(' · ', ', ')}.`,
+    a: `Call ${business.phoneDisplay}, email ${business.email}, or send a message through the contact page at ${business.domain}/contact. Hours are ${business.hoursDisplay.replace(' · ', ', ')}.`,
   },
 ]
 
@@ -71,7 +71,7 @@ export default function Home() {
           <div>
             <span className="eyebrow">{business.name} · {business.primaryCity}, {business.address.addressRegion}</span>
             <h1 className="display text-gradient">
-              Web development and SEO studio in {business.primaryCity}, {business.primaryRegion}
+              Web development and SEO agency in {business.primaryCity}, {business.primaryRegion}
             </h1>
             <p className="subhead">{business.description}</p>
             <div className="btns">
@@ -120,8 +120,8 @@ export default function Home() {
         <div className="container">
           <h2 id="where-title" className="section-title">Where we work</h2>
           <p className="section-subtitle">
-            Based at {fullAddressLine}, between Fort Lauderdale and Miami. Local clients can meet in person; clients in
-            other states work with us over video calls.
+            Based at {fullAddressLine}, between Fort Lauderdale and Miami. Every project runs by phone, email and video
+            call, for clients nearby and in other states alike.
           </p>
           <div className="cards">
             {locations.map((l) => (

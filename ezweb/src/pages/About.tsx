@@ -20,7 +20,7 @@ import {
 } from '../components/schema'
 
 const PATH = '/about'
-const TITLE = pageTitle(`About ${business.founder.name} & Our Studio`)
+const TITLE = pageTitle(`About ${business.name}`)
 const DESCRIPTION = `${business.name} is a Florida LLC founded in ${foundingYear} by ${business.founder.name} and based in ${business.primaryCity}, FL. Web development, SEO and AI-search visibility.`
 
 const crumbs: Crumb[] = [
@@ -34,6 +34,7 @@ const founderSkills = [
   'Shopify',
   'Technical SEO',
   'Google Ads',
+  'Meta ads',
   'AI search visibility',
 ]
 
@@ -87,7 +88,7 @@ export default function About() {
               </p>
               <p>
                 Ezra works hands-on across every project: WordPress sites, custom React and Vite builds, Shopify
-                stores, technical SEO, Google Ads and AI search visibility. When you hire {business.name}, he is the
+                stores, technical SEO, Google and Meta ads, and AI search visibility. When you hire {business.name}, he is the
                 person you talk to and the person doing the work.
               </p>
               <ul className="badges plain-list" aria-label={`${business.founder.name}'s areas of work`}>
@@ -112,14 +113,15 @@ export default function About() {
             <section className="callout prose" aria-labelledby="where-title">
               <h2 id="where-title">Where we work</h2>
               <p>
-                The studio is in downtown {business.primaryCity}. Clients in{' '}
+                We are based in downtown {business.primaryCity} and work with clients in{' '}
                 {locations.map((l, i) => (
                   <span key={l.slug}>
                     {i > 0 && ', '}
                     <Link to={`/locations/${l.slug}`}>{l.name}</Link>
                   </span>
                 ))}{' '}
-                and elsewhere in {business.metro} can meet in person. Clients in other states work with us remotely.
+                and elsewhere in {business.metro}, and in other states. Every stage, from the first call to launch, happens
+                over phone, email or video.
               </p>
             </section>
 

@@ -66,7 +66,7 @@ export const business = {
   ],
   /** One-sentence entity statement. Reuse verbatim on Home, About, GBP, LinkedIn, Clutch, etc. */
   description:
-    'EZ Web Development LLC is a web development and SEO studio in Hollywood, Florida, founded in 2022 by Ezra Pinsky. We design and build fast custom websites, run monthly SEO and AI-search visibility programs, improve landing-page conversion, and manage Google Ads for small businesses, professional services firms, and e-commerce brands across South Florida and nationwide.',
+    'EZ Web Development LLC is a web development and SEO agency in Hollywood, Florida, founded in 2022 by Ezra Pinsky. We design and build fast custom websites, run monthly SEO and AI-search visibility programs, improve landing-page conversion, and manage Google and Meta ads for businesses in South Florida and nationwide.',
   /** Google Business Profile identifiers (from the "Your Business Profile is live" notice, 2026-09-17). */
   gbp: {
     cid: '15049505616001444936',

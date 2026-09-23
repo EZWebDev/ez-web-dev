@@ -40,6 +40,11 @@
       "source": "/services/meta-ads",
       "destination": "/services/google-ads",
       "statusCode": 301
+    },
+    {
+      "source": "/services/full-website-packages",
+      "destination": "/services/custom-web-design",
+      "statusCode": 301
     }
   ],
   "headers": [

@@ -1,5 +1,5 @@
 /**
- * Service catalog. Six services we actively sell. Rendered at /services/<slug>.
+ * Service catalog. Five services we actively sell. Rendered at /services/<slug>.
  * Content is owned by the content agent; the page component and schema live in App.tsx.
  */
 export type Service = {
@@ -36,7 +36,7 @@ export const services: Service[] = [
     name: 'Custom Web Design & Development',
     eyebrow: 'Design & Build',
     title: 'Custom Web Design & Development',
-    description: 'Custom websites and web apps built for speed, search and easy editing: WordPress, Shopify and React builds from a Hollywood, FL studio.',
+    description: 'Custom websites and web apps built for speed, search and easy editing: WordPress, Shopify and React builds from a Hollywood, FL agency.',
     summary: 'Fast, accessible websites and web apps on WordPress, Shopify or custom React, built to rank and easy to maintain.',
     intro: [
       'We design and build websites and web applications that load quickly on a phone and that your team can update without calling a developer. Most projects are a WordPress site on a lean custom theme, a Shopify store, or a custom React application such as a client portal, booking tool or internal dashboard.',
@@ -55,7 +55,7 @@ export const services: Service[] = [
           'Technical SEO foundations: clean URLs, titles and meta descriptions, heading structure, schema markup, an XML sitemap and redirects from old URLs',
           'Core Web Vitals and accessibility work: compressed images, minimal scripts, readable contrast and keyboard-friendly navigation',
           'Google Analytics 4 and Google Search Console set up and verified',
-          'Training so your team can edit pages, plus documentation for anything custom',
+          'A short written guide for editing pages, plus documentation for anything custom',
         ],
       },
       {
@@ -76,7 +76,7 @@ export const services: Service[] = [
           'Design: key page layouts reviewed with you, then the rest of the site',
           'Build: development on a staging site you can click through',
           'Quality checks: real phones, forms, Lighthouse speed tests, redirects and tracking',
-          'Launch and handoff: hosting and DNS cutover, Search Console submission and a walkthrough',
+          'Launch and handoff: hosting and DNS cutover, Search Console submission and a walkthrough on a video call',
         ],
       },
       {
@@ -104,7 +104,7 @@ export const services: Service[] = [
         ],
       },
     ],
-    deliverables: ['Sitemap & page designs', 'WordPress, Shopify or React build', 'Technical SEO & Core Web Vitals', 'Analytics, training & handoff'],
+    deliverables: ['Sitemap & page designs', 'WordPress, Shopify or React build', 'Technical SEO & Core Web Vitals', 'Analytics, editing guide & handoff'],
     faqs: [
       {
         q: 'How much does a custom website cost?',
@@ -120,7 +120,7 @@ export const services: Service[] = [
       },
       {
         q: 'Will I be able to update the site myself?',
-        a: 'Yes. WordPress and Shopify sites come with training and a short guide for editing pages, adding posts or products, and swapping images. For custom applications we build editing tools where you need them and document the rest.',
+        a: 'Yes. WordPress and Shopify sites come with a short written guide for editing pages, adding posts or products, and swapping images. For custom applications we build editing tools where you need them and document the rest.',
       },
       {
         q: 'Will a redesign hurt my Google rankings?',
@@ -128,7 +128,7 @@ export const services: Service[] = [
       },
       {
         q: 'Do you only work with businesses in South Florida?',
-        a: 'No. We meet local clients in person in Hollywood, but the process runs on video calls and shared documents, so we work with businesses anywhere in the United States.',
+        a: 'No. Every project runs remotely, over phone, email, video calls and shared documents, so we work with businesses anywhere in the United States.',
       },
       {
         q: 'Who owns the website when it’s finished?',
@@ -145,123 +145,7 @@ export const services: Service[] = [
       'website redesign',
       'Core Web Vitals optimization',
     ],
-    related: ['full-website-packages', 'landing-page-cro', 'monthly-seo-content'],
-    updated: '2026-09-23',
-  },
-  {
-    slug: 'full-website-packages',
-    name: 'Full Website Packages',
-    eyebrow: 'All-in',
-    title: 'Full-Service Website Packages',
-    description: 'One project covering strategy, copy, design, development, SEO setup, analytics, hosting and launch, run by a founder-led studio in Hollywood, FL.',
-    summary: 'Strategy, copy, design, build, SEO setup and launch in one project, with one person responsible for all of it.',
-    intro: [
-      'A full website package means you hire one studio instead of a designer, a developer, a copywriter and an SEO consultant, and nobody has to manage the handoffs between them. We handle strategy, copy, design, development, search setup, analytics, hosting and launch. You review and approve each stage.',
-      'Choose it over a design-and-build project when you do not have finished copy or a marketing plan to hand a designer. It also fits when the current site is outdated, hard to edit or missing from Google entirely.',
-    ],
-    sections: [
-      {
-        heading: 'What the package covers',
-        body: [
-          'From the first interview to the redirects on launch day:',
-        ],
-        bullets: [
-          'Strategy: goals, audience, a competitor review and the single action each page should drive',
-          'Copywriting: page copy drafted from an interview with you, then edited for clarity and search',
-          'Design: mobile-first layouts built around your brand, content and photography',
-          'Development on WordPress, Shopify or a custom React build, whichever fits the business',
-          'On-page SEO: keyword research with Google Keyword Planner, titles, meta descriptions, headings, internal links, schema markup and an XML sitemap',
-          'Local search setup: a Google Business Profile review and the same name, address and phone on the site and the profile',
-          'Analytics: Google Analytics 4 with conversion events for calls and forms, and Google Search Console',
-          'Hosting, domain and SSL set up or migrated, with backups',
-          'Launch, redirects from old URLs, and a support period after launch for fixes and questions',
-        ],
-      },
-      {
-        heading: 'How a project runs',
-        body: [
-          'Projects move through five stages: discovery, content and structure, design, build, and launch. Each stage ends with something concrete for you to review, such as a sitemap, a copy document, page designs or a working staging site.',
-          'Communication happens over email and scheduled video calls, and local clients can meet in person in Hollywood. At any point you know what is done, what is next and what we are waiting on.',
-        ],
-      },
-      {
-        heading: 'Who it’s for',
-        body: [
-          'The package fits when there is more to decide than the design:',
-        ],
-        bullets: [
-          'A business launching its first serious website',
-          'A professional services firm whose current site does not explain what it does',
-          'An e-commerce brand moving to Shopify or rebuilding on it',
-          'A nonprofit or school that needs a site staff can update without a developer',
-        ],
-      },
-      {
-        heading: 'Timeline and what you need to provide',
-        body: [
-          'Most full packages take six to ten weeks. We set the schedule at kickoff, with a review date for each stage. Your part is small, but it sets the pace:',
-        ],
-        bullets: [
-          'A kickoff interview of about an hour on your business, customers and competitors',
-          'Logos, brand colors, and any photos or video you want used',
-          'Access to your domain registrar, current hosting and any Google accounts',
-          'One decision-maker who can approve each stage',
-          'Feedback within a few business days of each review',
-        ],
-      },
-      {
-        heading: 'How we measure success',
-        body: [
-          'Before launch we agree on what the site should produce, usually calls, form submissions, bookings or sales. Those actions are tracked as conversions in Google Analytics 4, and Google Search Console shows how the site appears in search. After launch you get a short report comparing results to the old site wherever earlier data exists.',
-        ],
-      },
-      {
-        heading: 'After launch',
-        body: [
-          'Many clients continue with website maintenance, monthly SEO and content, or Google Ads once the site is live. None of that is required. The site and every account are yours, and you can manage them in house if you prefer.',
-        ],
-      },
-    ],
-    deliverables: ['Strategy & sitemap', 'Copy, design & build', 'SEO, schema & analytics', 'Hosting, launch & support'],
-    faqs: [
-      {
-        q: 'What is included in a full website package?',
-        a: 'Strategy, copywriting, design, development, on-page SEO, schema markup, Google Analytics 4 and Search Console setup, hosting and domain setup, launch and a post-launch support period. You supply knowledge of the business and the approvals; we do the rest.',
-      },
-      {
-        q: 'How is a full package different from custom web design?',
-        a: 'A full package adds everything around the design and build: strategy, copywriting, SEO setup, analytics, hosting and launch. Custom web design and development focuses on the design and build itself, which suits teams that already have copy and a marketing plan.',
-      },
-      {
-        q: 'Do you write the website copy?',
-        a: 'Yes. We draft copy from a kickoff interview, your existing materials and keyword research, then you edit it for accuracy. Nothing goes live until you approve it.',
-      },
-      {
-        q: 'How much does a full website package cost?',
-        a: 'A fixed price, quoted in writing after a discovery call, with every deliverable listed. Page count, platform and custom features drive the number, and it does not change unless the scope does.',
-      },
-      {
-        q: 'Can you move my existing site to new hosting?',
-        a: 'Yes. We migrate the site, set up SSL and backups, and redirect old URLs to their new locations. Before any DNS change we document your existing email records so email keeps working through the switch.',
-      },
-      {
-        q: 'How much of my time does a full package take?',
-        a: 'About an hour for the kickoff interview, then a review at the end of each stage. Most delays come from slow feedback, so name one person who can approve each stage and reply within a few business days. The whole process can run remotely.',
-      },
-      {
-        q: 'What happens after the site launches?',
-        a: 'There is a support period for fixes and questions, and we check Search Console and analytics to confirm the site is being indexed and tracking correctly. After that you can continue with maintenance, SEO or ads, or manage the site yourself.',
-      },
-    ],
-    serviceType: 'Website design and development package',
-    keywords: [
-      'full service website design',
-      'website package small business',
-      'website redesign Hollywood FL',
-      'web design and SEO package',
-      'small business website South Florida',
-    ],
-    related: ['custom-web-design', 'monthly-seo-content', 'google-ads'],
+    related: ['landing-page-cro', 'monthly-seo-content', 'ai-search-ranking'],
     updated: '2026-09-23',
   },
   {
@@ -488,7 +372,7 @@ export const services: Service[] = [
           'CRO projects start with measurement and end with a written record of what changed and why.',
         ],
         bullets: [
-          'Conversion tracking audit: calls, forms, bookings and purchases measured correctly in Google Analytics 4 and Google Ads before anything changes',
+          'Conversion tracking audit: calls, forms, bookings and purchases measured correctly in Google Analytics 4 and your ad accounts before anything changes',
           'Page review: clarity of the offer, the path to the main action, form length, trust signals and mobile usability',
           'On-site surveys: short questions asked of real visitors, such as what almost stopped them from getting in touch',
           'Speed fixes: images, scripts and layout shifts that slow a page down or make it jump',
@@ -520,14 +404,14 @@ export const services: Service[] = [
       {
         heading: 'Who it’s for',
         body: [
-          'Businesses running Google Ads that want a better return on their spend, service firms whose sites get traffic but few inquiries, and e-commerce stores that want more visitors to reach checkout. It is also a sensible first project when a full redesign is not in the budget.',
+          'Businesses running Google or Meta ads that want a better return on their spend, service firms whose sites get traffic but few inquiries, and e-commerce stores that want more visitors to reach checkout. It is also a sensible first project when a full redesign is not in the budget.',
         ],
       },
       {
         heading: 'Timeline and what you need to provide',
         body: [
           'An audit and first round of fixes usually takes two to four weeks, and a new landing page typically takes one to three weeks depending on copy and approvals. Testing programs run month to month.',
-          'We need access to Google Analytics, Google Ads if you use it, and your website or CMS, plus someone who can tell us which leads turned into customers.',
+          'We need access to Google Analytics, your Google Ads or Meta ad accounts if you use them, and your website or CMS, plus someone who can tell us which leads turned into customers.',
         ],
       },
       {
@@ -552,8 +436,8 @@ export const services: Service[] = [
         a: 'Enough to reach a statistically reliable result in a reasonable time, which usually means hundreds of conversions per variation rather than dozens. Pages with less traffic benefit more from research-driven fixes and before-and-after comparisons than from formal tests.',
       },
       {
-        q: 'Do you build landing pages for Google Ads?',
-        a: 'Yes. Each page matches the keywords and ad copy that send traffic to it and loads quickly on mobile. Calls and form submissions are tracked as conversions in both Google Ads and Google Analytics 4.',
+        q: 'Do you build landing pages for Google and Meta ads?',
+        a: 'Yes. Each page matches the keywords or ad copy that send traffic to it and loads quickly on mobile. Calls and form submissions are tracked as conversions in Google Analytics 4 and in the ad platform that sent the visitor.',
       },
       {
         q: 'What are on-site surveys?',
@@ -573,42 +457,50 @@ export const services: Service[] = [
       'Google Ads landing pages',
       'on-site surveys',
     ],
-    related: ['google-ads', 'custom-web-design', 'full-website-packages'],
+    related: ['google-ads', 'custom-web-design', 'monthly-seo-content'],
     updated: '2026-09-23',
   },
   {
     slug: 'google-ads',
-    name: 'Google Ads Management',
-    eyebrow: 'Paid Search',
-    title: 'Google Ads Management & PPC',
-    description: 'Google Search, Shopping and Performance Max campaigns with accurate conversion tracking and matched landing pages, managed from Hollywood, FL.',
-    summary: 'Search, Shopping and Performance Max campaigns built on accurate tracking and matched landing pages.',
+    name: 'Google & Meta Ads Management',
+    eyebrow: 'Paid Ads',
+    title: 'Google & Meta Ads Management',
+    description: 'Google Search, Shopping and Performance Max plus Meta ads on Facebook and Instagram, built on accurate tracking. White-label management for agencies.',
+    summary: 'Google and Meta campaigns built on accurate conversion tracking and matched landing pages, with a white-label option for agencies.',
     intro: [
-      'We set up and manage Google Ads for local businesses, professional services firms and e-commerce brands. That means Search campaigns for high-intent queries, Shopping and Performance Max campaigns fed by Google Merchant Center, and remarketing to people who visited but did not act.',
-      'We also build websites, so the pieces that usually fall between an ad agency and a web developer stay with one person. That means conversion tracking, landing pages that match the ad, and product feeds that pass Merchant Center review.',
+      'We set up and manage paid ads on Google and Meta for local businesses, professional services firms and e-commerce brands. On Meta that means Facebook and Instagram campaigns run from Meta Ads Manager. On Google it means Search, Shopping and Performance Max campaigns, plus remarketing.',
+      'We also build websites, so conversion tracking, landing pages and product feeds stay with one person. Those are the pieces that usually fall between an ad agency and a web developer. Other agencies can hire us to run Google and Meta ads for their clients under the agency’s brand.',
     ],
     sections: [
       {
         heading: 'What’s included',
         body: [
-          'Management covers the account, the tracking and the pages the ads send people to.',
+          'Management covers the ad accounts, the tracking and the pages the ads send people to.',
         ],
         bullets: [
-          'Account audit: structure, wasted spend in the search terms report, tracking accuracy and policy issues',
-          'Conversion tracking: calls, forms, bookings and purchases measured in Google Ads and Google Analytics 4, with offline conversions where your CRM allows',
-          'Campaign structure: Search campaigns organized by service and intent, with negative keyword lists and location targeting that matches where you actually work',
+          'Account audit: structure, wasted spend, tracking accuracy and policy issues in Google Ads and Meta Ads Manager',
+          'Conversion tracking for calls, forms, bookings and purchases, with offline conversions where your CRM allows',
+          'Google Search campaigns organized by service and intent, with negative keyword lists and location targeting that matches where you actually work',
           'Google Merchant Center and Shopping: feed setup and fixes, disapproval troubleshooting, and Shopping or Performance Max campaigns',
-          'Ad copy and assets: headlines, descriptions, sitelinks, call assets and images',
+          'Meta campaigns on Facebook and Instagram, with audiences and locations set to the customers you want',
+          'Ad copy and assets: headlines, sitelinks and call assets on Google; ad text paired with your images or video on Meta',
           'Landing pages matched to each campaign',
-          'Ongoing management: bid strategy, budget pacing, search term review and testing',
+          'Ongoing management: bids, budget pacing, search term review and ad testing',
           'Monthly reporting in plain language',
+        ],
+      },
+      {
+        heading: 'Conversion tracking on both platforms',
+        body: [
+          'On Google, we set up Google Ads conversion tracking and Google Analytics 4, then check that both count the same calls, forms and purchases.',
+          'On Meta, we install the Meta Pixel in the browser and the Conversions API on the server. The server events still reach Meta when a browser blocks the pixel. Events sent both ways are deduplicated so each conversion counts once.',
         ],
       },
       {
         heading: 'How we manage campaigns',
         body: [
-          'Management starts with tracking. If conversions are not measured accurately, automated bidding optimizes for the wrong thing, so we verify tracking before increasing budget. From there, regular work includes reviewing search terms, adding negatives, adjusting bids and budgets, and pausing what is not working.',
-          'We prefer simple, well-structured accounts. A few campaigns with enough data tend to perform more predictably than many small ones competing for the same budget.',
+          'Management starts with tracking. Google and Meta both bid automatically toward whatever counts as a conversion. If that count is wrong, the budget goes to the wrong people, so we verify tracking before increasing spend.',
+          'From there, regular work includes reviewing search terms, adding negatives, adjusting bids and budgets, testing new ads and pausing what is not working. We prefer simple accounts. A few campaigns with enough data tend to perform more predictably than many small ones competing for the same budget.',
         ],
       },
       {
@@ -624,55 +516,76 @@ export const services: Service[] = [
         ],
       },
       {
+        heading: 'White-label ads management for agencies',
+        body: [
+          'Some agencies sell paid ads to their clients but do not run campaigns in house. We manage those Google and Meta accounts under your agency’s brand.',
+          'Your agency keeps the client relationship. Reports come to your agency, ready to pass on under your own name, and questions from the client come through you.',
+        ],
+        bullets: [
+          'Campaign setup and ongoing management in Google Ads and Meta Ads Manager',
+          'Conversion tracking with Google Ads, GA4, the Meta Pixel and the Conversions API',
+          'Monthly reporting delivered to your agency',
+        ],
+      },
+      {
         heading: 'How we measure results',
         body: [
-          'Reports focus on cost per lead or cost per acquisition, conversion value and return on ad spend for e-commerce, and, where you can share it, how many leads became customers. Clicks and impressions are included for context, but they are not the goal.',
+          'Reports focus on cost per lead or cost per acquisition, conversion value and return on ad spend for e-commerce, and, where you can share it, how many leads became customers. Google and Meta results sit side by side in the same report. Clicks and impressions are included for context, but they are not the goal.',
         ],
       },
       {
         heading: 'Who it’s for',
         body: [
-          'Businesses ready to pay for qualified traffic and able to handle the leads it brings. If the website or tracking is not ready, we will recommend fixing that first so ad spend is not wasted.',
+          'Businesses ready to pay for qualified traffic and able to handle the leads it brings. If the website or tracking is not ready, we will recommend fixing that first so ad spend is not wasted. The white-label option is for agencies that want Google and Meta ads handled without hiring for it.',
         ],
       },
     ],
-    deliverables: ['Tracking & attribution', 'Campaign & keyword structure', 'Merchant Center feed & assets', 'Management & monthly reports'],
+    deliverables: ['Google Ads, GA4, Meta Pixel & Conversions API tracking', 'Google Search, Shopping & Performance Max', 'Facebook & Instagram campaigns', 'White-label option for agencies', 'Management & monthly reports'],
     faqs: [
       {
-        q: 'How much should I spend on Google Ads?',
-        a: 'It depends on how competitive your keywords are, what a customer is worth to you and how large an area you serve. We use Google Keyword Planner cost estimates and your average customer value to recommend a starting budget large enough to produce useful data. Ad spend is paid directly to Google, separately from management fees.',
+        q: 'How much should I spend on Google or Meta ads?',
+        a: 'It depends on how competitive your market is, what a customer is worth to you and how large an area you serve. For Google we start from Keyword Planner cost estimates and your average customer value. Ad spend is paid directly to Google or Meta, separately from management fees.',
       },
       {
-        q: 'How long does it take for Google Ads to work?',
-        a: 'Ads can produce clicks and leads within days of launch. Campaigns usually need several weeks of conversion data before automated bidding settles, so the first month or two involves more adjustment than later months.',
+        q: 'How long does it take for paid ads to work?',
+        a: 'Ads can produce clicks and leads within days of launch. Automated bidding on both Google and Meta needs several weeks of conversion data to settle, so the first month or two involves more adjustment than later months.',
       },
       {
         q: 'Do you set up conversion tracking?',
-        a: 'Yes, and we do it before scaling spend. We track calls, form submissions, bookings and purchases in Google Ads and Google Analytics 4, and import offline conversions from your CRM where possible so bidding optimizes for real customers.',
+        a: 'Yes, and we do it before scaling spend. On Google we use Google Ads conversion tracking and Google Analytics 4. On Meta we use the Meta Pixel together with the Conversions API. Where your CRM allows, we also import offline conversions so bidding optimizes for real customers.',
       },
       {
         q: 'Can you fix Google Merchant Center disapprovals?',
         a: 'Yes. Common causes include mismatched prices, missing shipping or return policy details, missing product identifiers, and landing pages that do not match the feed. We find the cause in Merchant Center diagnostics, correct the feed or the site, and request a review.',
       },
       {
-        q: 'Who owns the Google Ads account?',
-        a: 'You do. Campaigns run in an account owned by your business with us added as a manager, so your data and history stay with you if you ever change providers.',
+        q: 'Who owns the ad accounts?',
+        a: 'You do. Campaigns run in Google Ads and Meta ad accounts owned by your business, with us given manager access. Your data and history stay with you if you ever change providers.',
       },
       {
-        q: 'Do you manage other ad platforms?',
-        a: 'Ad management here means Google Ads: Search, Shopping, Performance Max and remarketing. Staying on one platform leaves time to get the tracking, feeds and landing pages right.',
+        q: 'Which ad platforms do you manage?',
+        a: 'Google and Meta. On Google that means Search, Shopping, Performance Max and remarketing. On Meta it means Facebook and Instagram campaigns.',
+      },
+      {
+        q: 'Do you offer white-label Google and Meta ads management for agencies?',
+        a: 'Yes. We run the campaigns under your agency’s brand and deliver reports to your agency. Your agency keeps the client relationship.',
       },
     ],
-    serviceType: 'Pay-per-click advertising management',
+    serviceType: 'Paid search and paid social advertising management',
     keywords: [
       'Google Ads management',
+      'Meta ads management',
+      'Facebook ads management',
+      'Instagram ads',
       'PPC agency South Florida',
-      'Google Ads for local business',
       'Google Shopping management',
       'Google Merchant Center help',
       'Performance Max',
+      'Meta Conversions API',
+      'white-label PPC for agencies',
+      'white-label Meta ads',
     ],
-    related: ['landing-page-cro', 'monthly-seo-content'],
+    related: ['landing-page-cro', 'monthly-seo-content', 'custom-web-design'],
     updated: '2026-09-23',
   },
 ]
@@ -684,6 +597,7 @@ export const retiredServiceRedirects: Record<string, string> = {
   '/services/micro-influencer-marketing': '/services/google-ads',
   '/services/email-marketing': '/services/monthly-seo-content',
   '/services/meta-ads': '/services/google-ads',
+  '/services/full-website-packages': '/services/custom-web-design',
 }
 
 export const getService = (slug: string) => services.find((s) => s.slug === slug)
