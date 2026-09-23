@@ -8,6 +8,26 @@ This plan is ordered by leverage. Phases 1 and 2 are what get us into the answer
 
 ---
 
+
+## Implementation status (2026-09-23)
+
+**Done in code (branch `claude/ez-web-search-visibility-w4ggtd`)**
+- Canonical NAP taken from the live Google Business Profile: EZ Web Development LLC, 1909 Tyler Street Suite 308, Hollywood, FL 33020, (561) 692-6868. Single source: `ezweb/src/business.ts`.
+- Every route is prerendered to static HTML with title, canonical, OG and JSON-LD in `<head>` (`npm run build`, verified by `npm run check:seo`).
+- One `@graph` entity: ProfessionalService/LocalBusiness `#organization`, Person `#founder`, WebSite `#website`. Service, FAQPage, BreadcrumbList, BlogPosting with Person author on the relevant pages.
+- Six services with long-form copy and FAQs; five retired service URLs 301 to the nearest match.
+- Location pages for Hollywood, Fort Lauderdale and Miami.
+- About page with founder, Florida document number and a neutral "not to be confused with" note. New entity post at `/blog/ez-web-development-llc-hollywood-fl`.
+- Static `robots.txt` allowing AI crawlers, `sitemap.xml`, `feed.xml`, `llms.txt`, real 404, favicon, logo and OG image.
+- Netlify config: flat `.html` output so `/about` is served without a redirect, `/path/` 301s to `/path`, www 301s to apex. Vercel and Cloudflare Pages configs also included.
+
+**Owner actions (see `docs/CITATION-KIT.md`, `docs/MEASUREMENT.md`, `docs/REVIEWS-AND-AUTHORITY.md`)**
+1. Deploy this branch on Netlify: base directory `ezweb`, no SPA fallback rule. Then submit `https://ezweb.dev/sitemap.xml` in Search Console and Bing Webmaster Tools.
+2. File a Sunbiz annual report or amendment to change the principal and mailing address from Plantation to the Hollywood address.
+3. Add hours to the Google Business Profile, then build the directory profiles in the citation kit. Append each live URL to `business.sameAs` and redeploy.
+4. Confirm the service FAQ statements about client ownership of accounts and fixed written quotes match how you work.
+5. Start the weekly AI-visibility log in `docs/MEASUREMENT.md`.
+
 ## 0. Diagnosis (what the repo actually does today)
 
 | # | Finding | Where | Why it matters |
