@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && npm run build:client && npm run build:ssr && npm run prerender && npm run sitemap && npm run check:seo",
+    "build": "tsc -b && npm run build:client && npm run build:ssr && npm run prerender && npm run sitemap && npm run check:seo && npm run audit:copy -- --strict",
     "build:client": "vite build",
     "build:ssr": "vite build --ssr src/entry-server.tsx",
     "prerender": "node scripts/prerender.mjs",
