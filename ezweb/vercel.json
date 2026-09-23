@@ -1,0 +1,87 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ezweb.dev"
+        }
+      ],
+      "destination": "https://ezweb.dev/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/backlinks",
+      "destination": "/services/monthly-seo-content",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/branding",
+      "destination": "/services/custom-web-design",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/micro-influencer-marketing",
+      "destination": "/services/google-ads",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/email-marketing",
+      "destination": "/services/monthly-seo-content",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/meta-ads",
+      "destination": "/services/google-ads",
+      "statusCode": 301
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
+      "source": "/feed.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/rss+xml; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "source": "/llms.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
+    }
+  ]
+}

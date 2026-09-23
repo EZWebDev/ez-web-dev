@@ -11,6 +11,8 @@ export const SITE_UPDATED = '2026-09-23'
 export const business = {
   /** Legal name as registered with the Florida Division of Corporations (L22000242599). */
   legalName: 'EZ Web Development LLC',
+  /** Florida Division of Corporations document number (public record on sunbiz.org). */
+  floridaDocumentNumber: 'L22000242599',
   /** Name used in every schema entity and citation. Must match Google Business Profile exactly. */
   name: 'EZ Web Development LLC',
   /** Short wordmark used in the header logo only. */

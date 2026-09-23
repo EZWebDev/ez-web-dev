@@ -1,0 +1,21 @@
+# Netlify / Cloudflare Pages redirects. Keep in sync with retiredServiceRedirects in src/services.tsx
+# (npm run check:seo fails the build if an entry is missing).
+#
+# Unknown paths: both hosts serve /404.html with HTTP 404 automatically. There is intentionally
+# NO SPA catch-all (/* /index.html 200); every real route is prerendered to its own file.
+
+# www -> apex (Netlify; Cloudflare Pages ignores domain-level lines, use a Bulk Redirect there)
+https://www.ezweb.dev/* https://ezweb.dev/:splat 301!
+http://www.ezweb.dev/* https://ezweb.dev/:splat 301!
+
+# Retired service URLs
+/services/backlinks /services/monthly-seo-content 301
+/services/backlinks/ /services/monthly-seo-content 301
+/services/branding /services/custom-web-design 301
+/services/branding/ /services/custom-web-design 301
+/services/micro-influencer-marketing /services/google-ads 301
+/services/micro-influencer-marketing/ /services/google-ads 301
+/services/email-marketing /services/monthly-seo-content 301
+/services/email-marketing/ /services/monthly-seo-content 301
+/services/meta-ads /services/google-ads 301
+/services/meta-ads/ /services/google-ads 301

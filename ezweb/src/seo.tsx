@@ -1,100 +1,86 @@
-import { useEffect } from 'react'
+/**
+ * Head management that works both at build time (SSR prerender) and in the browser.
+ *
+ * - During SSR, <HeadProvider store={...}> collects the tags produced by <Seo/> and
+ *   useGlobalSchemas(); entry-server.tsx serializes them into the static <head>.
+ * - In the browser, the same tag list is applied to document.head. Every managed tag
+ *   carries a stable id (e.g. "seo:canonical"), so the tags already present in the
+ *   prerendered HTML are reused on hydration instead of duplicated.
+ *
+ * The tag builders themselves live in ./head.ts.
+ */
+import { createContext, useContext, useEffect, type ReactNode } from 'react'
+import { useLocation } from 'react-router-dom'
+import { buildGlobalTags, buildPageTags, PAGE_TAG_IDS, type HeadStore, type HeadTag, type SeoProps } from './head'
 
-const getBaseUrl = () => (import.meta as any).env?.VITE_SITE_URL || window.location.origin
+export type { SeoProps } from './head'
 
-const setTag = (tagName: string, attrs: Record<string, string>, id: string) => {
-  let el = document.head.querySelector(`#${CSS.escape(id)}`) as HTMLElement | null
-  if (!el) {
-    el = document.createElement(tagName)
-    el.id = id
+const HeadContext = createContext<HeadStore | null>(null)
+
+export function HeadProvider({ store, children }: { store: HeadStore; children: ReactNode }) {
+  return <HeadContext.Provider value={store}>{children}</HeadContext.Provider>
+}
+
+// ---------------------------------------------------------------------------
+// DOM application (browser)
+// ---------------------------------------------------------------------------
+
+const applyTag = (t: HeadTag) => {
+  if (t.tag === 'title') {
+    document.title = t.text ?? ''
+    return
+  }
+  let el = document.getElementById(t.id)
+  if (!el || el.tagName.toLowerCase() !== t.tag) {
+    el?.remove()
+    el = document.createElement(t.tag)
+    el.id = t.id
     document.head.appendChild(el)
   }
-  for (const [k, v] of Object.entries(attrs)) {
-    el.setAttribute(k, v)
+  for (const [k, v] of Object.entries(t.attrs)) {
+    if (el.getAttribute(k) !== v) el.setAttribute(k, v)
   }
+  if (t.tag === 'script' && el.textContent !== (t.text ?? '')) el.textContent = t.text ?? ''
 }
 
-const removeTag = (id: string) => {
-  const el = document.getElementById(id)
-  if (el) el.remove()
-}
+const removeTag = (id: string) => document.getElementById(id)?.remove()
 
-export type SeoProps = {
-  title: string
-  description?: string
-  path?: string
-  image?: string
-  robots?: string
-  jsonLd?: object | object[]
-}
-
+/** Emits the site-wide JSON-LD @graph. Call once, from the layout. */
+// eslint-disable-next-line react-refresh/only-export-components -- public API kept in this module
 export function useGlobalSchemas() {
+  const store = useContext(HeadContext)
+  if (store && typeof document === 'undefined') store.global = buildGlobalTags()
+
   useEffect(() => {
-    const baseUrl = getBaseUrl()
-    const org = {
-      '@context': 'https://schema.org',
-      '@type': 'Organization',
-      name: 'EZ Web Development LLC',
-      url: baseUrl,
-      sameAs: [
-      ],
-    }
-    const website = {
-      '@context': 'https://schema.org',
-      '@type': 'WebSite',
-      name: 'EZ Web',
-      url: baseUrl,
-    }
-    const id = 'seo:ld:global'
-    setTag('script', { type: 'application/ld+json' }, id)
-    const el = document.getElementById(id) as HTMLScriptElement
-    el.text = JSON.stringify([org, website])
-    return () => removeTag(id)
+    buildGlobalTags().forEach(applyTag)
   }, [])
 }
 
-export default function Seo({ title, description, path = '', image, robots = 'index,follow', jsonLd }: SeoProps) {
+export default function Seo(rawProps: SeoProps) {
+  const { pathname } = useLocation()
+  // Without an explicit path, fall back to the router location (never window.location).
+  const props = { ...rawProps, path: rawProps.path || pathname }
+  const store = useContext(HeadContext)
+  if (store && typeof document === 'undefined') store.page = buildPageTags(props)
+
+  const { title, description, path, image, robots, jsonLd, type, publishedTime, modifiedTime } = props
+  const jsonLdKey = jsonLd ? JSON.stringify(jsonLd) : ''
   useEffect(() => {
-    const baseUrl = getBaseUrl()
-    const url = new URL(path || window.location.pathname, baseUrl).toString()
-    document.title = title
-
-    // Meta description
-    if (description) setTag('meta', { name: 'description', content: description }, 'seo:description')
-
-    // Canonical
-    setTag('link', { rel: 'canonical', href: url }, 'seo:canonical')
-
-    // Robots
-    setTag('meta', { name: 'robots', content: robots }, 'seo:robots')
-
-    // OpenGraph
-    setTag('meta', { property: 'og:title', content: title }, 'seo:og:title')
-    if (description) setTag('meta', { property: 'og:description', content: description }, 'seo:og:description')
-    setTag('meta', { property: 'og:url', content: url }, 'seo:og:url')
-    setTag('meta', { property: 'og:type', content: 'website' }, 'seo:og:type')
-    if (image) setTag('meta', { property: 'og:image', content: image }, 'seo:og:image')
-
-    // Twitter
-    setTag('meta', { name: 'twitter:card', content: 'summary_large_image' }, 'seo:tw:card')
-    setTag('meta', { name: 'twitter:title', content: title }, 'seo:tw:title')
-    if (description) setTag('meta', { name: 'twitter:description', content: description }, 'seo:tw:description')
-    if (image) setTag('meta', { name: 'twitter:image', content: image }, 'seo:tw:image')
-
-    // JSON-LD
-    const id = 'seo:ld:page'
-    if (jsonLd) {
-      setTag('script', { type: 'application/ld+json' }, id)
-      const el = document.getElementById(id) as HTMLScriptElement
-      el.text = JSON.stringify(Array.isArray(jsonLd) ? jsonLd : [jsonLd])
-    } else {
-      removeTag(id)
-    }
-
-    return () => {
-      // leave canonical and others to be overwritten by next route
-    }
-  }, [title, description, path, image, robots, JSON.stringify(jsonLd)])
+    const tags = buildPageTags({
+      title,
+      description,
+      path,
+      image,
+      robots,
+      jsonLd: jsonLdKey ? (JSON.parse(jsonLdKey) as object | object[]) : undefined,
+      type,
+      publishedTime,
+      modifiedTime,
+    })
+    const keep = new Set(tags.map((t) => t.id))
+    PAGE_TAG_IDS.filter((id) => !keep.has(id)).forEach(removeTag)
+    tags.forEach(applyTag)
+  }, [title, description, path, image, robots, jsonLdKey, type, publishedTime, modifiedTime])
 
   return null
 }
