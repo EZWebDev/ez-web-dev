@@ -45,8 +45,9 @@ export default function ServicesHub() {
         <Breadcrumbs items={crumbs} />
         <h1 className="display text-gradient">Services</h1>
         <p className="subhead">
-          {business.name} designs, builds and grows websites for small businesses, professional services firms and
-          e-commerce brands. Every engagement is run by founder {business.founder.name}.
+          Websites, and the work that brings them customers: SEO, AI search visibility, conversion fixes and Google Ads.{' '}
+          {business.name} works with small businesses, professional services firms and e-commerce brands, and founder{' '}
+          {business.founder.name} runs every project.
         </p>
         <div className="cards">
           {services.map((s) => (

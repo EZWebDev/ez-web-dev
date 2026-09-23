@@ -11,6 +11,7 @@
     "prerender": "node scripts/prerender.mjs",
     "sitemap": "node scripts/generate-sitemap.mjs",
     "check:seo": "node scripts/check-seo.mjs",
+    "audit:copy": "node scripts/audit-copy.mjs",
     "icons": "node scripts/generate-icons.mjs",
     "lint": "eslint .",
     "preview": "vite preview"

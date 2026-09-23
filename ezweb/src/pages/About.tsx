@@ -112,14 +112,14 @@ export default function About() {
             <section className="callout prose" aria-labelledby="where-title">
               <h2 id="where-title">Where we work</h2>
               <p>
-                Our studio is in {business.primaryCity}, between Fort Lauderdale and Miami. We work with businesses in{' '}
+                The studio is in downtown {business.primaryCity}. Clients in{' '}
                 {locations.map((l, i) => (
                   <span key={l.slug}>
                     {i > 0 && ', '}
                     <Link to={`/locations/${l.slug}`}>{l.name}</Link>
                   </span>
                 ))}{' '}
-                and across {business.metro}, and remotely with clients nationwide.
+                and elsewhere in {business.metro} can meet in person. Clients in other states work with us remotely.
               </p>
             </section>
 

@@ -1,0 +1,111 @@
+COPY AUDIT  2026-09-23
+======================================================================================================================
+page                                           words  banned  dash/1k  long  openers  we%  triads  3x3 contr  dups  score
+----------------------------------------------------------------------------------------------------------------------
+/404                                              62       0      0.0     0        0    0       0    0     0     0      0
+/about                                           408       0      0.0     0        0   11       6    0     0     0      0
+/blog                                            345       0      0.0     0        0    0       4    0     0     0      0
+/blog/above-the-fold-cro-patterns                465       0      0.0     0        0    0       7    0     0     0      0
+/blog/are-boutique-agencies-dying                401       0      0.0     0        0    4       4    0     0     0      0
+/blog/entity-first-seo-ai-answers               1778       0      0.0     0        0    0      26    2     0     0      2
+/blog/ez-web-development-llc-hollywood-fl        529       0      0.0     0        2    6       9    0     0     0      2
+/blog/first-website-mistakes                     500       0      0.0     0        0    4       7    0     0     0      0
+/blog/google-ads-local-trades-roas-pattern       496       0      0.0     0        0    0       7    1     0     0      1
+/blog/local-service-seo-framework                814       0      0.0     0        0    2      16    0     0     0      0
+/blog/shopify-performance-budget                 443       0      0.0     0        0    4       6    0     0     0      0
+/blog/which-website-platform-2025                862       0      0.0     0        0    2      18    0     0     0      0
+/contact                                          94       0      0.0     0        0    0       1    0     0     0      0
+/                                                614       0      0.0     0        0   12      10    0     0     0      0
+/locations/fort-lauderdale                       811       0      0.0     0        0    5       9    0     0     0      0
+/locations/hollywood-fl                          753       0      0.0     0        0    0      12    2     0     0      2
+/locations/miami                                 766       0      0.0     0        0   10      11    0     0     0      0
+/services                                        178       0      0.0     0        0    0       5    0     0     0      0
+/services/ai-search-ranking                     1129       0      0.0     0        0   11      15    1     0     0      1
+/services/custom-web-design                     1066       0      0.0     0        0    9      16    1     0     0      1
+/services/full-website-packages                  999       0      0.0     0        0    6      20    0     0     0      0
+/services/google-ads                             863       0      0.0     0        1   13      15    2     0     0      3
+/services/landing-page-cro                       938       0      0.0     0        0    6       7    0     0     0      0
+/services/monthly-seo-content                    957       0      0.0     0        0    6      13    2     0     0      2
+(site chrome)                                     96       0      0.0     0        0    0       0    0     0     0      0
+----------------------------------------------------------------------------------------------------------------------
+Columns: banned = banned-phrase hits; dash/1k = em dashes + spaced en/hyphen dashes per 1,000 words;
+long = sentences > 35 words; openers = over-used openers + runs of 3 identical openers; we% = share of
+sentences starting with We/Our; triads = sentences with an exactly-three-item list; 3x3 = consecutive triad sentences;
+contr = "not X but Y"-style contrasts; dups = sentences also found on another page.
+
+DETAILS
+======================================================================================================================
+/about
+  watch:  solution(s) x1
+/blog/above-the-fold-cro-patterns
+  watch:  genuinely / truly / really x1
+/blog/are-boutique-agencies-dying
+  watch:  the right fit / better fit x1
+/blog/entity-first-seo-ai-answers
+  watch:  genuinely / truly / really x1
+  triad pair: text on your site, usually in the footer and on the contact page  /  only on an image, a map embed or schema markup
+  triad pair: by AI search tools, read the raw HTML and do not run scripts  /  If your text, headings and schema only appear after
+/blog/ez-web-development-llc-hollywood-fl
+  watch:  solution(s) x1
+  opener: "ez" starts 6 of 36 sentences
+  opener run: ez: "EZ Web LLC (ezweb.work) of High Ridge, Missouri…"
+/blog/google-ads-local-trades-roas-pattern
+  watch:  actually x1
+  triad pair: searches from job seekers, do-it-yourselfers and people looking for suppliers  /  counts as a conversion, so if spam calls and wrong-number forms count
+/blog/local-service-seo-framework
+  watch:  simply / just (softener) x1
+/blog/which-website-platform-2025
+  watch:  the right fit / better fit x1
+/locations/fort-lauderdale
+  watch:  actually x1, simply / just (softener) x1
+/locations/hollywood-fl
+  triad pair: needs fast mobile pages, current hours and menus, and booking links that work  /  A law, accounting or medical office needs clear
+  triad pair: the correct primary category, accurate hours and real photos  /  Keep your name, address and phone identical everywhere
+/services/ai-search-ranking
+  triad pair: answer engines to find, understand and cite  /  like Google AI Mode, ChatGPT and Perplexity can describe the
+/services/custom-web-design
+  watch:  the right fit / better fit x1
+  triad pair: page copy, photos and logos  /  access to your domain, hosting and any existing Google accounts
+/services/google-ads
+  watch:  actually x1
+  opener: "we" starts 6 of 48 sentences
+  triad pair: Ads for local businesses, professional services firms and e-commerce brands  /  campaigns for high-intent queries, Shopping and Performance Max campaigns fed
+  triad pair: causes include mismatched prices, missing shipping or return policy details  /  in Merchant Center diagnostics, correct the feed or the site
+/services/monthly-seo-content
+  triad pair: monthly report shows impressions, clicks and average position from Google  /  Google Business Profile calls, direction requests and website clicks
+  triad pair: from Google AI Mode, ChatGPT and Perplexity  /  with consistent business information, so the work overlaps and the two are often
+
+DUPLICATE SENTENCES ACROSS PAGES (>= 8 words, excluding allowed entity/boilerplate lines)
+======================================================================================================================
+  none
+
+NEAR-DUPLICATE PARAGRAPHS ACROSS PAGES (4-gram Jaccard >= 0.5)
+======================================================================================================================
+  none
+
+NEAR-DUPLICATE SENTENCES ACROSS PAGES (3-gram Jaccard >= 0.3: same template, words swapped)
+======================================================================================================================
+  0.39  /  <->  /locations/hollywood-fl
+      A: Our studio is at 1909 Tyler Street Suite 308, Hollywood, FL 33020.
+      B: EZ Web Development LLC is at 1909 Tyler Street Suite 308, Hollywood, FL 33020, in downtown Hollywood.
+  0.33  /  <->  /locations/hollywood-fl
+      A: Based at 1909 Tyler Street Suite 308, Hollywood, FL 33020, between Fort Lauderdale and Miami.
+      B: EZ Web Development LLC is at 1909 Tyler Street Suite 308, Hollywood, FL 33020, in downtown Hollywood.
+
+KEY TAKEAWAYS
+======================================================================================================================
+  "Key takeaways" heading on 4 of 9 posts (ok: not on every post)
+
+SUMMARY
+======================================================================================================================
+  pages audited ............ 25 (16,367 words)
+  banned phrases ........... 0
+  dash rate (site) ......... 0.00 per 1,000 words (worst page: /404 0.00)
+  sentences > 35 words ..... 0
+  opener repetition flags .. 3
+  triad sentences .......... 244 (11 consecutive pairs)
+  contrast constructions ... 0
+  duplicate sentences ...... 0
+  near-duplicate paragraphs  0
+  near-duplicate sentences . 2
+  TOTAL SCORE .............. 16  (lower is better; banned x3, contrasts x3, long, dash rate, 3x3 triads, openers, dups/2, near-dup paragraphs x2, near-dup sentences)

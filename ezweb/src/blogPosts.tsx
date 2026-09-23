@@ -26,7 +26,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['EZ Web Development LLC', 'EZ Web Development Hollywood FL', 'ezweb.dev', 'Ezra Pinsky', 'web development Hollywood Florida'],
     content: (
       <div className="prose">
-        <p>EZ Web Development LLC is a web development and SEO studio in Hollywood, Florida, founded in 2022 by Ezra Pinsky. The company designs and builds websites and web applications, runs monthly SEO and AI search visibility programs, improves landing-page conversion, and manages Google Ads for small businesses, professional services firms, e-commerce brands, and nonprofits and educators. This page sets out the basic facts about the company in one place.</p>
+        <p>EZ Web Development LLC is a web development and SEO studio in Hollywood, Florida, founded in 2022 by Ezra Pinsky. The company designs and builds websites and web applications, runs monthly SEO and AI search visibility programs, improves landing-page conversion, and manages Google Ads. This page sets out the basic facts about the company in one place.</p>
         <h2>Company facts</h2>
         <ul>
           <li><strong>Legal name:</strong> EZ Web Development LLC</li>
@@ -53,7 +53,7 @@ export const blogPosts: BlogPost[] = [
         <h2>Who the company works with</h2>
         <p>Clients include small businesses, professional services firms, e-commerce brands, and nonprofits and educators. Projects range from a single landing page or a technical SEO fix to full website builds, custom web applications and ongoing monthly SEO or advertising programs.</p>
         <h2>How the studio works</h2>
-        <p>EZ Web Development LLC is founder-led. Clients work directly with Ezra Pinsky from the first call through launch and ongoing support, and each project’s scope is agreed in writing before work begins.</p>
+        <p>The company is founder-led. Clients work directly with Ezra Pinsky from the first call through launch and ongoing support, and each project’s scope is agreed in writing before work begins.</p>
         <h2>Service area</h2>
         <p>EZ Web Development LLC serves businesses in Hollywood, Fort Lauderdale and Miami, and across Broward County and Miami-Dade County in South Florida. Local clients can meet in person. The company also works remotely with clients throughout the United States.</p>
         <h2>How to get in touch</h2>
@@ -79,7 +79,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['website platform comparison', 'Wix vs Squarespace', 'Webflow vs WordPress', 'Shopify vs custom website', 'best website platform 2026', 'best website builder for small business'],
     content: (
       <div className="prose">
-        <p>Choosing a website platform is less about feature lists than about three questions: how fast you need to launch, how much the site needs to grow, and what it will cost to run over the next few years. Pick well and the platform disappears into the background. Pick badly and you pay for it twice, once to build and again to migrate.</p>
+        <p>Every platform in this guide can publish a good-looking site. What separates them is how fast you can launch, how far the site can grow, and what it costs to run over three years. Pick badly and you pay twice: once to build, and again to migrate.</p>
         <h2>Key takeaways</h2>
         <ul>
           <li>Simple brochure site on a small budget: Squarespace or Wix.</li>
@@ -90,7 +90,7 @@ export const blogPosts: BlogPost[] = [
           <li>Whatever you choose, check that it serves real HTML, passes Core Web Vitals and lets you control SEO basics.</li>
         </ul>
         <h2>What has changed since 2025</h2>
-        <p>Three things shift the decision this year. First, AI search tools such as Google AI Mode, ChatGPT and Perplexity now answer many questions that used to send people to websites, and several of the crawlers behind them read raw HTML without running JavaScript. A platform that delivers your content as plain HTML is easier for them to read and cite.</p>
+        <p>Three things shift the decision this year. First, AI search tools such as Google AI Mode, ChatGPT and Perplexity now answer many questions that used to send people to websites. Several of the crawlers behind them read raw HTML without running JavaScript. A platform that delivers your content as plain HTML is easier for them to read and cite.</p>
         <p>Second, Core Web Vitals now measure responsiveness with Interaction to Next Paint (INP), which replaced First Input Delay in 2024. Heavy scripts and stacked third-party apps hurt INP more than they hurt older metrics. Third, every hosted builder now ships AI writing and design helpers. They speed up a first draft, but they do not change which platform fits your business.</p>
         <h2>Squarespace</h2>
         <p><strong>Best for:</strong> solo founders, simple service businesses and portfolios.</p>
@@ -146,36 +146,33 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'first-website-mistakes',
-    title: 'Top 5 First‑Website Mistakes That Kill Results (and How to Fix Them)',
-    description: 'Avoid these common first‑website mistakes—platform choice, slow pages, weak SEO, no CRO, no analytics—and learn how to fix each fast.',
+    title: '5 First-Website Mistakes That Cost You Leads (and How to Fix Them)',
+    description: 'Five first-website mistakes: no clear offer, the wrong platform, slow pages, SEO left for later and no clear next step, with a fix for each.',
     date: '2025-01-12',
+    updated: '2026-09-23',
     tags: ['beginner', 'seo', 'cwv', 'cro'],
     keywords: ['website mistakes', 'first website tips', 'website SEO mistakes', 'CRO mistakes', 'how to build first website'],
     content: (
       <div className="prose">
-        <p>New site, no results? These are the problems we see most often, and the fastest ways to turn things around.</p>
-        <h2>1) Building Before Positioning</h2>
-        <p><strong>Symptom</strong>: Pretty site, unclear offer, low conversions.</p>
-        <p><strong>Fix</strong>: Define your ideal customer, the main problem you solve, your proof, and one primary call to action per page.</p>
-        <p><strong>EZ Web</strong>: Landing Page & CRO, Full Website Packages.</p>
-        <h2>2) Choosing the Wrong Platform</h2>
-        <p><strong>Symptom</strong>: Can’t edit easily, no integrations, SEO/CWV issues.</p>
-        <p><strong>Fix</strong>: Choose the platform that matches goals (see our platform guide).</p>
-        <p><strong>EZ Web</strong>: Platform audits, Custom Web Design, Full Website Packages.</p>
-        <h2>3) Slow Pages and Failing Core Web Vitals</h2>
-        <p><strong>Symptom</strong>: High bounce, low rankings.</p>
-        <p><strong>Fix</strong>: Image/CDN hygiene, ship less JS, preconnect/preload, compress fonts.</p>
-        <p><strong>EZ Web</strong>: Performance fixes, Core Web Vitals and Lighthouse audits.</p>
-        <h2>4) Treating SEO as a “Later” Project</h2>
-        <p><strong>Symptom</strong>: Thin pages, no internal linking, no schema.</p>
-        <p><strong>Fix</strong>: Topic clusters, service pages, location pages, FAQs, schema.</p>
-        <p><strong>EZ Web</strong>: Monthly SEO & Content, AI Search Visibility.</p>
-        <h2>5) No Conversion Path (or Too Many)</h2>
-        <p><strong>Symptom</strong>: Traffic but no pipeline.</p>
-        <p><strong>Fix</strong>: One clear CTA per page, limited form fields, social proof above fold.</p>
-        <p><strong>EZ Web</strong>: Landing Page & CRO, Google Ads landing pages.</p>
-        <h2>Bonus: Ignoring Analytics, Consent, and QA</h2>
-        <p>Set up Google Analytics 4 and Google Search Console, handle cookie consent, and run a QA checklist before launch. Then monitor and iterate.</p>
+        <p>A new site that brings in nothing usually has one of five problems, and none of them is the color scheme. For each one below: what it looks like from the outside, and what to do about it.</p>
+        <h2>1. Building before deciding what the site is for</h2>
+        <p><strong>What it looks like:</strong> a good-looking site with an offer nobody can summarize in a sentence, and few inquiries.</p>
+        <p><strong>The fix:</strong> before any design work, write down four things: who the site is for, the main problem you solve, your proof (reviews, credentials, past work) and the one action each page should lead to. If you cannot fill in those four lines, a designer cannot either.</p>
+        <h2>2. Choosing the wrong platform</h2>
+        <p><strong>What it looks like:</strong> you cannot edit a page without help, the tools you need will not connect, or basic SEO settings are locked.</p>
+        <p><strong>The fix:</strong> match the platform to the job. Shopify for selling products, WordPress for content you publish often, a hosted builder for a simple brochure site, and custom code for logged-in tools. Our <a href="/blog/which-website-platform-2025">platform guide</a> walks through the tradeoffs.</p>
+        <h2>3. Slow pages</h2>
+        <p><strong>What it looks like:</strong> visitors leave before the page finishes loading on a phone, and Search Console reports failing Core Web Vitals.</p>
+        <p><strong>The fix:</strong> resize and compress images, remove scripts you do not need, load fonts efficiently, and make sure the largest element on each page loads first. Run PageSpeed Insights on your main pages before and after each change.</p>
+        <h2>4. Leaving SEO for later</h2>
+        <p><strong>What it looks like:</strong> one page lists every service, pages do not link to each other, and there is no structured data.</p>
+        <p><strong>The fix:</strong> give each service its own page, add location pages only where you have local work to show, answer common questions in an FAQ, link related pages together and add schema markup. Building this in at launch is much easier than restructuring a live site.</p>
+        <h2>5. No clear next step, or too many</h2>
+        <p><strong>What it looks like:</strong> traffic arrives, but calls and form submissions do not.</p>
+        <p><strong>The fix:</strong> one primary call to action per page, a form that asks only for what you need, and reviews or credentials near the top, where visitors decide whether to trust you.</p>
+        <h2>Before launch: set up measurement</h2>
+        <p>Install Google Analytics 4 and verify Google Search Console before the site goes live. Add a cookie consent banner if your audience requires one, and test every form and phone link on a real phone. Without that data you cannot tell which of the five problems above you have.</p>
+        <p>If you want a second opinion on a new site, our <a href="/services/full-website-packages">full website packages</a> and <a href="/services/landing-page-cro">landing page and CRO</a> service cover each of these.</p>
       </div>
     ),
   },
@@ -189,12 +186,12 @@ export const blogPosts: BlogPost[] = [
     keywords: ['boutique agency', 'small agency vs big agency', 'hire boutique agency', 'benefits of boutique agency', 'founder-led agency'],
     content: (
       <div className="prose">
-        <p>“Big teams mean big outcomes” is a common assumption. In practice, layers of account management and hand-offs can slow work down and blur accountability. That does not make large agencies bad. It makes them the right fit for different problems.</p>
+        <p>Hiring a big agency feels safer because there are more people on the account. Each layer of account management also adds a hand-off, and hand-offs slow work down and make it harder to tell who is responsible when something slips. Large agencies are still the right call for some jobs, covered below.</p>
         <h2>What has changed</h2>
         <ul>
           <li>AI tools have cut the time needed for routine production work, so headcount matters less than judgment.</li>
           <li>Site speed, technical SEO and AI search visibility reward careful technical work more than volume.</li>
-          <li>Buyers increasingly want direct access to the person doing the work.</li>
+          <li>Clients can check more of the work themselves. PageSpeed Insights, Search Console and the Google Ads dashboard are free, so a thin month is hard to hide behind a report deck.</li>
         </ul>
         <h2>Where small studios have the edge</h2>
         <ul>
@@ -204,7 +201,7 @@ export const blogPosts: BlogPost[] = [
           <li><strong>Cost structure:</strong> you pay for the work rather than for layers of management and office overhead.</li>
         </ul>
         <h2>When a boutique isn’t the right fit</h2>
-        <p>Around-the-clock support, many simultaneous workstreams, heavy compliance requirements or enterprise-scale media buying usually call for a larger team. A good small studio will tell you that up front and help you find the right partner.</p>
+        <p>Around-the-clock support, many simultaneous workstreams, heavy compliance requirements or enterprise-scale media buying usually call for a larger team. A good small studio will tell you that up front and point you to someone who fits.</p>
         <h2>Questions to ask any agency</h2>
         <ul>
           <li>Who exactly will do the work on my account?</li>
@@ -213,9 +210,9 @@ export const blogPosts: BlogPost[] = [
           <li>What happens if the main person is unavailable?</li>
           <li>Can I see comparable work, or speak with a past client?</li>
         </ul>
-        <h2>A sensible working model</h2>
+        <h2>How a good engagement runs</h2>
         <p>Start with a short discovery phase, fix or build the foundation, measure what matters, then improve month by month. Each step should end with clear deliverables and agreed measures of success.</p>
-        <h2>What we bring</h2>
+        <h2>About us</h2>
         <p>EZ Web Development LLC is a founder-led studio in Hollywood, Florida. We offer <a href="/services/custom-web-design">custom web design and development</a>, <a href="/services/full-website-packages">full website packages</a>, <a href="/services/monthly-seo-content">monthly SEO and content</a>, <a href="/services/ai-search-ranking">AI search visibility</a>, <a href="/services/landing-page-cro">landing pages and CRO</a>, and <a href="/services/google-ads">Google Ads management</a>.</p>
       </div>
     ),
@@ -223,15 +220,15 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'entity-first-seo-ai-answers',
     title: 'Entity-First SEO: How to Get Cited in ChatGPT, AI Mode and Perplexity',
-    description: 'A practical guide to getting your business cited in AI answers: entity facts, NAP, schema @id graphs, sameAs, citations, crawlable HTML and llms.txt.',
+    description: 'How to get your business cited in AI answers: entity facts, NAP, schema @id graphs, sameAs, citations, crawlable HTML and llms.txt.',
     date: '2025-01-12',
     updated: '2026-09-23',
     tags: ['seo', 'ai', 'geo'],
     keywords: ['AI search SEO', 'entity SEO', 'generative engine optimization', 'get cited in ChatGPT', 'Google AI Mode optimization', 'Perplexity SEO', 'llms.txt', 'schema sameAs'],
     content: (
       <div className="prose">
-        <p>When someone asks Google AI Mode, ChatGPT or Perplexity “who’s a good web developer near me?” or “what is [company name]?”, the reply is a short paragraph that names a few businesses and links to the sources it relied on. Getting into that paragraph is less about keywords than about identity. The engine has to know your business exists, understand what it does and where, and find enough sources that agree before it will say so with confidence.</p>
-        <p>This guide explains how that works and gives a step-by-step checklist. It is the same process we use on our own site. There are no tricks here, and no one can guarantee a mention, but each step removes a common reason AI tools skip a business or describe it incorrectly.</p>
+        <p>Ask Google AI Mode, ChatGPT or Perplexity “who’s a good web developer near me?” or “what is [company name]?” and you get a short paragraph. It names a few businesses and links to the sources it relied on. Getting into that paragraph depends mostly on identity: the engine has to know your business exists, understand what it does and where, and find enough sources that agree before it will name you.</p>
+        <p>Below is how that works, then the nine steps we follow on our own site. None of them guarantees a mention. Each one removes a common reason AI tools skip a business or describe it wrong.</p>
         <h2>Key takeaways</h2>
         <ul>
           <li>AI answer engines retrieve web pages and cross-check facts. Consistency across sources matters more than content volume.</li>
@@ -258,7 +255,7 @@ export const blogPosts: BlogPost[] = [
         </ul>
         <p>The one-sentence description matters more than it looks. AI answers often describe a business in a single sentence, and a description that is stated plainly and repeated consistently is the one most likely to be picked up.</p>
         <h2>Step 2: Make your NAP consistent everywhere</h2>
-        <p>NAP stands for name, address and phone. Search for your business name and phone number, list every place they appear (directories, social profiles, old listings, review sites, and your own footer and contact page) and correct anything that does not match your canonical facts. Formatting differences such as “Ste” versus “Suite” matter less than real conflicts such as an old address or a former phone number, so fix the conflicts first.</p>
+        <p>NAP stands for name, address and phone. Search for your business name and phone number and list every place they appear: directories, social profiles, old listings, review sites, and your own footer and contact page. Correct anything that does not match your canonical facts. Formatting differences such as “Ste” versus “Suite” matter less than real conflicts such as an old address or a former phone number, so fix the conflicts first.</p>
         <p>Put the full NAP in visible text on your site, usually in the footer and on the contact page. Do not rely only on an image, a map embed or schema markup.</p>
         <h2>Step 3: Build a connected schema graph</h2>
         <p>Structured data, written as schema.org markup in JSON-LD, lets you state your facts in a machine-readable form. The biggest improvement over a basic setup is connecting the pieces with stable identifiers so every page describes the same business and person:</p>
@@ -333,14 +330,14 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'google-ads-local-trades-roas-pattern',
     title: 'Google Ads for Local Trades: A Structure That Filters Out Junk Leads',
-    description: 'A lead-quality approach to Google Ads for roofers, HVAC and plumbers: negative keywords, location settings, call handling and offline conversion tracking.',
+    description: 'Google Ads for roofers, HVAC and plumbers, set up for lead quality: negative keywords, location settings, call handling and offline conversions.',
     date: '2025-01-12',
     updated: '2026-09-23',
     tags: ['ppc', 'google-ads', 'local'],
     keywords: ['google ads for roofers', 'google ads for HVAC', 'google ads for plumbers', 'local trades ppc', 'best google ads strategy local services'],
     content: (
       <div className="prose">
-        <p>Google Ads for roofers, HVAC companies, plumbers and other local trades tend to waste money in the same ways: irrelevant searches, spam and sales calls, and clicks from outside the service area. The fix is to treat the account as a circuit, where every step from the search to the booked job filters out low-quality leads.</p>
+        <p>Google Ads for roofers, HVAC companies, plumbers and other local trades tend to waste money in the same ways: irrelevant searches, spam and sales calls, and clicks from outside the service area. The fix is to make every step, from the keyword to the booked job, screen out bad leads before they cost you money.</p>
         <h2>Key takeaways</h2>
         <ul>
           <li>Build negative keyword lists in three layers: global, industry and geography.</li>
@@ -372,14 +369,14 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'above-the-fold-cro-patterns',
     title: 'Above the Fold That Converts: 7 Layout Patterns for Landing Pages',
-    description: 'Seven practical above-the-fold layouts for service and product pages, and the copy blocks each needs, to improve conversion without a full redesign.',
+    description: 'Seven above-the-fold layouts for service and product pages, with the copy each one needs, to lift conversions without a full redesign.',
     date: '2025-01-12',
     updated: '2026-09-23',
     tags: ['cro', 'design'],
     keywords: ['landing page above the fold', 'cro patterns', 'increase conversion rate', 'hero section design'],
     content: (
       <div className="prose">
-        <p>Most page headers fail because they bury the basics. A visitor should be able to tell within a glance what you offer, who it is for, why they should trust you and what to do next. These seven patterns are practical ways to arrange that space, depending on the page and the audience.</p>
+        <p>Most page headers fail because they bury the basics. A visitor should be able to tell within a glance what you offer, who it is for, why they should trust you and what to do next. The seven layouts below arrange that space for different pages and audiences.</p>
         <h2>Why most headers fail</h2>
         <p>Common problems include vague headlines, rotating sliders that hide the main message, stock photos that say nothing, several competing buttons and proof that sits far down the page. Each one makes the visitor work harder to decide.</p>
         <h2>The seven patterns</h2>
@@ -394,7 +391,7 @@ export const blogPosts: BlogPost[] = [
         <h3>5. Proof first</h3>
         <p>For professional services, open with credentials, review scores or recognizable affiliations beside the headline, since trust is the main hurdle.</p>
         <h3>6. Two paths</h3>
-        <p>When two audiences arrive on the same page, such as homeowners and businesses, offer two clearly labeled buttons that lead to tailored pages.</p>
+        <p>When two audiences arrive on the same page, such as homeowners and businesses, offer two clearly labeled buttons that lead to separate pages.</p>
         <h3>7. Question first</h3>
         <p>Start with a simple question or a short quiz, such as the type of project or the size of the space, that routes visitors to the right offer and qualifies them at the same time.</p>
         <h2>Risk reversal and proof density</h2>
@@ -410,7 +407,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'shopify-performance-budget',
     title: 'Shopify Speed: A 9-Part Performance Budget for Core Web Vitals',
-    description: 'A practical nine-part performance budget that developers and marketers can share to keep a Shopify store fast and passing Core Web Vitals.',
+    description: 'Nine limits developers and marketers can share to keep a Shopify store fast and passing Core Web Vitals as apps and scripts get added.',
     date: '2025-01-12',
     updated: '2026-09-23',
     tags: ['shopify', 'performance', 'cwv'],
@@ -419,7 +416,13 @@ export const blogPosts: BlogPost[] = [
       <div className="prose">
         <p>A performance budget is a set of limits that stop a store from slowly getting heavier as apps, scripts and images are added. It gives developers and marketers a shared rule: if a change breaks the budget, something else has to go. These nine parts cover where Shopify stores usually slow down.</p>
         <h2>The targets</h2>
-        <p>Google’s “good” thresholds for Core Web Vitals are Largest Contentful Paint (LCP) at or under 2.5 seconds, Interaction to Next Paint (INP) at or under 200 milliseconds, and Cumulative Layout Shift (CLS) at or under 0.1, measured on real visits. Set budgets separately for the home page, collection pages, product pages and cart, because each template has different weight.</p>
+        <p>Google’s “good” thresholds for Core Web Vitals, measured on real visits:</p>
+        <ul>
+          <li>Largest Contentful Paint (LCP): 2.5 seconds or less</li>
+          <li>Interaction to Next Paint (INP): 200 milliseconds or less</li>
+          <li>Cumulative Layout Shift (CLS): 0.1 or less</li>
+        </ul>
+        <p>Set budgets separately for the home page, collection pages, product pages and cart, because each template has different weight.</p>
         <h2>1. Images</h2>
         <p>Serve responsive sizes with Shopify’s image filters and <code>srcset</code>, compress everything, and lazy-load images below the fold. Never lazy-load the main product or hero image.</p>
         <h2>2. The LCP element</h2>
@@ -445,14 +448,14 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'local-service-seo-framework',
     title: 'Local Service SEO: The “Service × City × Proof” Framework',
-    description: 'A framework for service and location pages that avoids thin content, plus a Google Business Profile checklist and a South Florida example.',
+    description: 'Service and location pages that avoid thin content, plus a Google Business Profile checklist and a South Florida example.',
     date: '2025-01-12',
     updated: '2026-09-23',
     tags: ['local-seo', 'content'],
     keywords: ['local service seo', 'service area pages', 'location pages seo', 'google business profile optimization', 'local seo South Florida'],
     content: (
       <div className="prose">
-        <p>Most location pages are thin: the same text with a different city name swapped in. Google tends to ignore them, and customers can tell. The “Service × City × Proof” framework turns them into pages that give both searchers and search engines a real reason to connect your business with a place.</p>
+        <p>Most location pages are thin: the same text with a different city name swapped in. Google tends to ignore them, and customers can tell. The “Service × City × Proof” framework replaces them with pages built on work you have done in each place, which is what searchers and Google both look for.</p>
         <h2>Key takeaways</h2>
         <ul>
           <li>Build service pages first. Add city pages only where you have real work, reviews or local detail to show.</li>
@@ -464,7 +467,7 @@ export const blogPosts: BlogPost[] = [
         <h2>Step 1: Choose target cities realistically</h2>
         <p>Weigh demand, distance and competition. Cities close to your office or where you already have customers are the realistic first targets. Distant, highly competitive cities can wait until the core pages perform. Group your targets into tiers and work through them one quarter at a time.</p>
         <h2>Step 2: Build the matrix</h2>
-        <p>List your services down one side and your target cities across the top. Each strong service gets its own page first. Then add a page for a service and city combination only when you can make it genuinely specific: local jobs, local reviews, area details, pricing factors or regulations that differ by place.</p>
+        <p>List your services down one side and your target cities across the top. Each strong service gets its own page first. Then add a page for a service and city combination only when you can make it specific: local jobs, local reviews, area details, pricing factors or regulations that differ by place.</p>
         <h2>Step 3: Add proof blocks</h2>
         <p>Proof is what separates a useful location page from a doorway page. Include photos of real local work, short project descriptions, reviews from customers in that area, licenses or permits where relevant, and FAQs specific to the service. Add <code>LocalBusiness</code> and <code>Service</code> schema that matches what the page says.</p>
         <h2>Step 4: Get your Google Business Profile right</h2>
@@ -483,7 +486,7 @@ export const blogPosts: BlogPost[] = [
         <p>Link each service page to the city pages that offer it and each city page back to its services. Use the same business name, address and phone everywhere, and make your schema reference the same business entity on every page.</p>
         <h2>A South Florida example</h2>
         <p>South Florida shows why the matrix needs judgment. Broward and Miami-Dade counties are packed with separate cities along I-95 and US-1, and customers search by city (Hollywood, Aventura), by neighborhood (Brickell, Las Olas) and by county. Because Google weighs distance, a business in Hollywood will naturally show up more in nearby Hallandale Beach, Dania Beach and Pembroke Pines than in Kendall or Boca Raton.</p>
-        <p>A Hollywood-based home service company might build strong pages for each service first, then location pages for the southern Broward cities where it has real jobs and reviews, and add Fort Lauderdale or Miami pages only as that work grows. In parts of Miami-Dade with many Spanish-speaking customers, a properly translated Spanish service page can matter more than yet another English city page. Seasonality also plays a role: winter brings seasonal residents and visitors, and hurricane season is a good reason to keep hours and service notices current on both the website and the Google Business Profile.</p>
+        <p>A Hollywood-based home service company might build strong pages for each service first. Next come location pages for the southern Broward cities where it has real jobs and reviews. Fort Lauderdale or Miami pages wait until there is work there to show. In parts of Miami-Dade with many Spanish-speaking customers, a properly translated Spanish service page can matter more than yet another English city page. Seasonality also plays a role: winter brings seasonal residents and visitors, and hurricane season is a good reason to keep hours and service notices current on both the website and the Google Business Profile.</p>
         <h2>Step 6: Refresh quarterly and track what matters</h2>
         <p>Each quarter, add new local projects, photos and reviews to your pages and profile. Track calls, direction requests and website clicks in your Google Business Profile performance report, clicks and impressions by page in Google Search Console, and qualified leads in your CRM. Rankings are useful context, but booked work is the measure that matters.</p>
         <p>We apply this framework in our <a href="/services/monthly-seo-content">monthly SEO and content</a> service for businesses in <a href="/locations/hollywood-fl">Hollywood</a>, <a href="/locations/fort-lauderdale">Fort Lauderdale</a>, <a href="/locations/miami">Miami</a> and beyond.</p>

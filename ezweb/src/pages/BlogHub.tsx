@@ -15,7 +15,7 @@ import { postModified, sortedPosts } from './blogUtils'
 
 const PATH = '/blog'
 const TITLE = pageTitle('Web Design, SEO & AI Search Blog')
-const DESCRIPTION = `Practical articles on web design, SEO, AI search visibility, CRO and Google Ads by ${business.founder.name}, founder of ${business.name}.`
+const DESCRIPTION = `How-to articles on web design, SEO, AI search visibility, CRO and Google Ads by ${business.founder.name}, founder of ${business.name}.`
 
 const crumbs: Crumb[] = [
   { name: 'Home', path: '/' },
@@ -61,7 +61,7 @@ export default function BlogHub() {
         <Breadcrumbs items={crumbs} />
         <h1 className="display text-gradient">Blog</h1>
         <p className="subhead">
-          Short, practical posts on web design, SEO, AI search and paid growth, written by {business.founder.name}.
+          How-to posts on web design, SEO, AI search and Google Ads, written by {business.founder.name}.
         </p>
         <div className="cards">
           {posts.map((p) => (

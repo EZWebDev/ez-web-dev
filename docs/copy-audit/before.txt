@@ -1,0 +1,177 @@
+COPY AUDIT  2026-09-23
+======================================================================================================================
+page                                           words  banned  dash/1k  long  openers  we%  triads  3x3 contr  dups  score
+----------------------------------------------------------------------------------------------------------------------
+/404                                              66       0      0.0     0        0    0       0    0     0     0      0
+/about                                           404       0      0.0     0        0   24       7    0     0     0      0
+/blog                                            349       0      5.7     0        3    0       4    0     0     0      9
+/blog/above-the-fold-cro-patterns                470       0      0.0     0        0    0       8    0     0     0      0
+/blog/are-boutique-agencies-dying                369       0      0.0     0        0    4       4    0     1     0      3
+/blog/entity-first-seo-ai-answers               1799       0      0.0     2        0    0      26    2     1     0      7
+/blog/ez-web-development-llc-hollywood-fl        543       0      0.0     1        2    5       9    0     0     0      3
+/blog/first-website-mistakes                     273       0      0.0     0        0    0       5    0     0     0      0
+/blog/google-ads-local-trades-roas-pattern       497       0      0.0     0        0    0       7    1     0     0      1
+/blog/local-service-seo-framework                812       0      0.0     1        0    2      16    0     0     0      1
+/blog/shopify-performance-budget                 448       0      0.0     1        0    4       6    0     0     0      1
+/blog/which-website-platform-2025                878       0      0.0     2        0    2      19    0     1     0      5
+/contact                                          94       0      0.0     0        0    0       1    0     0     0      0
+/                                                595       0      0.0     0        2   19      12    0     0     0      2
+/locations/fort-lauderdale                       765       0      0.0     3        0   11      11    1     0     0      4
+/locations/hollywood-fl                          750       0      0.0     3        1    0      12    2     0     0      6
+/locations/miami                                 778       1      0.0     1        0   17      11    1     0     0      5
+/services                                        163       0      0.0     0        0    0       5    0     0     0      0
+/services/ai-search-ranking                     1138       0      0.0     2        1   14      14    1     1     0      7
+/services/custom-web-design                     1089       0      0.0     1        0    6      17    0     0     0      1
+/services/full-website-packages                 1009       0      0.0     1        0    5      22    1     0     0      2
+/services/google-ads                             872       0      0.0     2        1   13      14    1     0     0      4
+/services/landing-page-cro                       949       0      0.0     2        0    8       9    0     1     0      5
+/services/monthly-seo-content                    982       0      0.0     1        0   11      14    2     0     0      3
+(site chrome)                                     96       0      0.0     0        0    0       0    0     0     0      0
+----------------------------------------------------------------------------------------------------------------------
+Columns: banned = banned-phrase hits; dash/1k = em dashes + spaced en/hyphen dashes per 1,000 words;
+long = sentences > 35 words; openers = over-used openers + runs of 3 identical openers; we% = share of
+sentences starting with We/Our; triads = sentences with an exactly-three-item list; 3x3 = consecutive triad sentences;
+contr = "not X but Y"-style contrasts; dups = sentences also found on another page.
+
+DETAILS
+======================================================================================================================
+/about
+  watch:  solution(s) x1, partner x1
+/blog
+  dashes: 2 em, 0 spaced en, 0 spaced hyphen (5.7/1k)
+  opener: "a" starts 7 of 18 sentences
+  opener run: a: "A practical guide to getting your business cited in AI answe…"
+  opener run: a: "A framework for service and location pages that avoids thin …"
+/blog/above-the-fold-cro-patterns
+  watch:  genuinely / truly / really x1, tailored x1
+/blog/are-boutique-agencies-dying
+  watch:  partner x1, the right fit / better fit x2, in practice x1
+  contrast (doesn't make/mean X. It makes/means Y): …ity. That does not make large agencies bad. It makes them the right fit …
+/blog/entity-first-seo-ai-answers
+  watch:  genuinely / truly / really x1
+  long (40w): When someone asks Google AI Mode, ChatGPT or Perplexity “who’s a good web developer near me?” or “what is [company name]?”, the reply is a short parag…
+  long (37w): Search for your business name and phone number, list every place they appear (directories, social profiles, old listings, review sites, and your own f…
+  triad pair: text on your site, usually in the footer and on the contact page  /  only on an image, a map embed or schema markup
+  triad pair: by AI search tools, read the raw HTML and do not run scripts  /  If your text, headings and schema only appear after
+  contrast (less about X than (about) Y): …agraph is less about keywords than about identity. The…
+/blog/ez-web-development-llc-hollywood-fl
+  watch:  solution(s) x1
+  long (36w): The company designs and builds websites and web applications, runs monthly SEO and AI search visibility programs, improves landing-page conversion, an…
+  opener: "ez" starts 7 of 37 sentences
+  opener run: ez: "EZ Web LLC (ezweb.work) of High Ridge, Missouri…"
+/blog/google-ads-local-trades-roas-pattern
+  watch:  actually x1
+  triad pair: searches from job seekers, do-it-yourselfers and people looking for suppliers  /  counts as a conversion, so if spam calls and wrong-number forms count
+/blog/local-service-seo-framework
+  watch:  genuinely / truly / really x1, simply / just (softener) x1
+  long (40w): A Hollywood-based home service company might build strong pages for each service first, then location pages for the southern Broward cities where it h…
+/blog/shopify-performance-budget
+  long (40w): Google’s “good” thresholds for Core Web Vitals are Largest Contentful Paint (LCP) at or under 2.5 seconds, Interaction to Next Paint (INP) at or under…
+/blog/which-website-platform-2025
+  watch:  the right fit / better fit x1
+  long (38w): Choosing a website platform is less about feature lists than about three questions: how fast you need to launch, how much the site needs to grow, and …
+  long (36w): First, AI search tools such as Google AI Mode, ChatGPT and Perplexity now answer many questions that used to send people to websites, and several of t…
+  contrast (less about X than (about) Y): …atform is less about feature lists than about three questio…
+/
+  watch:  partner x1
+  opener: "we" starts 5 of 32 sentences
+  opener run: websites: "Websites, SEO and Google Ads from a studio on Tyler Street i…"
+/locations/fort-lauderdale
+  watch:  actually x1, simply / just (softener) x1
+  long (37w): Fort Lauderdale is the county seat of Broward and the center of much of its business activity, from the offices downtown and along Las Olas Boulevard …
+  long (39w): Marine businesses, yacht services and the hospitality industry around the beach and Port Everglades serve many customers from out of town, which makes…
+  long (40w): Service-area businesses that cover all of Broward should have a verified Google Business Profile with accurate service areas, a page on their site for…
+  triad pair: Marine businesses, yacht services and the hospitality industry around  /  Healthcare practices, real estate professionals and home service companies round
+/locations/hollywood-fl
+  watch:  actually x1, partner x1, in practice x1
+  long (39w): In practice, a search for a service in Hollywood shows businesses close to the searcher first, so a company on the west side of the city can lose map …
+  long (60w): You cannot move your office, but you can control the rest: a complete and accurate Google Business Profile with the right primary category, reviews th…
+  long (42w): Local clients can meet at the Tyler Street office by appointment or at their own place of business, which helps when we need to photograph a location,…
+  opener run: a: "A beachside restaurant or rental needs fast mobile pages, cu…"
+  triad pair: needs fast mobile pages, current hours and menus, and booking links that work  /  A law, accounting or medical office needs clear
+  triad pair: the correct primary category, accurate hours and real photos  /  Keep your name, address and phone identical everywhere
+/locations/miami
+  banned: landscape x1
+  long (36w): Clicks for competitive services in Miami can be expensive, so we focus spend on high-intent searches in the areas you serve, add negative keywords, an…
+  triad pair: It can be, if tracking is accurate and targeting is tight  /  the areas you serve, add negative keywords, and track calls and forms
+/services
+  watch:  partner x1
+/services/ai-search-ranking
+  long (36w): It is careful, verifiable groundwork: consistent business facts everywhere they appear, structured data that describes who you are, pages that answer …
+  long (39w): We build a fixed set of prompts that match how your customers ask, such as “best [service] in [city]” and questions about your company by name, and ru…
+  opener: "we" starts 8 of 59 sentences
+  triad pair: answer engines to find, understand and cite  /  like Google AI Mode, ChatGPT and Perplexity can describe the
+  contrast (it's not X, it's Y): …and cite. It is not a trick or a paid placement. It is careful, verifiable…
+/services/custom-web-design
+  watch:  actually x1, partner x1, the right fit / better fit x1
+  long (40w): Use Shopify if selling products online is the core of the business, WordPress if you publish a lot of content and want to edit it yourself, and a cust…
+/services/full-website-packages
+  watch:  partner x1
+  long (47w): Businesses launching their first serious website, companies replacing a slow or outdated site, professional services firms that need to explain what t…
+  triad pair: current site is outdated, hard to edit or invisible in Google  /  is based in Hollywood, Florida, and runs these projects for
+/services/google-ads
+  watch:  actually x1
+  long (44w): We set up and manage Google Ads campaigns for local businesses, professional services firms and e-commerce brands: Search campaigns for high-intent qu…
+  long (38w): Because the same studio builds websites and landing pages, ad management here includes the parts that usually fall between agencies: conversion tracki…
+  opener: "we" starts 6 of 47 sentences
+  triad pair: causes include mismatched prices, missing shipping or return policy details  /  in Merchant Center diagnostics, correct the feed or the site
+/services/landing-page-cro
+  watch:  partner x1
+  long (44w): They come from a headline that says exactly what you do and for whom, an offer that matches the ad or search that brought the visitor, fewer form fiel…
+  long (36w): Ad landing pages are built to match the keywords and ad copy that send traffic to them, load quickly on mobile, and track calls and form submissions a…
+  contrast (rarely X. They/It Y): …rovements rarely come from button colors. They come from a headline tha…
+/services/monthly-seo-content
+  watch:  actually x1
+  long (36w): It fits local service businesses and professional firms competing in a defined area, e-commerce stores that need category and product pages to rank, a…
+  triad pair: impressions, clicks and average position from Google  /  Google Business Profile calls, direction requests and website clicks
+  triad pair: from Google AI Mode, ChatGPT and Perplexity  /  on a crawlable site, clear content and consistent business information
+
+DUPLICATE SENTENCES ACROSS PAGES (>= 8 words, excluding allowed entity/boilerplate lines)
+======================================================================================================================
+  none
+
+NEAR-DUPLICATE PARAGRAPHS ACROSS PAGES (4-gram Jaccard >= 0.5)
+======================================================================================================================
+  none
+
+NEAR-DUPLICATE SENTENCES ACROSS PAGES (3-gram Jaccard >= 0.3: same template, words swapped)
+======================================================================================================================
+  0.75  /about  <->  /
+      A: We work with businesses in Hollywood, Fort Lauderdale, Miami and across South Florida, and remotely with clien
+      B: We work with businesses in Hollywood, Fort Lauderdale, Miami and across South Florida, and remotely with clien
+  0.39  /  <->  /locations/hollywood-fl
+      A: Our studio is at 1909 Tyler Street Suite 308, Hollywood, FL 33020.
+      B: EZ Web Development LLC is at 1909 Tyler Street, Suite 308, Hollywood, FL 33020, in downtown Hollywood.
+  0.36  /blog/shopify-performance-budget  <->  /blog/which-website-platform-2025
+      A: Google’s “good” thresholds for Core Web Vitals are Largest Contentful Paint (LCP) at or under 2.5 seconds, Int
+      B: Core Web Vitals: Google’s “good” thresholds are LCP at or under 2.5 seconds, INP at or under 200 milliseconds 
+  0.35  /  <->  /locations/hollywood-fl
+      A: Based at 1909 Tyler Street Suite 308, Hollywood, FL 33020.
+      B: EZ Web Development LLC is at 1909 Tyler Street, Suite 308, Hollywood, FL 33020, in downtown Hollywood.
+  0.35  /services/custom-web-design  <->  /services/full-website-packages
+      A: It depends on the number of page types, the platform and any custom functionality.
+      B: Price depends on the number of pages, the platform and any custom features.
+  0.31  /blog/are-boutique-agencies-dying  <->  /
+      A: We offer custom web design and development, full website packages, monthly SEO and content, AI search visibili
+      B: We offer Custom Web Design & Development, Full Website Packages, Monthly SEO & Content, AI Search Visibility (
+  0.31  /services/custom-web-design  <->  /services/full-website-packages
+      A: The studio is based in Hollywood, Florida, and works with businesses across South Florida and nationwide, in p
+      B: The studio is based in Hollywood, Florida, and runs these projects for clients across South Florida and nation
+
+KEY TAKEAWAYS
+======================================================================================================================
+  "Key takeaways" heading on 4 of 9 posts (ok: not on every post)
+
+SUMMARY
+======================================================================================================================
+  pages audited ............ 25 (16,188 words)
+  banned phrases ........... 1
+  dash rate (site) ......... 0.12 per 1,000 words (worst page: /blog 5.73)
+  sentences > 35 words ..... 23
+  opener repetition flags .. 10
+  triad sentences .......... 253 (12 consecutive pairs)
+  contrast constructions ... 5
+  duplicate sentences ...... 0
+  near-duplicate paragraphs  0
+  near-duplicate sentences . 7
+  TOTAL SCORE .............. 76  (lower is better; banned x3, contrasts x3, long, dash rate, 3x3 triads, openers, dups/2, near-dup paragraphs x2, near-dup sentences)

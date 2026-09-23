@@ -39,7 +39,7 @@ const faqs: FaqItem[] = [
   },
   {
     q: `What does ${business.name} do?`,
-    a: `We offer ${joinList(services.map((s) => s.name))}.`,
+    a: `${joinList(services.map((s) => s.name))}.`,
   },
   {
     q: 'Who do you work with?',
@@ -99,7 +99,7 @@ export default function Home() {
         <div className="container">
           <h2 id="services-title" className="section-title">What we do</h2>
           <p className="section-subtitle">
-            Design, build and growth services, led by founder {business.founder.name} from first call to launch and beyond.
+            Each service page lists what is included and how the work runs. Founder {business.founder.name} scopes and runs every project himself.
           </p>
           <div className="cards">
             {services.map((s) => (
@@ -120,7 +120,8 @@ export default function Home() {
         <div className="container">
           <h2 id="where-title" className="section-title">Where we work</h2>
           <p className="section-subtitle">
-            Based at {fullAddressLine}. We work with businesses across {business.metro} and remotely nationwide.
+            Based at {fullAddressLine}, between Fort Lauderdale and Miami. Local clients can meet in person; clients in
+            other states work with us over video calls.
           </p>
           <div className="cards">
             {locations.map((l) => (

@@ -39,14 +39,14 @@ export const services: Service[] = [
     description: 'Custom websites and web apps built for speed, search and easy editing: WordPress, Shopify and React builds from a Hollywood, FL studio.',
     summary: 'Fast, accessible websites and web apps on WordPress, Shopify or custom React, built to rank and easy to maintain.',
     intro: [
-      'We design and build websites and web applications that load quickly, read clearly on a phone, and are easy for your team to keep up to date. Depending on what the project needs, that might be a WordPress site with a lean custom theme, a Shopify storefront, or a custom React application such as a client portal, booking tool or internal dashboard.',
-      'Every build starts from how your customers actually find and choose you, so search, speed and conversion are designed in rather than bolted on after launch. The studio is based in Hollywood, Florida, and works with businesses across South Florida and nationwide, in person or remotely.',
+      'We design and build websites and web applications that load quickly on a phone and that your team can update without calling a developer. Most projects are a WordPress site on a lean custom theme, a Shopify store, or a custom React application such as a client portal, booking tool or internal dashboard.',
+      'Search setup ships with the site. Page titles, redirects from your old URLs, schema markup, Google Analytics 4 and Search Console are in place on launch day, so there is no separate SEO project to buy afterward.',
     ],
     sections: [
       {
         heading: 'What’s included',
         body: [
-          'A custom design and build covers the full path from a blank page to a live, measurable site. You get a design made for your content and your customers, not a lightly edited theme demo.',
+          'The design is drawn for your content and your customers. We do not start from a theme demo and swap in your logo. A typical project includes:',
         ],
         bullets: [
           'Discovery call and sitemap: which pages you need and what each one must do',
@@ -68,7 +68,7 @@ export const services: Service[] = [
       {
         heading: 'How we work',
         body: [
-          'You see the work at each stage and approve it before the next one begins, so nothing important is decided without you and there are no surprises at the end.',
+          'Each stage ends with something you can click through or mark up, and the next stage starts only after you approve it.',
         ],
         bullets: [
           'Discovery: goals, audience, competitors, existing analytics and content',
@@ -82,20 +82,25 @@ export const services: Service[] = [
       {
         heading: 'Who it’s for',
         body: [
-          'Small businesses and professional services firms that have outgrown a template site, e-commerce brands that need a faster store, and nonprofits and educators that need a site their staff can maintain without a developer. It also fits companies that need a custom web app or dashboard alongside their marketing site.',
+          'Most custom projects start from one of these situations:',
+        ],
+        bullets: [
+          'A template site the business has outgrown, or one nobody on staff can edit',
+          'An online store that has slowed down as apps and scripts piled up',
+          'A marketing site that needs a custom tool next to it, such as a client portal, quote calculator or dashboard',
         ],
       },
       {
         heading: 'Timeline and what you need to provide',
         body: [
-          'A typical marketing site of five to fifteen pages takes roughly four to eight weeks from kickoff to launch. Custom applications and larger stores take longer and are scoped in phases with dates agreed up front. The biggest variable is usually content: page copy, photos and logos, plus access to your domain, hosting and any existing Google accounts.',
+          'A typical marketing site of five to fifteen pages takes roughly four to eight weeks from kickoff to launch. Custom applications and larger stores take longer and are scoped in phases with dates agreed up front. The biggest variable is content: page copy, photos and logos. We also need access to your domain, hosting and any existing Google accounts.',
           'If writing copy is the bottleneck, we can draft it from a short interview and your existing materials, and you edit it for accuracy.',
         ],
       },
       {
         heading: 'After launch',
         body: [
-          'Websites need care after they go live. Ongoing maintenance covers software and plugin updates, backups, uptime and security monitoring, hosting management and small content changes, so the site stays fast and secure instead of slowly degrading.',
+          'Maintenance is available once the site is live: software and plugin updates, backups, uptime and security monitoring, hosting, and small content edits. It is optional, but skip it and plugins fall behind; unpatched plugins are one of the most common ways WordPress sites get compromised.',
         ],
       },
     ],
@@ -103,7 +108,7 @@ export const services: Service[] = [
     faqs: [
       {
         q: 'How much does a custom website cost?',
-        a: 'It depends on the number of page types, the platform and any custom functionality. After a short discovery call we send a fixed written quote with the scope spelled out, so you know the price before any work begins. Larger projects can be split into phases.',
+        a: 'Every project gets a fixed written quote after a short discovery call, so you know the price before work starts. The number depends on how many page types the site needs, the platform, and any custom features. Larger projects can be split into phases.',
       },
       {
         q: 'How long does it take to build a website?',
@@ -111,7 +116,7 @@ export const services: Service[] = [
       },
       {
         q: 'Should I use WordPress, Shopify or a custom build?',
-        a: 'Use Shopify if selling products online is the core of the business, WordPress if you publish a lot of content and want to edit it yourself, and a custom React build when you need functionality that off-the-shelf tools handle poorly. We recommend a platform after discovery and explain the tradeoffs in writing.',
+        a: 'Shopify if selling products online is the core of the business. WordPress if you publish a lot of content and want to edit it yourself. A custom React build when you need something off-the-shelf tools handle poorly. We recommend one after discovery and put the tradeoffs in writing.',
       },
       {
         q: 'Will I be able to update the site myself?',
@@ -119,11 +124,11 @@ export const services: Service[] = [
       },
       {
         q: 'Will a redesign hurt my Google rankings?',
-        a: 'A redesign done carefully should protect existing rankings. We map every old URL to its new equivalent with 301 redirects, keep the titles and content that already rank, and watch Google Search Console after launch to catch problems early.',
+        a: 'It should not, if the old URLs are handled. We map every old URL to its new page with a 301 redirect and keep the titles and content that already rank. After launch we watch Google Search Console to catch crawl errors early.',
       },
       {
         q: 'Do you only work with businesses in South Florida?',
-        a: 'No. The studio is in Hollywood, Florida, and meets local clients in person, but most of the process runs over video calls and shared documents, so we work with businesses anywhere in the United States.',
+        a: 'No. We meet local clients in person in Hollywood, but the process runs on video calls and shared documents, so we work with businesses anywhere in the United States.',
       },
       {
         q: 'Who owns the website when it’s finished?',
@@ -149,16 +154,16 @@ export const services: Service[] = [
     eyebrow: 'All-in',
     title: 'Full-Service Website Packages',
     description: 'One project covering strategy, copy, design, development, SEO setup, analytics, hosting and launch, run by a founder-led studio in Hollywood, FL.',
-    summary: 'Strategy, copy, design, build, SEO setup and launch handled end to end by one accountable partner.',
+    summary: 'Strategy, copy, design, build, SEO setup and launch in one project, with one person responsible for all of it.',
     intro: [
-      'A full website package is for businesses that want one accountable partner for the whole project instead of coordinating a designer, a developer, a copywriter and an SEO consultant separately. We handle strategy, copy, design, development, search setup, analytics, hosting and launch, and you review and approve each stage.',
-      'It is the most common way new and growing businesses start with us, especially when the current site is outdated, hard to edit or invisible in Google. The studio is based in Hollywood, Florida, and runs these projects for clients across South Florida and nationwide.',
+      'A full website package means you hire one studio instead of a designer, a developer, a copywriter and an SEO consultant, and nobody has to manage the handoffs between them. We handle strategy, copy, design, development, search setup, analytics, hosting and launch. You review and approve each stage.',
+      'Choose it over a design-and-build project when you do not have finished copy or a marketing plan to hand a designer. It also fits when the current site is outdated, hard to edit or missing from Google entirely.',
     ],
     sections: [
       {
         heading: 'What the package covers',
         body: [
-          'Everything needed to go from an idea or an outdated site to a live website that is set up to be found and measured.',
+          'From the first interview to the redirects on launch day:',
         ],
         bullets: [
           'Strategy: goals, audience, a competitor review and the single action each page should drive',
@@ -182,13 +187,19 @@ export const services: Service[] = [
       {
         heading: 'Who it’s for',
         body: [
-          'Businesses launching their first serious website, companies replacing a slow or outdated site, professional services firms that need to explain what they do more clearly, e-commerce brands moving to or rebuilding on Shopify, and nonprofits or educators who need a site staff can update without a developer.',
+          'The package fits when there is more to decide than the design:',
+        ],
+        bullets: [
+          'A business launching its first serious website',
+          'A professional services firm whose current site does not explain what it does',
+          'An e-commerce brand moving to Shopify or rebuilding on it',
+          'A nonprofit or school that needs a site staff can update without a developer',
         ],
       },
       {
         heading: 'Timeline and what you need to provide',
         body: [
-          'Most full packages take about six to ten weeks. The schedule is set at kickoff, with a review date for each stage. Your part is smaller than most people expect, but it does determine the pace.',
+          'Most full packages take six to ten weeks. We set the schedule at kickoff, with a review date for each stage. Your part is small, but it sets the pace:',
         ],
         bullets: [
           'A kickoff interview of about an hour on your business, customers and competitors',
@@ -215,7 +226,7 @@ export const services: Service[] = [
     faqs: [
       {
         q: 'What is included in a full website package?',
-        a: 'Strategy, copywriting, design, development, on-page SEO, schema markup, Google Analytics 4 and Search Console setup, hosting and domain setup, launch and a post-launch support period. It is everything needed to go from planning to a live site that can be found and measured.',
+        a: 'Strategy, copywriting, design, development, on-page SEO, schema markup, Google Analytics 4 and Search Console setup, hosting and domain setup, launch and a post-launch support period. You supply knowledge of the business and the approvals; we do the rest.',
       },
       {
         q: 'How is a full package different from custom web design?',
@@ -227,15 +238,15 @@ export const services: Service[] = [
       },
       {
         q: 'How much does a full website package cost?',
-        a: 'Price depends on the number of pages, the platform and any custom features. After a discovery call you receive a fixed written quote that lists exactly what is included, so the cost is known before work begins.',
+        a: 'A fixed price, quoted in writing after a discovery call, with every deliverable listed. Page count, platform and custom features drive the number, and it does not change unless the scope does.',
       },
       {
         q: 'Can you move my existing site to new hosting?',
         a: 'Yes. We migrate the site, set up SSL and backups, and redirect old URLs to their new locations. Before any DNS change we document your existing email records so email keeps working through the switch.',
       },
       {
-        q: 'Do I need to be located in Florida?',
-        a: 'No. Local clients can meet in person in Hollywood, but the whole process works remotely, and we run full website projects for businesses across the United States.',
+        q: 'How much of my time does a full package take?',
+        a: 'About an hour for the kickoff interview, then a review at the end of each stage. Most delays come from slow feedback, so name one person who can approve each stage and reply within a few business days. The whole process can run remotely.',
       },
       {
         q: 'What happens after the site launches?',
@@ -261,8 +272,8 @@ export const services: Service[] = [
     description: 'Monthly SEO: keyword research, technical and Core Web Vitals fixes, local pages and content written to rank, tracked in Google Search Console.',
     summary: 'Technical fixes, page improvements and new content each month, reported against Search Console data.',
     intro: [
-      'Monthly SEO and content is an ongoing program that makes your site easier for Google to understand and more useful to the people searching for what you sell. Each month combines technical fixes, improvements to existing pages, and new content aimed at searches your customers actually make.',
-      'Organic search results build over months, not days, so the program is designed to compound: every page we improve or publish keeps working after the month it ships. We work with small businesses, professional services firms, e-commerce brands and nonprofits from our studio in Hollywood, Florida, and with clients nationwide.',
+      'Monthly SEO and content is ongoing work on your site. Each month we fix technical problems, improve pages you already have, and publish new pages aimed at the searches your customers type.',
+      'Organic results take months. The work adds up, though: a page we improve in March is still bringing in searches in December, and next month’s work starts from there instead of from zero.',
     ],
     sections: [
       {
@@ -290,28 +301,28 @@ export const services: Service[] = [
       {
         heading: 'Who it’s for',
         body: [
-          'Businesses that already have a reasonably solid website and want more qualified traffic from Google without paying for every click. It fits local service businesses and professional firms competing in a defined area, e-commerce stores that need category and product pages to rank, and organizations that publish useful content but do not see it in search.',
+          'It works best when the website itself is sound and the goal is more leads from Google without paying for each click. Good fits include local service businesses competing in a defined area, stores that need category and product pages to rank, and organizations whose articles never show up in search.',
           'If the site itself is the problem, for example very slow, hard to crawl or built on a platform that blocks basic SEO, we will say so and may recommend fixing the foundation first.',
         ],
       },
       {
         heading: 'How we measure results',
         body: [
-          'Reports focus on what matters to the business: impressions, clicks and average position from Google Search Console; organic sessions and conversions from Google Analytics 4; and rankings for a short list of priority terms. For local businesses we also track Google Business Profile calls, direction requests and website clicks.',
+          'Each monthly report shows impressions, clicks and average position from Google Search Console; organic sessions and conversions from Google Analytics 4; and rankings for a short list of priority terms. For local businesses it adds Google Business Profile calls, direction requests and website clicks.',
           'Each report lists the pages we changed and what happened afterward, so progress can be traced to specific work.',
         ],
       },
       {
         heading: 'Timeline and expectations',
         body: [
-          'Technical fixes can show an effect within weeks once Google recrawls the site. New content and competitive terms usually take three to six months to settle. We do not guarantee rankings, because no one controls Google’s results, but we do commit to a clear plan and honest reporting.',
+          'Technical fixes can show an effect within weeks once Google recrawls the site. New content and competitive terms usually take three to six months to settle. No one controls Google’s results, so we do not promise rankings. You get the plan in writing and a report each month that shows what changed.',
           'From you we need access to Search Console, Analytics and your CMS, and about half an hour a month from someone who can check new content for accuracy.',
         ],
       },
       {
-        heading: 'Content standards',
+        heading: 'How content gets written',
         body: [
-          'Every page is written for a reader first: direct answers, specific details about your services and service area, and no filler. We draft, you review for accuracy, and nothing is published without your approval.',
+          'Pages open with the answer, name your actual services and towns, and skip the warm-up paragraph. We write the draft and you check the facts. Nothing is published without your approval.',
         ],
       },
     ],
@@ -323,15 +334,15 @@ export const services: Service[] = [
       },
       {
         q: 'Do you guarantee first-page rankings?',
-        a: 'No. Nobody outside Google controls its rankings, and guarantees are a warning sign. We commit to a documented plan, the work in it, and transparent reporting on what changed.',
+        a: 'No. Nobody outside Google controls its rankings, and an agency that guarantees them is a warning sign. You get a written plan, the work in it, and a monthly report showing what changed.',
       },
       {
         q: 'Do you write the content, or do I?',
-        a: 'We write it. You provide a short interview or notes and review each draft for accuracy before it is published. Your expertise combined with our writing and SEO work produces pages that are both correct and findable.',
+        a: 'We write it. You give us a short interview or notes, then check each draft before it goes live. That check matters: you will catch details about your own services that an outside writer gets wrong.',
       },
       {
         q: 'Do you do local SEO?',
-        a: 'Yes. Local SEO includes service and location pages, Google Business Profile optimization, consistent name, address and phone details across directories, and local schema markup. Most of our South Florida clients start here.',
+        a: 'Yes. Local SEO includes service and location pages, Google Business Profile optimization, consistent name, address and phone details across directories, and local schema markup. For a service business that depends on nearby customers, this is usually the place to start.',
       },
       {
         q: 'Can you do SEO on WordPress and Shopify sites?',
@@ -339,7 +350,7 @@ export const services: Service[] = [
       },
       {
         q: 'What is the difference between SEO and AI search visibility?',
-        a: 'They overlap. SEO focuses on ranking in Google’s traditional results, while AI search visibility focuses on being named and cited in AI-generated answers from Google AI Mode, ChatGPT and Perplexity. Both depend on a crawlable site, clear content and consistent business information, so many clients run them together.',
+        a: 'They overlap. SEO focuses on ranking in Google’s traditional results, while AI search visibility focuses on being named and cited in AI-generated answers from Google AI Mode, ChatGPT and Perplexity. Both depend on a crawlable site with consistent business information, so the work overlaps and the two are often run together.',
       },
     ],
     serviceType: 'Search engine optimization',
@@ -363,7 +374,7 @@ export const services: Service[] = [
     summary: 'Entity, schema and citation work so AI answers can find and accurately describe your business.',
     intro: [
       'More people now ask Google AI Mode, AI Overviews, ChatGPT and Perplexity who to hire or what to buy, and those tools answer with a short list of named businesses. AI search visibility, also called generative engine optimization (GEO), is the work of making your business easy for those systems to find, understand, trust and cite.',
-      'It is not a trick or a paid placement. It is careful, verifiable groundwork: consistent business facts everywhere they appear, structured data that describes who you are, pages that answer real questions in plain HTML, and profiles on the sites these engines already rely on. We do this work from Hollywood, Florida, for businesses in South Florida and nationwide, and we use the same methods on our own site.',
+      'You cannot buy a place in an AI answer, and no trick forces a mention. The work is groundwork you can check. It means the same business facts everywhere they appear, structured data that says who you are, pages that answer questions in plain HTML, and profiles on the sites these engines already cite. We use the same methods on this site.',
     ],
     sections: [
       {
@@ -391,20 +402,20 @@ export const services: Service[] = [
       {
         heading: 'How we measure it',
         body: [
-          'We build a fixed set of prompts that match how your customers ask, such as “best [service] in [city]” and questions about your company by name, and run them on a schedule in Google AI Mode, ChatGPT and Perplexity. For each run we record whether your business is mentioned, whether the description is accurate, and which sources were cited.',
-          'We pair that with Google Search Console data, referral traffic from AI tools in Google Analytics 4, and the status of each citation. AI answers vary from one run to the next, so we look at trends across many prompts rather than any single result.',
+          'We write a fixed set of prompts that match how your customers ask, such as “best [service] in [city]” and questions about your company by name. Those prompts run on a schedule in Google AI Mode, ChatGPT and Perplexity. Each run records whether your business is mentioned, whether the description is accurate, and which sources were cited.',
+          'The report also includes Google Search Console data, referral traffic from AI tools in Google Analytics 4, and the status of each citation. AI answers vary from one run to the next, so we look at trends across many prompts rather than any single result.',
         ],
       },
       {
         heading: 'What we will not promise',
         body: [
-          'No one can guarantee that an AI system will name your business. What we can do is remove the reasons an engine would skip or misdescribe you, and track honestly whether that changes.',
+          'No one can guarantee that an AI system will name your business. We can remove the reasons an engine would skip or misdescribe you, then show you, prompt by prompt, whether that changes.',
         ],
       },
       {
         heading: 'Who it’s for',
         body: [
-          'Businesses that customers research by asking questions: professional services, local service companies, specialty e-commerce brands and nonprofits. It is especially useful if your business shares a name with other companies, if AI tools currently describe you inaccurately, or if competitors show up in AI answers and you do not.',
+          'Businesses that customers research by asking questions: professional services, local service companies, specialty e-commerce brands and nonprofits. It matters most if your business shares a name with other companies, if AI tools currently describe you inaccurately, or if competitors show up in AI answers and you do not.',
         ],
       },
       {
@@ -427,11 +438,11 @@ export const services: Service[] = [
       },
       {
         q: 'Can you guarantee my business will appear in ChatGPT or Google AI Mode?',
-        a: 'No. AI answers are generated fresh for each query and no outside party controls them. We remove the obstacles that keep engines from citing you, build the signals they rely on, and measure mentions over time.',
+        a: 'No. AI answers are generated fresh for each query and no outside party controls them. We fix what keeps engines from citing you, add the profiles and markup they look for, and log mentions over time.',
       },
       {
         q: 'How do you track AI search visibility?',
-        a: 'We run a fixed set of customer-style prompts in Google AI Mode, ChatGPT and Perplexity on a regular schedule and log whether your business is named, how it is described and which sources are cited. We combine that with Search Console data and AI referral traffic in Google Analytics 4.',
+        a: 'We run a fixed set of customer-style prompts in Google AI Mode, ChatGPT and Perplexity on a regular schedule and log whether your business is named, how it is described and which sources are cited. Search Console data and AI referral traffic from Google Analytics 4 go in the same report.',
       },
       {
         q: 'What is llms.txt, and do I need one?',
@@ -467,8 +478,8 @@ export const services: Service[] = [
     description: 'Landing pages and CRO: clearer offers, faster pages, on-site surveys and A/B tests that turn more of your existing traffic into calls, leads and sales.',
     summary: 'Research, on-site surveys, speed fixes and tests that turn more visitors into leads and customers.',
     intro: [
-      'Conversion rate optimization (CRO) is the work of getting more of the people who already visit your site to call, book, fill out a form or buy. It is often the least expensive growth available, because it improves the return on every visitor you already earn from search, ads and referrals.',
-      'We design and build landing pages for campaigns and services, and we improve existing pages using analytics, on-site surveys and structured testing. The work is run from our Hollywood, Florida studio for businesses in South Florida and across the United States.',
+      'Conversion rate optimization (CRO) is the work of getting more of the people who already visit your site to call, book, fill out a form or buy. It is often the cheapest growth available. You have already paid for those visitors in ad spend or SEO work; CRO gets more of them to act.',
+      'We build new landing pages for ad campaigns and individual services, and we fix existing pages using analytics, short on-site surveys and A/B tests where the traffic supports them.',
     ],
     sections: [
       {
@@ -496,7 +507,14 @@ export const services: Service[] = [
       {
         heading: 'What usually makes the biggest difference',
         body: [
-          'The largest improvements rarely come from button colors. They come from a headline that says exactly what you do and for whom, an offer that matches the ad or search that brought the visitor, fewer form fields, visible proof such as reviews and credentials, and a page that loads quickly on mobile.',
+          'Button colors almost never move the number. These usually do:',
+        ],
+        bullets: [
+          'A headline that says exactly what you do and for whom',
+          'An offer that matches the ad or search that brought the visitor',
+          'Fewer form fields',
+          'Reviews and credentials near the top of the page',
+          'A page that loads quickly on a phone',
         ],
       },
       {
@@ -523,11 +541,11 @@ export const services: Service[] = [
     faqs: [
       {
         q: 'What is conversion rate optimization?',
-        a: 'Conversion rate optimization is the process of increasing the share of website visitors who take a desired action, such as calling, booking or buying. It combines analytics, visitor research and testing to find and fix what stops people from acting.',
+        a: 'It is the work of raising the share of visitors who call, book or buy. Analytics and short visitor surveys show what stops people from acting. CRO fixes those things one at a time and measures each change.',
       },
       {
         q: 'What is a good conversion rate for a landing page?',
-        a: 'There is no single good number, because conversion rates vary widely by industry, offer, traffic source and what counts as a conversion. The useful comparison is a page against its own past performance. We set a baseline first and measure improvement from there.',
+        a: 'The one to beat is your own page’s current rate. Published averages vary too much by industry, offer, traffic source and what counts as a conversion to be a useful target, so we set a baseline first and measure from there.',
       },
       {
         q: 'How much traffic do I need for A/B testing?',
@@ -535,7 +553,7 @@ export const services: Service[] = [
       },
       {
         q: 'Do you build landing pages for Google Ads?',
-        a: 'Yes. Ad landing pages are built to match the keywords and ad copy that send traffic to them, load quickly on mobile, and track calls and form submissions as conversions in Google Ads and Google Analytics 4.',
+        a: 'Yes. Each page matches the keywords and ad copy that send traffic to it and loads quickly on mobile. Calls and form submissions are tracked as conversions in both Google Ads and Google Analytics 4.',
       },
       {
         q: 'What are on-site surveys?',
@@ -566,8 +584,8 @@ export const services: Service[] = [
     description: 'Google Search, Shopping and Performance Max campaigns with accurate conversion tracking and matched landing pages, managed from Hollywood, FL.',
     summary: 'Search, Shopping and Performance Max campaigns built on accurate tracking and matched landing pages.',
     intro: [
-      'We set up and manage Google Ads campaigns for local businesses, professional services firms and e-commerce brands: Search campaigns for high-intent queries, Shopping and Performance Max campaigns fed by Google Merchant Center, and remarketing to bring back people who visited but did not act.',
-      'Because the same studio builds websites and landing pages, ad management here includes the parts that usually fall between agencies: conversion tracking that works, landing pages that match the ad, and product feeds that pass Merchant Center review. Accounts are managed from Hollywood, Florida, for advertisers in South Florida and nationwide.',
+      'We set up and manage Google Ads for local businesses, professional services firms and e-commerce brands. That means Search campaigns for high-intent queries, Shopping and Performance Max campaigns fed by Google Merchant Center, and remarketing to people who visited but did not act.',
+      'We also build websites, so the pieces that usually fall between an ad agency and a web developer stay with one person. That means conversion tracking, landing pages that match the ad, and product feeds that pass Merchant Center review.',
     ],
     sections: [
       {
@@ -602,7 +620,7 @@ export const services: Service[] = [
       {
         heading: 'E-commerce and Google Merchant Center',
         body: [
-          'For online stores, product data is the campaign. We clean up titles, descriptions, categories, identifiers and images in Google Merchant Center, fix disapprovals, and structure Shopping or Performance Max campaigns so your most important products get the budget they deserve. Shopify stores connect through the Google & YouTube app, and other platforms through a product feed.',
+          'For online stores, product data is the campaign. We clean up titles, descriptions, categories, identifiers and images in Google Merchant Center, fix disapprovals, and structure Shopping or Performance Max campaigns so the budget goes to the products that earn the most. Shopify stores connect through the Google & YouTube app, and other platforms through a product feed.',
         ],
       },
       {
@@ -642,7 +660,7 @@ export const services: Service[] = [
       },
       {
         q: 'Do you manage other ad platforms?',
-        a: 'We focus on Google Ads, including Search, Shopping, Performance Max and remarketing. Keeping the focus narrow lets us handle tracking, feeds and landing pages properly.',
+        a: 'Ad management here means Google Ads: Search, Shopping, Performance Max and remarketing. Staying on one platform leaves time to get the tracking, feeds and landing pages right.',
       },
     ],
     serviceType: 'Pay-per-click advertising management',

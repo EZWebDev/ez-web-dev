@@ -18,7 +18,7 @@ export default function NotFound() {
         <span className="eyebrow">404</span>
         <h1 className="display text-gradient">Page not found</h1>
         <p className="subhead">
-          That page does not exist or has moved. Here are the most useful places to go next.
+          That page does not exist or has moved. Try one of these instead.
         </p>
         <div className="two-col">
           <nav className="callout prose" aria-label="Services">
